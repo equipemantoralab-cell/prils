@@ -1,8 +1,23 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "cliente": {
     "nome": "Sabrina Nascimento",
     "slug": "sabrina"
+  },
+  "marca": {
+    "provisoria": true,
+    "monograma": "SN",
+    "logo": null,
+    "cores": {
+      "primaria": "#0f7a5a",
+      "primaria_escuro": "#3aa680",
+      "destaque": "#b8772a",
+      "destaque_escuro": "#c4862c"
+    },
+    "fontes": {
+      "titulos": "Fraunces",
+      "texto": "Manrope"
+    }
   },
   "periodo": {
     "inicio": "2026-09-22",
@@ -12,6 +27,73 @@
   "demo": true,
   "textos_exemplo": true,
   "destaques": "Foi uma semana de presença constante e de ajustes finos: o conteúdo do Instagram manteve o ritmo de publicações e trouxe novos seguidores orgânicos, as campanhas de tráfego seguiram distribuídas entre atração, engajamento e vendas, e o funil recebeu otimizações pensadas para facilitar a decisão de compra.",
+  "panorama": {
+    "titulo": "Resultados financeiros por área",
+    "colunas": [
+      {
+        "rotulo": "Faturamento",
+        "formato": "moeda"
+      },
+      {
+        "rotulo": "Lucro",
+        "formato": "moeda"
+      }
+    ],
+    "linhas": [
+      {
+        "area": "conteudo",
+        "rotulo": "Conteúdo & Instagram",
+        "periodo": {
+          "inicio": "2026-09-22",
+          "fim": "2026-09-26",
+          "rotulo": "22 a 26/set/2026",
+          "cobertura": "semana"
+        },
+        "celulas": [
+          {
+            "valor": 1111
+          },
+          null
+        ]
+      },
+      {
+        "area": "trafego",
+        "rotulo": "Tráfego pago",
+        "periodo": {
+          "inicio": "2026-09-24",
+          "fim": "2026-09-24",
+          "rotulo": "dados de 24/set",
+          "cobertura": "dia"
+        },
+        "celulas": [
+          {
+            "valor": 1111
+          },
+          {
+            "valor": null
+          }
+        ]
+      },
+      {
+        "area": "funil",
+        "rotulo": "Copy & Funil de vendas",
+        "periodo": {
+          "inicio": "2026-09-22",
+          "fim": "2026-09-26",
+          "rotulo": "22 a 26/set/2026",
+          "cobertura": "semana"
+        },
+        "celulas": [
+          {
+            "valor": 1111
+          },
+          {
+            "valor": 111
+          }
+        ]
+      }
+    ]
+  },
   "areas": [
     {
       "id": "conteudo",
@@ -155,6 +237,61 @@
         {
           "rotulo": "Melhor post da semana",
           "valor": "111"
+        }
+      ],
+      "graficos": [
+        {
+          "tipo": "funil",
+          "titulo": "Do alcance à venda",
+          "subtitulo": "Caminho do público no orgânico nesta semana",
+          "formato": null,
+          "escala_100": false,
+          "itens": [
+            {
+              "rotulo": "Alcance e visualizações",
+              "formato": "numero",
+              "valor": 111
+            },
+            {
+              "rotulo": "Cliques no link da bio",
+              "formato": "numero",
+              "valor": 1111
+            },
+            {
+              "rotulo": "Leads gerados",
+              "formato": "numero",
+              "valor": 111
+            },
+            {
+              "rotulo": "Vendas",
+              "formato": "numero",
+              "valor": 111
+            }
+          ]
+        },
+        {
+          "tipo": "barras",
+          "titulo": "Instagram em números",
+          "subtitulo": "Médias e ações da semana",
+          "formato": "numero",
+          "escala_100": false,
+          "itens": [
+            {
+              "rotulo": "Alcance médio no feed",
+              "formato": "numero",
+              "valor": 111
+            },
+            {
+              "rotulo": "Visualizações médias nos stories",
+              "formato": "numero",
+              "valor": 111
+            },
+            {
+              "rotulo": "Ativações de automação",
+              "formato": "numero",
+              "valor": 111
+            }
+          ]
         }
       ],
       "resumo": "Mantivemos o calendário editorial ativo no feed e nos stories, alternando conteúdos de autoridade, bastidores e prova social. As automações de mensagem continuaram levando quem interage até a sua oferta, e o blog seguiu como porta de entrada para quem chega pelas buscas.",
@@ -420,6 +557,113 @@
           "valor": "1111"
         }
       ],
+      "graficos": [
+        {
+          "tipo": "barras",
+          "titulo": "Investimento × faturamento",
+          "subtitulo": "Quanto foi investido e quanto voltou em vendas",
+          "formato": "moeda",
+          "escala_100": false,
+          "itens": [
+            {
+              "rotulo": "Investimento",
+              "formato": "moeda",
+              "valor": 111
+            },
+            {
+              "rotulo": "Faturamento",
+              "formato": "moeda",
+              "valor": 1111
+            },
+            {
+              "rotulo": "Lucro",
+              "formato": "moeda",
+              "valor": null
+            }
+          ]
+        },
+        {
+          "tipo": "funil",
+          "titulo": "Da visita à venda",
+          "subtitulo": "Resultado das campanhas no período",
+          "formato": null,
+          "escala_100": false,
+          "itens": [
+            {
+              "rotulo": "Visitas ao perfil",
+              "formato": "numero",
+              "valor": 111
+            },
+            {
+              "rotulo": "Leads",
+              "formato": "numero",
+              "valor": 111
+            },
+            {
+              "rotulo": "Vendas",
+              "formato": "numero",
+              "valor": 111
+            }
+          ]
+        },
+        {
+          "tipo": "tabela",
+          "titulo": "Campanhas por fase",
+          "subtitulo": "Como cada etapa das campanhas se comportou",
+          "colunas": [
+            {
+              "rotulo": "Investimento",
+              "formato": "moeda"
+            },
+            {
+              "rotulo": "CPM",
+              "formato": "moeda"
+            },
+            {
+              "rotulo": "CTR",
+              "formato": "percentual"
+            }
+          ],
+          "linhas": [
+            {
+              "rotulo": "Fase 1 · Atração",
+              "celulas": [
+                {
+                  "valor": 111
+                },
+                null,
+                null
+              ]
+            },
+            {
+              "rotulo": "Fase 2 · Engajamento",
+              "celulas": [
+                {
+                  "valor": 111
+                },
+                {
+                  "valor": 1111
+                },
+                {
+                  "valor": 111
+                }
+              ]
+            },
+            {
+              "rotulo": "Fase 3 · Vendas",
+              "celulas": [
+                null,
+                {
+                  "valor": 111
+                },
+                {
+                  "valor": 111
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "resumo": "Acompanhamos as campanhas nas três fases — atração de novos seguidores, engajamento com quem já conhece o seu trabalho e campanhas de vendas — ajustando públicos e criativos conforme a resposta de cada etapa. Os números abaixo são de um único dia de acompanhamento.",
       "fonte": {
         "sistema": "ClickUp",
@@ -539,6 +783,51 @@
         }
       ],
       "textos": [],
+      "graficos": [
+        {
+          "tipo": "funil",
+          "titulo": "Do lead ao cliente",
+          "subtitulo": "Quantas pessoas avançaram no funil",
+          "formato": null,
+          "escala_100": false,
+          "itens": [
+            {
+              "rotulo": "Leads gerados",
+              "formato": "numero",
+              "valor": 111
+            },
+            {
+              "rotulo": "Novos clientes / vendas",
+              "formato": "numero",
+              "valor": 111
+            }
+          ]
+        },
+        {
+          "tipo": "barras",
+          "titulo": "Taxas de conversão",
+          "subtitulo": "Desempenho das etapas da página e das ofertas",
+          "formato": "percentual",
+          "escala_100": true,
+          "itens": [
+            {
+              "rotulo": "Mapa de calor até o botão",
+              "formato": "percentual",
+              "valor": 111
+            },
+            {
+              "rotulo": "Order bump",
+              "formato": "percentual",
+              "valor": 111
+            },
+            {
+              "rotulo": "Upsell",
+              "formato": "percentual",
+              "valor": 111
+            }
+          ]
+        }
+      ],
       "resumo": "Revisamos a copy das páginas e das ofertas complementares, com foco em deixar o caminho até o botão de compra mais claro. Também mapeamos oportunidades de novos produtos que conversam com o momento do seu público.",
       "fonte": {
         "sistema": "ClickUp",
@@ -553,9 +842,10 @@
     "Aplicar os ajustes de copy na página de vendas e acompanhar o efeito na conversão."
   ],
   "comparacao_anterior": null,
+  "historico": [],
   "fonte": {
     "sistema": "ClickUp",
     "modo_coleta": "snapshot",
-    "coletado_em": "2026-10-02T03:56:25.911Z"
+    "coletado_em": "2026-10-02T04:12:48.504Z"
   }
 }

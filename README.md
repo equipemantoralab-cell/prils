@@ -12,7 +12,7 @@ A página depende **só do formato do JSON**, não do ClickUp. Para trocar por S
 
 | Caminho | O que é |
 |---|---|
-| `config/<cliente>.json` | Mapeamento: qual tarefa do ClickUp é qual área, quais campos (por ID) aparecem, rótulo e formato. Só o que está aqui vai para o JSON público. |
+| `config/<cliente>.json` | Mapeamento: qual tarefa do ClickUp é qual área, quais campos (por ID) aparecem, rótulo e formato; **marca** do cliente (cores, fontes, logo); **panorama** e **gráficos** de cada área. Só o que está aqui vai para o JSON público. |
 | `content/<cliente>.json` | Textos para o cliente: destaques, resumo por área, próximos passos. Fica separado para a coleta não sobrescrever. |
 | `scripts/coletar.mjs` | Coleta (Node 18+, sem dependências). Copia os valores dos campos sem calcular nada. Campo vazio vira `null`. |
 | `coleta/snapshots/` | Retorno bruto do ClickUp (auditoria e modo offline). **Não é publicado.** |
@@ -30,12 +30,39 @@ npm run dev                       # http://localhost:8000
 
 Abrir `index.html` direto (file://) não funciona porque o navegador bloqueia o `fetch` do JSON. Use o servidor local.
 
-## Formato do JSON (schema_version 1)
+## Identidade visual por cliente
+
+No bloco `marca` do config:
+
+```json
+"marca": {
+  "logo": "https://…/logo.svg",          // opcional; sem logo, usa o monograma
+  "monograma": "SN",
+  "cores": { "primaria": "#0f7a5a", "primaria_escuro": "#3aa680", "destaque": "#b8772a", "destaque_escuro": "#c4862c" },
+  "fontes": { "titulos": "Fraunces", "texto": "Manrope" }   // nomes do Google Fonts
+}
+```
+
+A página aplica essas cores e fontes. Fundos, linhas e textos secundários são derivados da cor primária, então cada cliente ganha um tom próprio sem configurar mais nada. As versões `_escuro` são usadas no modo escuro. Valide as cores para gráficos (contraste e distinção) antes de usar.
+
+## Gráficos e tabelas
+
+Declarados por área em `graficos` no config, sempre apontando para IDs de campo do Report daquela área:
+
+- `barras`: compara valores da mesma unidade (ex.: investimento × faturamento). `escala_100: true` para percentuais.
+- `funil`: etapas em sequência (alcance → cliques → leads → vendas).
+- `tabela`: linhas × colunas (ex.: campanhas por fase). `null` na célula = indicador não acompanhado (mostra "—"); campo vazio mostra "sem dados".
+
+`panorama` gera a tabela-resumo do topo (uma linha por área, com o período de cada uma). Cada gráfico tem o botão "Ver tabela"; no celular as tabelas viram blocos empilhados.
+
+## Formato do JSON (schema_version 2)
 
 - `cliente {nome, slug}`, `periodo {inicio, fim, rotulo}`, `destaques`, `proximos_passos[]`
-- `areas[]`: `{id, titulo, responsavel, periodo {inicio, fim, rotulo, cobertura: semana|dia|parcial}, metricas[], textos[], resumo, fonte}`
+- `marca`, `panorama {titulo, colunas[], linhas[{area, rotulo, periodo, celulas[]}]}`
+- `areas[]`: `{id, titulo, responsavel, periodo {inicio, fim, rotulo, cobertura: semana|dia|parcial}, metricas[], graficos[], textos[], resumo, fonte}`
 - `metricas[]`: `{rotulo, valor (número ou null), formato: numero|moeda|percentual|multiplicador, destaque, grupo, anterior}`
 - `anterior` e `comparacao_anterior` já estão reservados para a comparação com a semana anterior. A página mostra esse bloco só quando houver valor.
+- `historico: []` reservado para a evolução semana a semana (a seção aparece com 2+ semanas).
 - `demo` / `textos_exemplo` exibem o aviso de "dados de demonstração".
 
 ## Deploy

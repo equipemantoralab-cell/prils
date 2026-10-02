@@ -13,7 +13,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const SCHEMA_VERSION = 1;
+const SCHEMA_VERSION = 2;
 const avisos = [];
 
 async function lerJson(p) {
@@ -119,8 +119,63 @@ function rotuloPeriodo({ inicio, fim }, longo = false) {
   return `${i.d}${sep}${mes(i)} a ${f.d}${sep}${mes(f)}${sep}${f.a}`;
 }
 
+function camposPorId(tarefa) {
+  return new Map((tarefa.custom_fields ?? []).map((c) => [c.id, c]));
+}
+
+// Célula de gráfico/tabela: null = não se aplica (sem campo no Report); {valor} = valor do campo (pode ser null).
+function celula(porId, id, contexto) {
+  if (id === null || id === undefined) return null;
+  return { valor: valorNumerico(porId.get(id), contexto) };
+}
+
+function transformarGrafico(g, porId, areaId) {
+  const ctx = (rotulo) => `${areaId} · gráfico "${g.titulo}" · ${rotulo}`;
+  const base = { tipo: g.tipo, titulo: g.titulo, subtitulo: g.subtitulo ?? null };
+  if (g.tipo === "tabela") {
+    return {
+      ...base,
+      colunas: g.colunas,
+      linhas: g.linhas.map((l) => ({
+        rotulo: l.rotulo,
+        celulas: l.celulas.map((id, i) => celula(porId, id, ctx(`${l.rotulo} / ${g.colunas[i].rotulo}`))),
+      })),
+    };
+  }
+  return {
+    ...base,
+    formato: g.formato ?? null,
+    escala_100: Boolean(g.escala_100),
+    itens: g.itens.map((it) => ({
+      rotulo: it.rotulo,
+      formato: it.formato ?? g.formato ?? "numero",
+      valor: valorNumerico(porId.get(it.id), ctx(it.rotulo)),
+    })),
+  };
+}
+
+function transformarPanorama(config, tarefas, areasSaida) {
+  const pan = config.panorama;
+  if (!pan) return null;
+  return {
+    titulo: pan.titulo,
+    colunas: pan.colunas,
+    linhas: pan.linhas.map((l) => {
+      const area = config.areas.find((a) => a.id === l.area);
+      const porId = camposPorId(tarefas[area.task_id]);
+      const saida = areasSaida.find((a) => a.id === l.area);
+      return {
+        area: l.area,
+        rotulo: area.titulo,
+        periodo: saida.periodo,
+        celulas: l.celulas.map((id, i) => celula(porId, id, `panorama · ${area.titulo} / ${pan.colunas[i].rotulo}`)),
+      };
+    }),
+  };
+}
+
 function transformarArea(area, tarefa, config, textos) {
-  const porId = new Map((tarefa.custom_fields ?? []).map((c) => [c.id, c]));
+  const porId = camposPorId(tarefa);
 
   const clienteNaTarefa = opcaoDropdown(porId.get(area.campo_cliente));
   if (clienteNaTarefa !== config.cliente.clickup_cliente) {
@@ -152,6 +207,7 @@ function transformarArea(area, tarefa, config, textos) {
     textos: area.textos
       .filter((t) => t.exibir)
       .map((t) => ({ rotulo: t.rotulo, valor: valorTexto(porId.get(t.id), `${area.id} · ${t.campo}`) })),
+    graficos: (area.graficos ?? []).map((g) => transformarGrafico(g, porId, area.id)),
     resumo: textos.areas?.[area.id] ?? null,
     fonte: {
       sistema: "ClickUp",
@@ -162,9 +218,12 @@ function transformarArea(area, tarefa, config, textos) {
 }
 
 function transformar(config, textos, tarefas, modo) {
+  const areas = config.areas.map((a) => transformarArea(a, tarefas[a.task_id], config, textos));
+  const { $comentario, ...marca } = config.marca ?? {};
   return {
     schema_version: SCHEMA_VERSION,
     cliente: { nome: config.cliente.nome, slug: config.cliente.slug },
+    marca,
     periodo: {
       inicio: config.semana.inicio,
       fim: config.semana.fim,
@@ -173,10 +232,13 @@ function transformar(config, textos, tarefas, modo) {
     demo: Boolean(config.demo),
     textos_exemplo: Boolean(textos.exemplo),
     destaques: textos.destaques ?? null,
-    areas: config.areas.map((a) => transformarArea(a, tarefas[a.task_id], config, textos)),
+    panorama: transformarPanorama(config, tarefas, areas),
+    areas,
     proximos_passos: textos.proximos_passos ?? [],
     // Reservado para a comparação com a semana anterior (a página já sabe esconder quando é null).
     comparacao_anterior: null,
+    // Reservado para a evolução semana a semana: [{inicio, fim, metricas: {<id>: valor}}]. Hoje só há uma semana.
+    historico: [],
     fonte: { sistema: "ClickUp", modo_coleta: modo, coletado_em: new Date().toISOString() },
   };
 }
