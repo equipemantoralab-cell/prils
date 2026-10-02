@@ -1,0 +1,561 @@
+{
+  "schema_version": 1,
+  "cliente": {
+    "nome": "Sabrina Nascimento",
+    "slug": "sabrina"
+  },
+  "periodo": {
+    "inicio": "2026-09-22",
+    "fim": "2026-09-26",
+    "rotulo": "22 a 26 de setembro de 2026"
+  },
+  "demo": true,
+  "textos_exemplo": true,
+  "destaques": "Foi uma semana de presença constante e de ajustes finos: o conteúdo do Instagram manteve o ritmo de publicações e trouxe novos seguidores orgânicos, as campanhas de tráfego seguiram distribuídas entre atração, engajamento e vendas, e o funil recebeu otimizações pensadas para facilitar a decisão de compra.",
+  "areas": [
+    {
+      "id": "conteudo",
+      "titulo": "Conteúdo & Instagram",
+      "responsavel": "Carol",
+      "periodo": {
+        "inicio": "2026-09-22",
+        "fim": "2026-09-26",
+        "rotulo": "22 a 26/set/2026",
+        "cobertura": "semana"
+      },
+      "metricas": [
+        {
+          "id": "3f61a1be-2800-4d96-826e-1d4560c2ee87",
+          "rotulo": "Alcance e visualizações",
+          "valor": 111,
+          "formato": "numero",
+          "destaque": true,
+          "grupo": null,
+          "anterior": null
+        },
+        {
+          "id": "66c6a814-9e10-404d-9244-2af476a909ac",
+          "rotulo": "Novos seguidores orgânicos",
+          "valor": 111,
+          "formato": "numero",
+          "destaque": true,
+          "grupo": null,
+          "anterior": null
+        },
+        {
+          "id": "be43dbba-2466-46a0-92f7-c48ea9762d1d",
+          "rotulo": "Interações",
+          "valor": 111,
+          "formato": "numero",
+          "destaque": true,
+          "grupo": null,
+          "anterior": null
+        },
+        {
+          "id": "da451c96-11e8-4d32-91f8-61264c0035d6",
+          "rotulo": "Conteúdos publicados",
+          "valor": 111,
+          "formato": "numero",
+          "destaque": true,
+          "grupo": null,
+          "anterior": null
+        },
+        {
+          "id": "a6376479-68ca-4b76-aa07-4d30e55a630e",
+          "rotulo": "Alcance médio no feed",
+          "valor": 111,
+          "formato": "numero",
+          "destaque": false,
+          "grupo": "Instagram",
+          "anterior": null
+        },
+        {
+          "id": "df930500-986b-4c5b-b157-6e6543936d8f",
+          "rotulo": "Visualizações médias nos stories",
+          "valor": 111,
+          "formato": "numero",
+          "destaque": false,
+          "grupo": "Instagram",
+          "anterior": null
+        },
+        {
+          "id": "be0f1bc2-1863-4e78-b960-a5a631609ff5",
+          "rotulo": "Cliques no link da bio",
+          "valor": 1111,
+          "formato": "numero",
+          "destaque": false,
+          "grupo": "Instagram",
+          "anterior": null
+        },
+        {
+          "id": "0ffb3de7-3039-4e22-98b8-cd67c59bb301",
+          "rotulo": "Ativações de automação (ManyChat)",
+          "valor": 111,
+          "formato": "numero",
+          "destaque": false,
+          "grupo": "Instagram",
+          "anterior": null
+        },
+        {
+          "id": "3bf91e4c-3a67-4e78-97cd-9fa9cf3409d2",
+          "rotulo": "Leads gerados",
+          "valor": 111,
+          "formato": "numero",
+          "destaque": false,
+          "grupo": "Resultados do orgânico",
+          "anterior": null
+        },
+        {
+          "id": "19c6d587-16f5-40e0-95f2-2ae0bda38906",
+          "rotulo": "Vendas",
+          "valor": 111,
+          "formato": "numero",
+          "destaque": false,
+          "grupo": "Resultados do orgânico",
+          "anterior": null
+        },
+        {
+          "id": "1f092c72-bd2c-44bb-b8b0-506d6fb102ed",
+          "rotulo": "Faturamento orgânico",
+          "valor": 1111,
+          "formato": "moeda",
+          "destaque": false,
+          "grupo": "Resultados do orgânico",
+          "anterior": null
+        },
+        {
+          "id": "b35c01a1-1e83-4d93-bd33-26910206878e",
+          "rotulo": "Depoimentos recebidos",
+          "valor": 111,
+          "formato": "numero",
+          "destaque": false,
+          "grupo": "Resultados do orgânico",
+          "anterior": null
+        },
+        {
+          "id": "b2fd0af3-58f2-431a-b107-e24ac91b3e50",
+          "rotulo": "Visitas ao blog",
+          "valor": 111,
+          "formato": "numero",
+          "destaque": false,
+          "grupo": "Blog",
+          "anterior": null
+        },
+        {
+          "id": "bb8d2f77-3227-494c-ac2f-d9290ae8c317",
+          "rotulo": "Leitores únicos",
+          "valor": 1111,
+          "formato": "numero",
+          "destaque": false,
+          "grupo": "Blog",
+          "anterior": null
+        }
+      ],
+      "textos": [
+        {
+          "rotulo": "Melhor post da semana",
+          "valor": "111"
+        }
+      ],
+      "resumo": "Mantivemos o calendário editorial ativo no feed e nos stories, alternando conteúdos de autoridade, bastidores e prova social. As automações de mensagem continuaram levando quem interage até a sua oferta, e o blog seguiu como porta de entrada para quem chega pelas buscas.",
+      "fonte": {
+        "sistema": "ClickUp",
+        "task_id": "17tjca224m9",
+        "atualizado_em": "2026-10-01T16:07:30.435Z"
+      }
+    },
+    {
+      "id": "trafego",
+      "titulo": "Tráfego pago",
+      "responsavel": "Karine",
+      "periodo": {
+        "inicio": "2026-09-24",
+        "fim": "2026-09-24",
+        "rotulo": "dados de 24/set",
+        "cobertura": "dia"
+      },
+      "metricas": [
+        {
+          "id": "6e7206ac-35b8-47bc-a112-fdc88acc6e3d",
+          "rotulo": "Investimento",
+          "valor": 111,
+          "formato": "moeda",
+          "destaque": true,
+          "grupo": null,
+          "anterior": null
+        },
+        {
+          "id": "1e626e16-c659-49ba-b514-e2f9ed3e01fe",
+          "rotulo": "Faturamento com tráfego",
+          "valor": 1111,
+          "formato": "moeda",
+          "destaque": true,
+          "grupo": null,
+          "anterior": null
+        },
+        {
+          "id": "a89b33eb-42dc-4b29-94ef-28f4a6aa87de",
+          "rotulo": "ROAS (retorno sobre investimento em anúncios)",
+          "valor": 1111,
+          "formato": "multiplicador",
+          "destaque": true,
+          "grupo": null,
+          "anterior": null
+        },
+        {
+          "id": "a6b337d8-91b0-41ee-9dc6-c23c18d97b16",
+          "rotulo": "Novos seguidores",
+          "valor": 1111,
+          "formato": "numero",
+          "destaque": true,
+          "grupo": null,
+          "anterior": null
+        },
+        {
+          "id": "f5cc7660-d48a-4a66-aef8-bc37f9e6dfcc",
+          "rotulo": "Lucro com tráfego",
+          "valor": null,
+          "formato": "moeda",
+          "destaque": false,
+          "grupo": "Resultado",
+          "anterior": null
+        },
+        {
+          "id": "74f03937-6bac-42c8-932e-10773c9cbf0d",
+          "rotulo": "Visitas ao perfil",
+          "valor": 111,
+          "formato": "numero",
+          "destaque": false,
+          "grupo": "Resultado",
+          "anterior": null
+        },
+        {
+          "id": "e5c20f97-df85-4fb2-81c0-e0f185373797",
+          "rotulo": "Conversão de visita em seguidor",
+          "valor": 111,
+          "formato": "percentual",
+          "destaque": false,
+          "grupo": "Resultado",
+          "anterior": null
+        },
+        {
+          "id": "e243a1a3-666c-4223-99e5-7506205662b6",
+          "rotulo": "Visualizações de vídeo",
+          "valor": null,
+          "formato": "numero",
+          "destaque": false,
+          "grupo": "Resultado",
+          "anterior": null
+        },
+        {
+          "id": "fadc416d-0d3c-414a-b61a-f5ee6fd41098",
+          "rotulo": "Investimento",
+          "valor": 111,
+          "formato": "moeda",
+          "destaque": false,
+          "grupo": "Fase 1 · Atração",
+          "anterior": null
+        },
+        {
+          "id": "0a233754-7f6e-4dd1-8ff0-4719c3791f5e",
+          "rotulo": "Custo por seguidor",
+          "valor": 1111,
+          "formato": "moeda",
+          "destaque": false,
+          "grupo": "Fase 1 · Atração",
+          "anterior": null
+        },
+        {
+          "id": "3335aaa9-f64d-4be9-82d0-2d93af9adf13",
+          "rotulo": "Custo por visita ao perfil",
+          "valor": 111,
+          "formato": "moeda",
+          "destaque": false,
+          "grupo": "Fase 1 · Atração",
+          "anterior": null
+        },
+        {
+          "id": "8c99a025-4407-4556-af66-7ef9c31fe907",
+          "rotulo": "Investimento",
+          "valor": 111,
+          "formato": "moeda",
+          "destaque": false,
+          "grupo": "Fase 2 · Engajamento",
+          "anterior": null
+        },
+        {
+          "id": "d1fd2241-3517-48be-8fae-a68c2f78330f",
+          "rotulo": "CPM",
+          "valor": 1111,
+          "formato": "moeda",
+          "destaque": false,
+          "grupo": "Fase 2 · Engajamento",
+          "anterior": null
+        },
+        {
+          "id": "c73de185-bd99-4c07-ac67-e2a9f5cb12a6",
+          "rotulo": "CTR",
+          "valor": 111,
+          "formato": "percentual",
+          "destaque": false,
+          "grupo": "Fase 2 · Engajamento",
+          "anterior": null
+        },
+        {
+          "id": "435fa2e4-cc83-4956-b2cc-996fb3088802",
+          "rotulo": "Vendas",
+          "valor": 111,
+          "formato": "numero",
+          "destaque": false,
+          "grupo": "Fase 3 · Vendas",
+          "anterior": null
+        },
+        {
+          "id": "4d0e3b56-925f-4e7f-9b63-8335acb43f97",
+          "rotulo": "Leads",
+          "valor": 111,
+          "formato": "numero",
+          "destaque": false,
+          "grupo": "Fase 3 · Vendas",
+          "anterior": null
+        },
+        {
+          "id": "fa0a2fe1-8182-4cee-9bf2-a9bec2036f0f",
+          "rotulo": "Ticket médio",
+          "valor": 111,
+          "formato": "moeda",
+          "destaque": false,
+          "grupo": "Fase 3 · Vendas",
+          "anterior": null
+        },
+        {
+          "id": "7460e80d-bc09-47b4-9930-b262c78b5df5",
+          "rotulo": "CPM",
+          "valor": 111,
+          "formato": "moeda",
+          "destaque": false,
+          "grupo": "Fase 3 · Vendas",
+          "anterior": null
+        },
+        {
+          "id": "9c094884-ed4e-4a18-ba65-ef3f6b1c584e",
+          "rotulo": "CTR",
+          "valor": 111,
+          "formato": "percentual",
+          "destaque": false,
+          "grupo": "Fase 3 · Vendas",
+          "anterior": null
+        },
+        {
+          "id": "a1534349-a3af-4362-9f41-b0db49457f47",
+          "rotulo": "CPA (custo por aquisição)",
+          "valor": 111,
+          "formato": "moeda",
+          "destaque": false,
+          "grupo": "Eficiência dos anúncios",
+          "anterior": null
+        },
+        {
+          "id": "08613c05-3ce2-4d55-8dad-75fa97354e2c",
+          "rotulo": "CPL (custo por lead)",
+          "valor": 1111,
+          "formato": "moeda",
+          "destaque": false,
+          "grupo": "Eficiência dos anúncios",
+          "anterior": null
+        },
+        {
+          "id": "06d73365-bf2c-4fe1-b77f-5865b5cc8eaa",
+          "rotulo": "Custo por clique",
+          "valor": 1111,
+          "formato": "moeda",
+          "destaque": false,
+          "grupo": "Eficiência dos anúncios",
+          "anterior": null
+        },
+        {
+          "id": "e4380519-2721-4250-8efe-4637607a4de0",
+          "rotulo": "CPM (custo por mil impressões)",
+          "valor": 11,
+          "formato": "moeda",
+          "destaque": false,
+          "grupo": "Eficiência dos anúncios",
+          "anterior": null
+        },
+        {
+          "id": "8eb860e5-0ed1-4655-b071-7f84fe7f2929",
+          "rotulo": "CTR (taxa de cliques)",
+          "valor": 111,
+          "formato": "percentual",
+          "destaque": false,
+          "grupo": "Eficiência dos anúncios",
+          "anterior": null
+        },
+        {
+          "id": "3e24090f-25cd-41fd-8e54-b154b8fc7908",
+          "rotulo": "Frequência",
+          "valor": 111,
+          "formato": "numero",
+          "destaque": false,
+          "grupo": "Eficiência dos anúncios",
+          "anterior": null
+        },
+        {
+          "id": "7c316617-d147-43cc-8cb4-734e763ee073",
+          "rotulo": "Retenção de vídeo (50% a 100%)",
+          "valor": 111,
+          "formato": "percentual",
+          "destaque": false,
+          "grupo": "Eficiência dos anúncios",
+          "anterior": null
+        }
+      ],
+      "textos": [
+        {
+          "rotulo": "Custo por visualização (50% / 75% / 100%)",
+          "valor": "111"
+        },
+        {
+          "rotulo": "Reproduções (50% / 75% / 100%)",
+          "valor": "1111"
+        }
+      ],
+      "resumo": "Acompanhamos as campanhas nas três fases — atração de novos seguidores, engajamento com quem já conhece o seu trabalho e campanhas de vendas — ajustando públicos e criativos conforme a resposta de cada etapa. Os números abaixo são de um único dia de acompanhamento.",
+      "fonte": {
+        "sistema": "ClickUp",
+        "task_id": "17tjca224mj",
+        "atualizado_em": "2026-10-01T16:10:08.211Z"
+      }
+    },
+    {
+      "id": "funil",
+      "titulo": "Copy & Funil de vendas",
+      "responsavel": "Camila",
+      "periodo": {
+        "inicio": "2026-09-22",
+        "fim": "2026-09-26",
+        "rotulo": "22 a 26/set/2026",
+        "cobertura": "semana"
+      },
+      "metricas": [
+        {
+          "id": "8cec4389-ad99-45ce-81e4-c72667a127c6",
+          "rotulo": "Faturamento gerado",
+          "valor": 1111,
+          "formato": "moeda",
+          "destaque": true,
+          "grupo": null,
+          "anterior": null
+        },
+        {
+          "id": "936a6abe-bd4d-44b4-baaa-1ef0f7426789",
+          "rotulo": "Lucro gerado",
+          "valor": 111,
+          "formato": "moeda",
+          "destaque": true,
+          "grupo": null,
+          "anterior": null
+        },
+        {
+          "id": "2492bca6-0e44-428d-b036-7e9ca0f43ac1",
+          "rotulo": "Novos clientes / vendas",
+          "valor": 111,
+          "formato": "numero",
+          "destaque": true,
+          "grupo": null,
+          "anterior": null
+        },
+        {
+          "id": "3bf91e4c-3a67-4e78-97cd-9fa9cf3409d2",
+          "rotulo": "Leads gerados",
+          "valor": 111,
+          "formato": "numero",
+          "destaque": true,
+          "grupo": null,
+          "anterior": null
+        },
+        {
+          "id": "dd11f476-b7b4-40bf-9b7a-4f8d97aace1e",
+          "rotulo": "ROI da conta",
+          "valor": 111,
+          "formato": "numero",
+          "destaque": false,
+          "grupo": "Rentabilidade",
+          "anterior": null
+        },
+        {
+          "id": "1dcbaaa5-e35b-4e80-826a-dc7fa991783f",
+          "rotulo": "Margem de lucro",
+          "valor": 1111,
+          "formato": "percentual",
+          "destaque": false,
+          "grupo": "Rentabilidade",
+          "anterior": null
+        },
+        {
+          "id": "9b8b4f64-7eab-4c15-89e2-521ec75d62e5",
+          "rotulo": "Conversão do order bump",
+          "valor": 111,
+          "formato": "percentual",
+          "destaque": false,
+          "grupo": "Conversão",
+          "anterior": null
+        },
+        {
+          "id": "5f60383e-ffb8-41d9-9e11-fffdaf3f1a8f",
+          "rotulo": "Conversão do upsell",
+          "valor": 111,
+          "formato": "percentual",
+          "destaque": false,
+          "grupo": "Conversão",
+          "anterior": null
+        },
+        {
+          "id": "b5349aec-5183-47dd-a5fa-0d67d5f88520",
+          "rotulo": "Mapa de calor até o botão",
+          "valor": 111,
+          "formato": "percentual",
+          "destaque": false,
+          "grupo": "Conversão",
+          "anterior": null
+        },
+        {
+          "id": "a3f46d1d-4c4b-4ad4-aea2-4ac55a2bb79e",
+          "rotulo": "Otimizações realizadas",
+          "valor": 111,
+          "formato": "numero",
+          "destaque": false,
+          "grupo": "O que fizemos",
+          "anterior": null
+        },
+        {
+          "id": "39362a1f-00e8-4ec1-b628-90225c8b40b7",
+          "rotulo": "Recomendações de novos produtos",
+          "valor": 111,
+          "formato": "numero",
+          "destaque": false,
+          "grupo": "O que fizemos",
+          "anterior": null
+        }
+      ],
+      "textos": [],
+      "resumo": "Revisamos a copy das páginas e das ofertas complementares, com foco em deixar o caminho até o botão de compra mais claro. Também mapeamos oportunidades de novos produtos que conversam com o momento do seu público.",
+      "fonte": {
+        "sistema": "ClickUp",
+        "task_id": "17tjca224md",
+        "atualizado_em": "2026-10-01T16:08:27.364Z"
+      }
+    }
+  ],
+  "proximos_passos": [
+    "Produzir a próxima leva de conteúdos a partir dos formatos que mais engajaram nesta semana.",
+    "Testar novos criativos nas campanhas de vendas e redistribuir o investimento entre as fases.",
+    "Aplicar os ajustes de copy na página de vendas e acompanhar o efeito na conversão."
+  ],
+  "comparacao_anterior": null,
+  "fonte": {
+    "sistema": "ClickUp",
+    "modo_coleta": "snapshot",
+    "coletado_em": "2026-10-02T03:56:25.911Z"
+  }
+}

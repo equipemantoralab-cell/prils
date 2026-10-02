@@ -1,0 +1,5 @@
+{
+  "buildCommand": "rm -rf dist && mkdir -p dist && cp index.html dist/ && cp -r data dist/",
+  "outputDirectory": "dist",
+  "headers": [{ "source": "/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }] }]
+}

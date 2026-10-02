@@ -1,0 +1,125 @@
+{
+  "_nota": "Snapshot gerado a partir da leitura via conector MCP do ClickUp em 2026-10-02 (somente campos usados no mapeamento + Cliente/Período). Será substituído pelo retorno bruto da API ao rodar a coleta com CLICKUP_TOKEN.",
+  "id": "17tjca224m9",
+  "name": "Carol · Período — ex.: Carol · Semana 22–26/set/2026",
+  "url": "https://app.clickup.com/t/17tjca224m9",
+  "date_updated": "1790870850435",
+  "custom_fields": [
+    {
+      "id": "8af1c5f6-d1e6-4cc2-9e7d-1e9b02c276c1",
+      "name": "Cliente",
+      "type": "drop_down",
+      "value": 2,
+      "type_config": {
+        "options": [
+          {
+            "name": "Sabrina Nascimento",
+            "orderindex": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "6f3e33c6-ade3-44ca-a7d3-c3b0b824c2de",
+      "name": "Período",
+      "type": "short_text",
+      "value": "1111"
+    },
+    {
+      "id": "3f61a1be-2800-4d96-826e-1d4560c2ee87",
+      "name": "Alcance e visualizações",
+      "type": "number",
+      "value": "111"
+    },
+    {
+      "id": "66c6a814-9e10-404d-9244-2af476a909ac",
+      "name": "Novos seguidores orgânicos",
+      "type": "number",
+      "value": "111"
+    },
+    {
+      "id": "be43dbba-2466-46a0-92f7-c48ea9762d1d",
+      "name": "Interações",
+      "type": "number",
+      "value": "111"
+    },
+    {
+      "id": "da451c96-11e8-4d32-91f8-61264c0035d6",
+      "name": "Conteúdos publicados",
+      "type": "number",
+      "value": "111"
+    },
+    {
+      "id": "a6376479-68ca-4b76-aa07-4d30e55a630e",
+      "name": "Média alcance feed",
+      "type": "number",
+      "value": "111"
+    },
+    {
+      "id": "df930500-986b-4c5b-b157-6e6543936d8f",
+      "name": "Média visualizações stories",
+      "type": "number",
+      "value": "111"
+    },
+    {
+      "id": "be0f1bc2-1863-4e78-b960-a5a631609ff5",
+      "name": "Toques link bio",
+      "type": "number",
+      "value": "1111"
+    },
+    {
+      "id": "0ffb3de7-3039-4e22-98b8-cd67c59bb301",
+      "name": "Ativações ManyChat",
+      "type": "number",
+      "value": "111"
+    },
+    {
+      "id": "3bf91e4c-3a67-4e78-97cd-9fa9cf3409d2",
+      "name": "Leads gerados | Funil",
+      "type": "number",
+      "value": "111"
+    },
+    {
+      "id": "19c6d587-16f5-40e0-95f2-2ae0bda38906",
+      "name": "Vendas",
+      "type": "number",
+      "value": "111"
+    },
+    {
+      "id": "1f092c72-bd2c-44bb-b8b0-506d6fb102ed",
+      "name": "Faturamento orgânico",
+      "type": "currency",
+      "value": "1111"
+    },
+    {
+      "id": "b35c01a1-1e83-4d93-bd33-26910206878e",
+      "name": "Depoimentos sobre conteúdo",
+      "type": "number",
+      "value": "111"
+    },
+    {
+      "id": "b2fd0af3-58f2-431a-b107-e24ac91b3e50",
+      "name": "Visitas ao blog",
+      "type": "number",
+      "value": "111"
+    },
+    {
+      "id": "bb8d2f77-3227-494c-ac2f-d9290ae8c317",
+      "name": "Leitores únicos blog",
+      "type": "number",
+      "value": "1111"
+    },
+    {
+      "id": "e4659789-0f4d-4d26-8b90-85398098461e",
+      "name": "Melhor post do período",
+      "type": "short_text",
+      "value": "111"
+    },
+    {
+      "id": "9e5b5cd9-ac61-4746-8207-c98cabf7b7bd",
+      "name": "Comparativo entre canais",
+      "type": "text",
+      "value": "1111\n"
+    }
+  ]
+}

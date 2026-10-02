@@ -1,0 +1,11 @@
+{
+  "name": "mantora-relatorio-semanal",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "coletar": "node scripts/coletar.mjs sabrina",
+    "coletar:offline": "node scripts/coletar.mjs sabrina --offline",
+    "dev": "python3 -m http.server 8000"
+  },
+  "engines": { "node": ">=18" }
+}

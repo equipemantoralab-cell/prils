@@ -1,0 +1,15 @@
+{
+  "$comentario": "Textos escritos para o cliente. Separados da coleta para não serem sobrescritos. 'exemplo: true' = texto de demonstração, os Reports ainda não têm campos qualitativos preenchidos. Regra: sem números que não estejam nos campos, sem assuntos internos.",
+  "exemplo": true,
+  "destaques": "Foi uma semana de presença constante e de ajustes finos: o conteúdo do Instagram manteve o ritmo de publicações e trouxe novos seguidores orgânicos, as campanhas de tráfego seguiram distribuídas entre atração, engajamento e vendas, e o funil recebeu otimizações pensadas para facilitar a decisão de compra.",
+  "areas": {
+    "conteudo": "Mantivemos o calendário editorial ativo no feed e nos stories, alternando conteúdos de autoridade, bastidores e prova social. As automações de mensagem continuaram levando quem interage até a sua oferta, e o blog seguiu como porta de entrada para quem chega pelas buscas.",
+    "trafego": "Acompanhamos as campanhas nas três fases — atração de novos seguidores, engajamento com quem já conhece o seu trabalho e campanhas de vendas — ajustando públicos e criativos conforme a resposta de cada etapa. Os números abaixo são de um único dia de acompanhamento.",
+    "funil": "Revisamos a copy das páginas e das ofertas complementares, com foco em deixar o caminho até o botão de compra mais claro. Também mapeamos oportunidades de novos produtos que conversam com o momento do seu público."
+  },
+  "proximos_passos": [
+    "Produzir a próxima leva de conteúdos a partir dos formatos que mais engajaram nesta semana.",
+    "Testar novos criativos nas campanhas de vendas e redistribuir o investimento entre as fases.",
+    "Aplicar os ajustes de copy na página de vendas e acompanhar o efeito na conversão."
+  ]
+}

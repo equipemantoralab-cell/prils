@@ -1,0 +1,195 @@
+{
+  "_nota": "Snapshot gerado a partir da leitura via conector MCP do ClickUp em 2026-10-02 (somente campos usados no mapeamento + Cliente/Período). Será substituído pelo retorno bruto da API ao rodar a coleta com CLICKUP_TOKEN.",
+  "id": "17tjca224mj",
+  "name": " Karine · 24/set/2026",
+  "url": "https://app.clickup.com/t/17tjca224mj",
+  "date_updated": "1790871008211",
+  "custom_fields": [
+    {
+      "id": "5296d5b5-3f38-47b1-afeb-d63abaa0a496",
+      "name": "Cliente",
+      "type": "drop_down",
+      "value": 2,
+      "type_config": {
+        "options": [
+          {
+            "name": "Sabrina Nascimento",
+            "orderindex": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "6f3e33c6-ade3-44ca-a7d3-c3b0b824c2de",
+      "name": "Período",
+      "type": "short_text",
+      "value": " Karine · 24/set/2026"
+    },
+    {
+      "id": "6e7206ac-35b8-47bc-a112-fdc88acc6e3d",
+      "name": "Investimento",
+      "type": "currency",
+      "value": "111"
+    },
+    {
+      "id": "1e626e16-c659-49ba-b514-e2f9ed3e01fe",
+      "name": "Faturamento tráfego",
+      "type": "currency",
+      "value": "1111"
+    },
+    {
+      "id": "a89b33eb-42dc-4b29-94ef-28f4a6aa87de",
+      "name": "ROAS",
+      "type": "number",
+      "value": "1111"
+    },
+    {
+      "id": "a6b337d8-91b0-41ee-9dc6-c23c18d97b16",
+      "name": "Novos seguidores",
+      "type": "number",
+      "value": "1111"
+    },
+    {
+      "id": "f5cc7660-d48a-4a66-aef8-bc37f9e6dfcc",
+      "name": "Lucro tráfego",
+      "type": "currency"
+    },
+    {
+      "id": "74f03937-6bac-42c8-932e-10773c9cbf0d",
+      "name": "Visitas ao perfil",
+      "type": "number",
+      "value": "111"
+    },
+    {
+      "id": "e5c20f97-df85-4fb2-81c0-e0f185373797",
+      "name": "Taxa conversão seguidor",
+      "type": "number",
+      "value": "111"
+    },
+    {
+      "id": "e243a1a3-666c-4223-99e5-7506205662b6",
+      "name": "Vídeo view",
+      "type": "number"
+    },
+    {
+      "id": "fadc416d-0d3c-414a-b61a-f5ee6fd41098",
+      "name": "Investimento Fase 1",
+      "type": "currency",
+      "value": "111"
+    },
+    {
+      "id": "0a233754-7f6e-4dd1-8ff0-4719c3791f5e",
+      "name": "Custo por seguidor",
+      "type": "number",
+      "value": "1111"
+    },
+    {
+      "id": "3335aaa9-f64d-4be9-82d0-2d93af9adf13",
+      "name": "Custo visita ao perfil",
+      "type": "number",
+      "value": "111"
+    },
+    {
+      "id": "8c99a025-4407-4556-af66-7ef9c31fe907",
+      "name": "Investimento Fase 2",
+      "type": "currency",
+      "value": "111"
+    },
+    {
+      "id": "d1fd2241-3517-48be-8fae-a68c2f78330f",
+      "name": "CPM Fase 2",
+      "type": "number",
+      "value": "1111"
+    },
+    {
+      "id": "c73de185-bd99-4c07-ac67-e2a9f5cb12a6",
+      "name": "CTR Fase 2",
+      "type": "number",
+      "value": "111"
+    },
+    {
+      "id": "435fa2e4-cc83-4956-b2cc-996fb3088802",
+      "name": "Vendas Fase 3",
+      "type": "number",
+      "value": "111"
+    },
+    {
+      "id": "4d0e3b56-925f-4e7f-9b63-8335acb43f97",
+      "name": "Leads Fase 3",
+      "type": "number",
+      "value": "111"
+    },
+    {
+      "id": "fa0a2fe1-8182-4cee-9bf2-a9bec2036f0f",
+      "name": "Ticket médio Fase 3",
+      "type": "currency",
+      "value": "111"
+    },
+    {
+      "id": "7460e80d-bc09-47b4-9930-b262c78b5df5",
+      "name": "CPM vendas (Fase 3)",
+      "type": "number",
+      "value": "111"
+    },
+    {
+      "id": "9c094884-ed4e-4a18-ba65-ef3f6b1c584e",
+      "name": "CTR vendas (Fase 3)",
+      "type": "number",
+      "value": "111"
+    },
+    {
+      "id": "a1534349-a3af-4362-9f41-b0db49457f47",
+      "name": "CPA",
+      "type": "number",
+      "value": "111"
+    },
+    {
+      "id": "08613c05-3ce2-4d55-8dad-75fa97354e2c",
+      "name": "CPL",
+      "type": "number",
+      "value": "1111"
+    },
+    {
+      "id": "06d73365-bf2c-4fe1-b77f-5865b5cc8eaa",
+      "name": "Custo por clique",
+      "type": "number",
+      "value": "1111"
+    },
+    {
+      "id": "e4380519-2721-4250-8efe-4637607a4de0",
+      "name": "CPM",
+      "type": "number",
+      "value": "11"
+    },
+    {
+      "id": "8eb860e5-0ed1-4655-b071-7f84fe7f2929",
+      "name": "CTR - Number",
+      "type": "number",
+      "value": "111"
+    },
+    {
+      "id": "3e24090f-25cd-41fd-8e54-b154b8fc7908",
+      "name": "Frequência",
+      "type": "number",
+      "value": "111"
+    },
+    {
+      "id": "7c316617-d147-43cc-8cb4-734e763ee073",
+      "name": "Retenção 50% a 100%",
+      "type": "number",
+      "value": "111"
+    },
+    {
+      "id": "8e152a51-ccf4-4396-b7b8-4f69501af446",
+      "name": "CPV 50%/75%/100%",
+      "type": "short_text",
+      "value": "111"
+    },
+    {
+      "id": "f1988dac-3602-4de6-8752-5528f691e9a0",
+      "name": "Reproduções 50%/75%/100%",
+      "type": "short_text",
+      "value": "1111"
+    }
+  ]
+}

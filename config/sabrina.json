@@ -1,0 +1,103 @@
+{
+  "$comentario": "Mapeamento Report do ClickUp → página do cliente. Campos referenciados pelo ID (estável); 'campo' é só para leitura humana. Só o que estiver listado aqui vai para o JSON público.",
+  "cliente": {
+    "nome": "Sabrina Nascimento",
+    "slug": "sabrina",
+    "clickup_cliente": "Sabrina Nascimento"
+  },
+  "workspace_id": "90131874842",
+  "semana": { "inicio": "2026-09-22", "fim": "2026-09-26" },
+  "demo": true,
+  "areas": [
+    {
+      "id": "conteudo",
+      "titulo": "Conteúdo & Instagram",
+      "responsavel": "Carol",
+      "task_id": "17tjca224m9",
+      "campo_cliente": "8af1c5f6-d1e6-4cc2-9e7d-1e9b02c276c1",
+      "periodo": { "inicio": "2026-09-22", "fim": "2026-09-26" },
+      "metricas": [
+        { "id": "3f61a1be-2800-4d96-826e-1d4560c2ee87", "campo": "Alcance e visualizações", "rotulo": "Alcance e visualizações", "formato": "numero", "destaque": true },
+        { "id": "66c6a814-9e10-404d-9244-2af476a909ac", "campo": "Novos seguidores orgânicos", "rotulo": "Novos seguidores orgânicos", "formato": "numero", "destaque": true },
+        { "id": "be43dbba-2466-46a0-92f7-c48ea9762d1d", "campo": "Interações", "rotulo": "Interações", "formato": "numero", "destaque": true },
+        { "id": "da451c96-11e8-4d32-91f8-61264c0035d6", "campo": "Conteúdos publicados", "rotulo": "Conteúdos publicados", "formato": "numero", "destaque": true },
+        { "id": "a6376479-68ca-4b76-aa07-4d30e55a630e", "campo": "Média alcance feed", "rotulo": "Alcance médio no feed", "formato": "numero", "grupo": "Instagram" },
+        { "id": "df930500-986b-4c5b-b157-6e6543936d8f", "campo": "Média visualizações stories", "rotulo": "Visualizações médias nos stories", "formato": "numero", "grupo": "Instagram" },
+        { "id": "be0f1bc2-1863-4e78-b960-a5a631609ff5", "campo": "Toques link bio", "rotulo": "Cliques no link da bio", "formato": "numero", "grupo": "Instagram" },
+        { "id": "0ffb3de7-3039-4e22-98b8-cd67c59bb301", "campo": "Ativações ManyChat", "rotulo": "Ativações de automação (ManyChat)", "formato": "numero", "grupo": "Instagram" },
+        { "id": "3bf91e4c-3a67-4e78-97cd-9fa9cf3409d2", "campo": "Leads gerados | Funil", "rotulo": "Leads gerados", "formato": "numero", "grupo": "Resultados do orgânico" },
+        { "id": "19c6d587-16f5-40e0-95f2-2ae0bda38906", "campo": "Vendas", "rotulo": "Vendas", "formato": "numero", "grupo": "Resultados do orgânico" },
+        { "id": "1f092c72-bd2c-44bb-b8b0-506d6fb102ed", "campo": "Faturamento orgânico", "rotulo": "Faturamento orgânico", "formato": "moeda", "grupo": "Resultados do orgânico" },
+        { "id": "b35c01a1-1e83-4d93-bd33-26910206878e", "campo": "Depoimentos sobre conteúdo", "rotulo": "Depoimentos recebidos", "formato": "numero", "grupo": "Resultados do orgânico" },
+        { "id": "b2fd0af3-58f2-431a-b107-e24ac91b3e50", "campo": "Visitas ao blog", "rotulo": "Visitas ao blog", "formato": "numero", "grupo": "Blog" },
+        { "id": "bb8d2f77-3227-494c-ac2f-d9290ae8c317", "campo": "Leitores únicos blog", "rotulo": "Leitores únicos", "formato": "numero", "grupo": "Blog" }
+      ],
+      "textos": [
+        { "id": "e4659789-0f4d-4d26-8b90-85398098461e", "campo": "Melhor post do período", "rotulo": "Melhor post da semana", "exibir": true },
+        { "id": "9e5b5cd9-ac61-4746-8207-c98cabf7b7bd", "campo": "Comparativo entre canais", "rotulo": "Comparativo entre canais", "exibir": false }
+      ]
+    },
+    {
+      "id": "trafego",
+      "titulo": "Tráfego pago",
+      "responsavel": "Karine",
+      "task_id": "17tjca224mj",
+      "campo_cliente": "5296d5b5-3f38-47b1-afeb-d63abaa0a496",
+      "periodo": { "inicio": "2026-09-24", "fim": "2026-09-24" },
+      "metricas": [
+        { "id": "6e7206ac-35b8-47bc-a112-fdc88acc6e3d", "campo": "Investimento", "rotulo": "Investimento", "formato": "moeda", "destaque": true },
+        { "id": "1e626e16-c659-49ba-b514-e2f9ed3e01fe", "campo": "Faturamento tráfego", "rotulo": "Faturamento com tráfego", "formato": "moeda", "destaque": true },
+        { "id": "a89b33eb-42dc-4b29-94ef-28f4a6aa87de", "campo": "ROAS", "rotulo": "ROAS (retorno sobre investimento em anúncios)", "formato": "multiplicador", "destaque": true },
+        { "id": "a6b337d8-91b0-41ee-9dc6-c23c18d97b16", "campo": "Novos seguidores", "rotulo": "Novos seguidores", "formato": "numero", "destaque": true },
+        { "id": "f5cc7660-d48a-4a66-aef8-bc37f9e6dfcc", "campo": "Lucro tráfego", "rotulo": "Lucro com tráfego", "formato": "moeda", "grupo": "Resultado" },
+        { "id": "74f03937-6bac-42c8-932e-10773c9cbf0d", "campo": "Visitas ao perfil", "rotulo": "Visitas ao perfil", "formato": "numero", "grupo": "Resultado" },
+        { "id": "e5c20f97-df85-4fb2-81c0-e0f185373797", "campo": "Taxa conversão seguidor", "rotulo": "Conversão de visita em seguidor", "formato": "percentual", "grupo": "Resultado" },
+        { "id": "e243a1a3-666c-4223-99e5-7506205662b6", "campo": "Vídeo view", "rotulo": "Visualizações de vídeo", "formato": "numero", "grupo": "Resultado" },
+        { "id": "fadc416d-0d3c-414a-b61a-f5ee6fd41098", "campo": "Investimento Fase 1", "rotulo": "Investimento", "formato": "moeda", "grupo": "Fase 1 · Atração" },
+        { "id": "0a233754-7f6e-4dd1-8ff0-4719c3791f5e", "campo": "Custo por seguidor", "rotulo": "Custo por seguidor", "formato": "moeda", "grupo": "Fase 1 · Atração" },
+        { "id": "3335aaa9-f64d-4be9-82d0-2d93af9adf13", "campo": "Custo visita ao perfil", "rotulo": "Custo por visita ao perfil", "formato": "moeda", "grupo": "Fase 1 · Atração" },
+        { "id": "8c99a025-4407-4556-af66-7ef9c31fe907", "campo": "Investimento Fase 2", "rotulo": "Investimento", "formato": "moeda", "grupo": "Fase 2 · Engajamento" },
+        { "id": "d1fd2241-3517-48be-8fae-a68c2f78330f", "campo": "CPM Fase 2", "rotulo": "CPM", "formato": "moeda", "grupo": "Fase 2 · Engajamento" },
+        { "id": "c73de185-bd99-4c07-ac67-e2a9f5cb12a6", "campo": "CTR Fase 2", "rotulo": "CTR", "formato": "percentual", "grupo": "Fase 2 · Engajamento" },
+        { "id": "435fa2e4-cc83-4956-b2cc-996fb3088802", "campo": "Vendas Fase 3", "rotulo": "Vendas", "formato": "numero", "grupo": "Fase 3 · Vendas" },
+        { "id": "4d0e3b56-925f-4e7f-9b63-8335acb43f97", "campo": "Leads Fase 3", "rotulo": "Leads", "formato": "numero", "grupo": "Fase 3 · Vendas" },
+        { "id": "fa0a2fe1-8182-4cee-9bf2-a9bec2036f0f", "campo": "Ticket médio Fase 3", "rotulo": "Ticket médio", "formato": "moeda", "grupo": "Fase 3 · Vendas" },
+        { "id": "7460e80d-bc09-47b4-9930-b262c78b5df5", "campo": "CPM vendas (Fase 3)", "rotulo": "CPM", "formato": "moeda", "grupo": "Fase 3 · Vendas" },
+        { "id": "9c094884-ed4e-4a18-ba65-ef3f6b1c584e", "campo": "CTR vendas (Fase 3)", "rotulo": "CTR", "formato": "percentual", "grupo": "Fase 3 · Vendas" },
+        { "id": "a1534349-a3af-4362-9f41-b0db49457f47", "campo": "CPA", "rotulo": "CPA (custo por aquisição)", "formato": "moeda", "grupo": "Eficiência dos anúncios" },
+        { "id": "08613c05-3ce2-4d55-8dad-75fa97354e2c", "campo": "CPL", "rotulo": "CPL (custo por lead)", "formato": "moeda", "grupo": "Eficiência dos anúncios" },
+        { "id": "06d73365-bf2c-4fe1-b77f-5865b5cc8eaa", "campo": "Custo por clique", "rotulo": "Custo por clique", "formato": "moeda", "grupo": "Eficiência dos anúncios" },
+        { "id": "e4380519-2721-4250-8efe-4637607a4de0", "campo": "CPM", "rotulo": "CPM (custo por mil impressões)", "formato": "moeda", "grupo": "Eficiência dos anúncios" },
+        { "id": "8eb860e5-0ed1-4655-b071-7f84fe7f2929", "campo": "CTR - Number", "rotulo": "CTR (taxa de cliques)", "formato": "percentual", "grupo": "Eficiência dos anúncios" },
+        { "id": "3e24090f-25cd-41fd-8e54-b154b8fc7908", "campo": "Frequência", "rotulo": "Frequência", "formato": "numero", "grupo": "Eficiência dos anúncios" },
+        { "id": "7c316617-d147-43cc-8cb4-734e763ee073", "campo": "Retenção 50% a 100%", "rotulo": "Retenção de vídeo (50% a 100%)", "formato": "percentual", "grupo": "Eficiência dos anúncios" }
+      ],
+      "textos": [
+        { "id": "8e152a51-ccf4-4396-b7b8-4f69501af446", "campo": "CPV 50%/75%/100%", "rotulo": "Custo por visualização (50% / 75% / 100%)", "exibir": true },
+        { "id": "f1988dac-3602-4de6-8752-5528f691e9a0", "campo": "Reproduções 50%/75%/100%", "rotulo": "Reproduções (50% / 75% / 100%)", "exibir": true }
+      ]
+    },
+    {
+      "id": "funil",
+      "titulo": "Copy & Funil de vendas",
+      "responsavel": "Camila",
+      "task_id": "17tjca224md",
+      "campo_cliente": "8056bfea-e52f-48af-9d42-8b34f9d31ffb",
+      "periodo": { "inicio": "2026-09-22", "fim": "2026-09-26" },
+      "metricas": [
+        { "id": "8cec4389-ad99-45ce-81e4-c72667a127c6", "campo": "Faturamento gerado | Funil", "rotulo": "Faturamento gerado", "formato": "moeda", "destaque": true },
+        { "id": "936a6abe-bd4d-44b4-baaa-1ef0f7426789", "campo": "Lucro gerado | Funil", "rotulo": "Lucro gerado", "formato": "moeda", "destaque": true },
+        { "id": "2492bca6-0e44-428d-b036-7e9ca0f43ac1", "campo": "Novos clientes/vendas | Funil", "rotulo": "Novos clientes / vendas", "formato": "numero", "destaque": true },
+        { "id": "3bf91e4c-3a67-4e78-97cd-9fa9cf3409d2", "campo": "Leads gerados | Funil", "rotulo": "Leads gerados", "formato": "numero", "destaque": true },
+        { "id": "dd11f476-b7b4-40bf-9b7a-4f8d97aace1e", "campo": "ROI da conta | Funil", "rotulo": "ROI da conta", "formato": "numero", "grupo": "Rentabilidade" },
+        { "id": "1dcbaaa5-e35b-4e80-826a-dc7fa991783f", "campo": "% Lucro dos clientes | Funil", "rotulo": "Margem de lucro", "formato": "percentual", "grupo": "Rentabilidade" },
+        { "id": "9b8b4f64-7eab-4c15-89e2-521ec75d62e5", "campo": "Taxa de conversão order bump | Funil", "rotulo": "Conversão do order bump", "formato": "percentual", "grupo": "Conversão" },
+        { "id": "5f60383e-ffb8-41d9-9e11-fffdaf3f1a8f", "campo": "Taxa de conversão upsell | Funil", "rotulo": "Conversão do upsell", "formato": "percentual", "grupo": "Conversão" },
+        { "id": "b5349aec-5183-47dd-a5fa-0d67d5f88520", "campo": "Mapa de calor até botão | Funil", "rotulo": "Mapa de calor até o botão", "formato": "percentual", "grupo": "Conversão" },
+        { "id": "a3f46d1d-4c4b-4ad4-aea2-4ac55a2bb79e", "campo": "Quantidade de otimizações realizadas | Funil", "rotulo": "Otimizações realizadas", "formato": "numero", "grupo": "O que fizemos" },
+        { "id": "39362a1f-00e8-4ec1-b628-90225c8b40b7", "campo": "Recomendações de novos produtos | Funil", "rotulo": "Recomendações de novos produtos", "formato": "numero", "grupo": "O que fizemos" }
+      ],
+      "textos": []
+    }
+  ]
+}

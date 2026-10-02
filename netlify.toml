@@ -1,0 +1,9 @@
+# Publica só a página e o JSON público (config/, content/, coleta/ e scripts/ ficam fora).
+[build]
+  command = "rm -rf dist && mkdir -p dist && cp index.html dist/ && cp -r data dist/"
+  publish = "dist"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
