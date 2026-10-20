@@ -9,6 +9,8 @@
     "atividades:offline": "node scripts/atividades.mjs sabrina --offline",
     "meta": "node scripts/meta.mjs sabrina",
     "meta:stories": "node scripts/meta.mjs sabrina --stories",
+    "relatorio": "node scripts/montar.mjs sabrina",
+    "semana": "node scripts/atividades.mjs sabrina && node scripts/meta.mjs sabrina && node scripts/montar.mjs sabrina",
     "dev": "python3 -m http.server 8000"
   },
   "engines": { "node": ">=18" }

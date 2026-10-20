@@ -699,5 +699,10 @@
     "marcador_comentario": "#relatorio",
     "etiqueta_destaque": "relatorio",
     "prefixo_nome": "Sabrina"
-  }
+  },
+  "modulos": [
+    "atividades",
+    "instagram",
+    "anuncios"
+  ]
 }

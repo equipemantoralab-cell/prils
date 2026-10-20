@@ -114,3 +114,17 @@ node scripts/meta.mjs hosaka --inicio 2026-10-12
 ```
 
 Atrás de proxy (como no ambiente do Claude Code), rode com `NODE_USE_ENV_PROXY=1` para o Node usar o `HTTPS_PROXY`.
+
+## Relatório semanal (página única)
+
+`relatorio.html` junta tudo por cliente: destaques, KPIs com comparação, o que fizemos (ClickUp), marcos, Instagram, anúncios e próximos passos, com a camada "Todos os dados".
+
+```bash
+npm run semana            # atividades + meta + montar (precisa CLICKUP_TOKEN e META_TOKEN)
+npm run relatorio         # só remonta data/<cliente>-relatorio.json com o que já foi coletado
+npm run dev               # http://localhost:8000/relatorio.html?cliente=sabrina
+```
+
+- Blocos ligados por cliente em `config/<cliente>.json` → `"modulos": ["atividades", "instagram", "anuncios"]`.
+- Textos (destaques, aprendizados, marcos, próximos passos) em `content/<cliente>-semana.json`, por semana. Enquanto `revisado` for `false`, a página mostra "Rascunho · revisar antes de enviar".
+- A comparação usa `data/historico/<cliente>/meta-<semana>.json`, gravado a cada coleta da Meta.

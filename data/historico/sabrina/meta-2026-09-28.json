@@ -1,0 +1,406 @@
+{
+  "schema_version": 1,
+  "cliente": {
+    "nome": "Sabrina Nascimento",
+    "slug": "sabrina"
+  },
+  "periodo": {
+    "inicio": "2026-09-28",
+    "fim": "2026-10-04"
+  },
+  "instagram": {
+    "usuario": "eusousabrinanascimento",
+    "seguidores": 762,
+    "conta": {
+      "reach": 448,
+      "views": 2384,
+      "accounts_engaged": 48,
+      "total_interactions": 99,
+      "likes": 89,
+      "comments": 0,
+      "saves": 4,
+      "shares": 1,
+      "profile_links_taps": 0,
+      "novos_seguidores": 5,
+      "deixaram_de_seguir": 6
+    },
+    "publico": {
+      "age": [
+        {
+          "rotulo": "35-44",
+          "valor": 307
+        },
+        {
+          "rotulo": "25-34",
+          "valor": 217
+        },
+        {
+          "rotulo": "45-54",
+          "valor": 116
+        },
+        {
+          "rotulo": "55-64",
+          "valor": 34
+        },
+        {
+          "rotulo": "18-24",
+          "valor": 30
+        },
+        {
+          "rotulo": "65+",
+          "valor": 26
+        }
+      ],
+      "gender": [
+        {
+          "rotulo": "F",
+          "valor": 336
+        },
+        {
+          "rotulo": "M",
+          "valor": 317
+        },
+        {
+          "rotulo": "U",
+          "valor": 77
+        }
+      ],
+      "city": [
+        {
+          "rotulo": "São Paulo, São Paulo (state)",
+          "valor": 84
+        },
+        {
+          "rotulo": "São Vicente, São Paulo (state)",
+          "valor": 60
+        },
+        {
+          "rotulo": "Santos, São Paulo (state)",
+          "valor": 55
+        },
+        {
+          "rotulo": "Rio de Janeiro, Rio de Janeiro (state)",
+          "valor": 24
+        },
+        {
+          "rotulo": "Curitiba, Paraná",
+          "valor": 13
+        },
+        {
+          "rotulo": "Fortaleza, Ceará",
+          "valor": 12
+        },
+        {
+          "rotulo": "Belo Horizonte, Minas Gerais",
+          "valor": 12
+        },
+        {
+          "rotulo": "Recife, Pernambuco",
+          "valor": 10
+        },
+        {
+          "rotulo": "Porto Alegre, Rio Grande do Sul",
+          "valor": 8
+        },
+        {
+          "rotulo": "Salvador, Bahia",
+          "valor": 8
+        },
+        {
+          "rotulo": "São Caetano do Sul, São Paulo (state)",
+          "valor": 7
+        },
+        {
+          "rotulo": "Praia Grande, São Paulo (state)",
+          "valor": 7
+        },
+        {
+          "rotulo": "Guarujá, São Paulo (state)",
+          "valor": 7
+        },
+        {
+          "rotulo": "Florianópolis, Santa Catarina",
+          "valor": 7
+        },
+        {
+          "rotulo": "Santo André, São Paulo (state)",
+          "valor": 7
+        },
+        {
+          "rotulo": "Aracaju, Sergipe",
+          "valor": 5
+        },
+        {
+          "rotulo": "Maringá, Paraná",
+          "valor": 5
+        },
+        {
+          "rotulo": "São José dos Campos, São Paulo (state)",
+          "valor": 4
+        },
+        {
+          "rotulo": "Palhoça, Santa Catarina",
+          "valor": 4
+        },
+        {
+          "rotulo": "Uberlândia, Minas Gerais",
+          "valor": 4
+        },
+        {
+          "rotulo": "Vila Velha, Espírito Santo",
+          "valor": 4
+        },
+        {
+          "rotulo": "Duque de Caxias, Rio de Janeiro (state)",
+          "valor": 4
+        },
+        {
+          "rotulo": "Nova Iguaçu, Rio de Janeiro (state)",
+          "valor": 4
+        },
+        {
+          "rotulo": "Balneário Camboriú, Santa Catarina",
+          "valor": 4
+        },
+        {
+          "rotulo": "Campinas, São Paulo (state)",
+          "valor": 4
+        },
+        {
+          "rotulo": "Ribeirão Prêto, São Paulo (state)",
+          "valor": 3
+        },
+        {
+          "rotulo": "São Luís, Maranhão",
+          "valor": 3
+        },
+        {
+          "rotulo": "Contagem, Minas Gerais",
+          "valor": 3
+        },
+        {
+          "rotulo": "Taubaté, São Paulo (state)",
+          "valor": 3
+        },
+        {
+          "rotulo": "Campo Grande, Mato Grosso do Sul",
+          "valor": 3
+        },
+        {
+          "rotulo": "João Pessoa, Paraíba",
+          "valor": 3
+        },
+        {
+          "rotulo": "Montadas, Paraíba",
+          "valor": 3
+        },
+        {
+          "rotulo": "Rio das Ostras, Rio de Janeiro (state)",
+          "valor": 3
+        },
+        {
+          "rotulo": "Guará, Federal District",
+          "valor": 3
+        },
+        {
+          "rotulo": "Guarulhos, São Paulo (state)",
+          "valor": 3
+        },
+        {
+          "rotulo": "Piracicaba, São Paulo (state)",
+          "valor": 3
+        },
+        {
+          "rotulo": "São Bernardo do Campo, São Paulo (state)",
+          "valor": 3
+        },
+        {
+          "rotulo": "Betim, Minas Gerais",
+          "valor": 3
+        },
+        {
+          "rotulo": "Cotia, São Paulo (state)",
+          "valor": 3
+        },
+        {
+          "rotulo": "Criciúma, Santa Catarina",
+          "valor": 3
+        },
+        {
+          "rotulo": "Cuiabá, Mato Grosso",
+          "valor": 3
+        },
+        {
+          "rotulo": "Cajuru do Sul, São Paulo (state)",
+          "valor": 3
+        },
+        {
+          "rotulo": "Juiz de Fora, Minas Gerais",
+          "valor": 3
+        },
+        {
+          "rotulo": "Serra, Espírito Santo",
+          "valor": 3
+        },
+        {
+          "rotulo": "Russas, Ceará",
+          "valor": 2
+        }
+      ]
+    },
+    "publicacoes": {
+      "total": 8,
+      "reels": 6,
+      "feed": 2,
+      "stories": 0
+    },
+    "medias": {
+      "alcance_feed": 43,
+      "alcance_reels": 43,
+      "visualizacoes_stories": null
+    },
+    "destaques": {
+      "maior_alcance": "18077553020392309",
+      "mais_salvo": "18132564397680118",
+      "mais_comentado": "18132564397680118"
+    },
+    "posts": [
+      {
+        "id": "18132564397680118",
+        "formato": "Reels",
+        "data": "2026-10-03",
+        "legenda": "Quando tentamos parecer profissionais demais, muitas vezes começamos a retirar justamente aquilo que torna a nossa comunicação interessante.",
+        "link": "https://www.instagram.com/reel/DeCqIxmjb7Q/",
+        "imagem": "https://scontent-ord5-2.cdninstagram.com/v/t51.71878-15/833653788_1100306442694469_9114302529016168657_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=O_afyIGP17MQ7kNvwHEKQO1&_nc_oc=AdrdpDytSC1rLepn7r-4qZmH3Y_ghlpBxV3ZFovNOXMWMonEo2umeo02lKORChX1umw&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=N7aWZLYbgmt_QFI3--zQmQ&_nc_tpa=Q5bMBQLPR4lFNkqqxb28ZrKT-xrmKke0XK5bLwYAexYg3n1E2tWClxHHICy0hA8ZKh2H0lPs3BnCOF9E&oh=00_AQPOt4CSL2cBelzgtvO2ghv0IwMAVXMFqJnejIHnfJlWPQ&oe=6ADD56BB",
+        "reach": 54,
+        "views": 71,
+        "likes": 2,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 2,
+        "tempo_medio_assistido_s": 7.5
+      },
+      {
+        "id": "18115659164042619",
+        "formato": "Imagem",
+        "data": "2026-10-02",
+        "legenda": "Durante muito tempo, eu achei que coragem chegaria acompanhada de certeza.",
+        "link": "https://www.instagram.com/p/DeAX6NdDKXr/",
+        "imagem": "https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/831437433_18102996032366164_1239133064073411117_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=X5B100Rvu6kQ7kNvwGAlZYM&_nc_oc=Adrms5xgGBQCob_KvshUNXeHQiag1ECrO9S0G5-OaK0cj0THwJyAki-cr5ZgItuOmaI&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=N7aWZLYbgmt_QFI3--zQmQ&oh=00_AQMAoFH-UwE7LPQq7AQUofqyED93xGynYDH-HztjcX0MoQ&oe=6ADD7BE2",
+        "reach": 51,
+        "views": 114,
+        "likes": 5,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 5
+      },
+      {
+        "id": "18077553020392309",
+        "formato": "Reels",
+        "data": "2026-10-02",
+        "legenda": "Sempre existe alguém pronto para comprar. O desafio é construir uma comunicação que faça essa pessoa entender por que deveria comprar de voc",
+        "link": "https://www.instagram.com/reel/DeAIosQnTKr/",
+        "imagem": "https://scontent-ord5-2.cdninstagram.com/v/t51.71878-15/830405869_1597876057835143_8849884563618151699_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=mSwngRL6Ea0Q7kNvwFNu1cP&_nc_oc=AdpDaGgNhAdhuA4kGVjiyqB7D6zat30nrsoUM93JnoZDOJczFqar9Lt7WPJzZ_Nzx7Y&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=N7aWZLYbgmt_QFI3--zQmQ&_nc_tpa=Q5bMBQLzheUHgQHeqV5WEmbD2i8n6LFGoOSr4JAAMAStx-c_DrwU2ovBAOxJSelGfxRMoWL5rsELS1r1&oh=00_AQOz6-jiXvj6IXIzaEr-I9TP5NwvJnPSYQwg9U4-f4D11w&oe=6ADD7E47",
+        "reach": 64,
+        "views": 86,
+        "likes": 5,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 5,
+        "tempo_medio_assistido_s": 8.2
+      },
+      {
+        "id": "18083434631327061",
+        "formato": "Reels",
+        "data": "2026-10-01",
+        "legenda": "Quando transformamos nossa própria trajetória na única referência para criar conteúdo, corremos o risco de falar apenas com quem pensa, sent",
+        "link": "https://www.instagram.com/reel/Dd9zyxgglZy/",
+        "imagem": "https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/830540157_18102889415366164_3414952354576717732_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=zZMtP3Yqv5QQ7kNvwHYeZEE&_nc_oc=AdoJlyeY1AtHPWD53_3PFrqx1rFZI6GmT9BIde4_yqDxeJ-XxW_J5oOP-48CDYFT69I&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=N7aWZLYbgmt_QFI3--zQmQ&_nc_tpa=Q5bMBQIqJK4nyUfyf47z3TlGAjS6XTj0aL3vkrTYhgQ2XHRkWMIogy3EpgQYeH7CeNaYBsXrqaZHhXoG&oh=00_AQP-DG52HVlnZ7exJQ4U-rHb9etsB76aJvfU8dBh7hvEqw&oe=6ADD8370",
+        "reach": 36,
+        "views": 49,
+        "likes": 4,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 4,
+        "tempo_medio_assistido_s": 4.5
+      },
+      {
+        "id": "18093712349444915",
+        "formato": "Carrossel",
+        "data": "2026-09-30",
+        "legenda": "Ter uma boa solução é importante. Mas, para que ela se transforme em receita, existe uma série de decisões que precisam funcionar juntas.",
+        "link": "https://www.instagram.com/p/Dd7jaKxlw_V/",
+        "imagem": "https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/829734512_18102793067366164_7805110766123873009_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=ypv4w5cp8FQQ7kNvwHbBsuH&_nc_oc=Adq26k-D1ZEcs7fvjkBehQ_Tkrv6oo4xFd2C4UY9G46ZNuGIVhJj_uMB6iH2XvNMO3M&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=N7aWZLYbgmt_QFI3--zQmQ&oh=00_AQOTqmG6DFSFgrOYecyRoOekST0ivWk0aKRc3m0H9EYuRw&oe=6ADD86B2",
+        "reach": 35,
+        "views": 123,
+        "likes": 4,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 4
+      },
+      {
+        "id": "18107869730625651",
+        "formato": "Reels",
+        "data": "2026-09-29",
+        "legenda": "Na Black Friday, as pessoas já chegam mais predispostas a comprar. Existe expectativa, comparação, vontade de aproveitar uma oportunidade e ",
+        "link": "https://www.instagram.com/reel/Dd4iLtQDmkx/",
+        "imagem": "https://scontent-ord5-1.cdninstagram.com/v/t51.71878-15/828506842_939427852118861_1313563193483368132_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=ckYMKYUBUQIQ7kNvwGIzwna&_nc_oc=AdrYQYhRN5WZM0QAkNX-hvicNFK1LzF9CVKiXZpZtOzJDtlWrntqjNVD1jgIAQkekKY&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=N7aWZLYbgmt_QFI3--zQmQ&_nc_tpa=Q5bMBQK2T0mynyJGusVhN7qbksSOA5f8anOOAHMlOeohnDc9hLKC0qoBMToBwieibvWE6-bHOLRBsX5g&oh=00_AQOQCrzGw5O0TM_cLvibsO_EpHoTWhoGN0GE6IrcyqGO6A&oe=6ADD8045",
+        "reach": 29,
+        "views": 52,
+        "likes": 2,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 2,
+        "tempo_medio_assistido_s": 4.8
+      },
+      {
+        "id": "18629821285006463",
+        "formato": "Reels",
+        "data": "2026-09-29",
+        "legenda": "O jogo de quem quer começar a faturar no digital exige uma estratégia completamente diferente de quem já construiu uma marca de massa.",
+        "link": "https://www.instagram.com/reel/Dd3ZYYDRBJC/",
+        "imagem": "https://scontent-ord5-1.cdninstagram.com/v/t51.71878-15/825320419_1052192811148086_6565420736757605447_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=jITba26y0koQ7kNvwGT-677&_nc_oc=AdrLyi6T1E-1oOWIAKLbjVWHoBX6t-7RlJ0Mi-Asalt4xSK9EkG8fmQaOL6NUXNIJvk&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=N7aWZLYbgmt_QFI3--zQmQ&_nc_tpa=Q5bMBQLCOZTTH7ZQX2pQh8lSio2r4VbocFHLuEAue8dkI1z2ecDrDKMZQKYttUTnIGceSn4T2Hno_yMl&oh=00_AQNjPUeNygFGgw07TvgeSMujoE3gYk5uR_Kx74K6vPRPsQ&oe=6ADD65D2",
+        "reach": 34,
+        "views": 41,
+        "likes": 0,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 0,
+        "tempo_medio_assistido_s": 3.5
+      },
+      {
+        "id": "17950840491269261",
+        "formato": "Reels",
+        "data": "2026-09-28",
+        "legenda": "Talvez você esteja tentando melhorar sua comunicação olhando para fora, quando parte da resposta está no que você já viveu.",
+        "link": "https://www.instagram.com/reel/Dd1-tgtD9p2/",
+        "imagem": "https://scontent-ord5-1.cdninstagram.com/v/t51.82787-15/825320605_18102572747366164_5216035111227564370_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=rk5trc5YKFcQ7kNvwE9XVou&_nc_oc=Adq2Wap-w18mMec3SrUtUVaeckrq6ct6bxy9k2DnPX-fUs7IKndyxvEFjXoTshCiL20&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=N7aWZLYbgmt_QFI3--zQmQ&_nc_tpa=Q5bMBQIt0v-skFkb1qz-E0IU7A4j25Idc7yBSQPpJlCMk2NaSAcSTX4Tys-ziKXGEsSUCd7EXE28j0lm&oh=00_AQO-dUQskDH6Yna11l0ULHXKAbsD-tlLKKEkxfFt0I3dRA&oe=6ADD83FA",
+        "reach": 38,
+        "views": 58,
+        "likes": 4,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 4,
+        "tempo_medio_assistido_s": 19.1
+      }
+    ],
+    "stories": []
+  },
+  "anuncios": {
+    "total": null,
+    "por_conta": [],
+    "campanhas": []
+  },
+  "fonte": {
+    "sistema": "Meta",
+    "coletado_em": "2026-10-20T16:51:09.566Z"
+  }
+}

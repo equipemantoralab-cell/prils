@@ -317,6 +317,10 @@ async function gravar(slug, saida, modo) {
   await mkdir(path.join(ROOT, "data"), { recursive: true });
   const destino = path.join(ROOT, "data", `${slug}-meta.json`);
   await writeFile(destino, JSON.stringify(saida, null, 2) + "\n");
+  // Histórico: uma cópia por semana, usada para comparar com as semanas anteriores.
+  const hist = path.join(ROOT, "data", "historico", slug);
+  await mkdir(hist, { recursive: true });
+  await writeFile(path.join(hist, `meta-${saida.periodo.inicio}.json`), JSON.stringify(saida, null, 2) + "\n");
   const i = saida.instagram, a = saida.anuncios?.total;
   console.log(`✓ ${path.relative(ROOT, destino)} · ${saida.periodo.inicio} a ${saida.periodo.fim} (${modo})`);
   if (i) console.log(`  Instagram @${i.usuario}: alcance ${i.conta?.reach ?? "—"}, interações ${i.conta?.total_interactions ?? "—"}, ${i.publicacoes.total} posts, ${i.publicacoes.stories} stories`);

@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Relatório semanal · Mantora</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: relatório da semana em duas camadas (Resumo / Todos os dados). Blocos ligados por cliente em "modulos". Paleta Mantora. */
+:root{
+  --bg:#f7f5fb; --surface:#ffffff; --surface-2:#efeaf7; --line:#e0d8ee;
+  --fg:#22082f; --muted:#6b5a7a;
+  --primary:#5b2aab; --primary-soft:#ece5fa; --accent:#6840e1; --accent-soft:#e8e2ff;
+  --good:#1d7f4e; --good-soft:#dcf1e5; --bad:#b0442f; --bad-soft:#f6dfd8; --warn:#9a5b00; --warn-soft:#fbecd2;
+  --display:"Instrument Sans","Helvetica Neue",Arial,sans-serif;
+  --body:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#17061f; --surface:#220b2e; --surface-2:#2f0a40; --line:#46215c;
+  --fg:#f3eef8; --muted:#b5a5c6;
+  --primary:#9f82ff; --primary-soft:#3a1658; --accent:#8f72ff; --accent-soft:#33195a;
+  --good:#5cc993; --good-soft:#173a29; --bad:#e2775f; --bad-soft:#3d2620; --warn:#f0b35a; --warn-soft:#3d2b12; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#17061f; --surface:#220b2e; --surface-2:#2f0a40; --line:#46215c;
+  --fg:#f3eef8; --muted:#b5a5c6;
+  --primary:#9f82ff; --primary-soft:#3a1658; --accent:#8f72ff; --accent-soft:#33195a;
+  --good:#5cc993; --good-soft:#173a29; --bad:#e2775f; --bad-soft:#3d2620; --warn:#f0b35a; --warn-soft:#3d2b12; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;letter-spacing:-.015em;line-height:1.15;margin:0;text-wrap:balance}
+a{color:inherit}
+p{margin:0}
+.num{font-variant-numeric:tabular-nums}
+.wrap{max-width:1100px;margin:0 auto;padding-inline:16px;padding-block:24px 72px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:8px;font-family:var(--display);font-weight:700;font-size:19px;letter-spacing:-.02em}
+.brand svg{width:32px;height:auto}
+.src{font-size:12px;color:var(--muted)}
+.draft{font-size:12px;font-weight:700;color:var(--warn);background:var(--warn-soft);padding:4px 10px;border-radius:999px}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-top:28px}
+.head h1{font-size:clamp(28px,4.4vw,40px)}
+.head p{color:var(--muted);margin-top:6px}
+.layer{display:flex;gap:4px;background:var(--surface-2);padding:4px;border-radius:10px}
+.layer button{font:inherit;border:0;background:transparent;padding:8px 14px;border-radius:7px;font-weight:600;font-size:13.5px;color:var(--muted);cursor:pointer}
+.layer button[aria-pressed="true"]{background:var(--surface);color:var(--fg);box-shadow:0 1px 2px rgba(0,0,0,.12)}
+.lead{margin-top:22px;font-family:var(--display);font-weight:500;font-size:clamp(19px,2.4vw,23px);line-height:1.4;max-width:62ch}
+.sec{margin-top:40px}
+.sec-h{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.sec-h h2{font-size:23px}
+.sec-h small{color:var(--muted);font-size:13px}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px;min-width:0}
+.grid2{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:16px}
+@media (max-width:860px){.grid2{grid-template-columns:1fr}}
+/* KPIs */
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:12px;margin-top:24px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 16px 12px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.kpi .lab{font-size:13px;color:var(--muted);font-weight:600}
+.kpi .val{font-family:var(--display);font-size:30px;font-weight:600;line-height:1}
+.kpi .ctx{font-size:12px;color:var(--muted)}
+.kpi svg{width:100%;height:30px;display:block;margin-top:2px}
+.delta{font-size:12.5px;font-weight:700;white-space:nowrap}
+.delta.up{color:var(--good)} .delta.down{color:var(--bad)} .delta.eq{color:var(--muted)}
+/* cards de atividades */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:14px;align-items:start}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;min-width:0}
+.card[open]{grid-column:1/-1}
+.card summary{list-style:none;cursor:pointer;padding:18px 18px 16px;display:flex;flex-direction:column;gap:10px}
+.card summary::-webkit-details-marker{display:none}
+.c-top{display:flex;align-items:baseline;gap:10px}
+.c-top b{font-family:var(--display);font-size:38px;font-weight:600;line-height:1;font-variant-numeric:tabular-nums}
+.c-top span{font-weight:600;color:var(--muted);flex:1}
+.chev{width:10px;height:10px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg);opacity:.6;align-self:center;transition:transform .2s}
+.card[open] .chev{transform:rotate(-135deg)}
+.lines{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:15px}
+.lines li span{display:block;font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.c-txt,.c-none{font-size:14.5px}
+.c-none{color:var(--muted)}
+.c-none code,.empty code{background:var(--surface-2);padding:1px 5px;border-radius:5px;color:var(--fg)}
+.c-det{padding:16px 18px 18px;border-top:1px solid var(--line)}
+.card.main{background:var(--primary);border-color:var(--primary);color:#fff}
+.card.main .c-top span,.card.main .lines li span{color:rgba(255,255,255,.78)}
+.card.main .c-det{background:var(--bg);color:var(--fg);border-radius:0 0 15px 15px;border-top-color:transparent}
+.card.warn{background:var(--warn-soft);border-color:transparent}
+.card.soft{border-style:dashed}
+.list{list-style:none;margin:0;padding:0;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.list li{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:12px;align-items:center;padding:11px 14px;border-top:1px solid var(--line)}
+.list li:first-child{border-top:0}
+.list .t a{text-decoration:none;font-weight:600;display:block;overflow-wrap:anywhere}
+.list .t a:hover{text-decoration:underline}
+.list .t small{display:block;color:var(--muted);font-size:12px;margin-top:2px}
+.list .d{font-size:12px;color:var(--muted);white-space:nowrap}
+.fmt{font-size:11px;font-weight:700;padding:3px 8px;border-radius:999px;background:var(--primary-soft);color:var(--primary);white-space:nowrap;min-width:72px;text-align:center}
+.fmt.Imagem,.fmt.Capa{background:var(--accent-soft);color:var(--accent)}
+.fmt.Projeto{background:var(--surface-2);color:var(--muted)}
+.pill{font-size:11px;font-weight:700;padding:3px 8px;border-radius:999px;white-space:nowrap;background:var(--surface-2);color:var(--muted)}
+.pill.ok{background:var(--good-soft);color:var(--good)} .pill.aj{background:var(--warn-soft);color:var(--warn)}
+.group{font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:16px 0 8px}
+.group:first-child{margin-top:0}
+.week{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px}
+@media (max-width:860px){.week{grid-template-columns:1fr}}
+.day{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px;min-height:90px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.day h3{font-family:var(--body);font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.day .it{font-size:12.5px;line-height:1.35;background:var(--surface-2);border-radius:8px;padding:6px 8px;overflow-wrap:anywhere}
+.day .it i{font-style:normal;display:block;font-size:10.5px;font-weight:700;color:var(--primary);text-transform:uppercase}
+.empty{background:var(--surface);border:1px dashed var(--line);border-radius:14px;padding:16px;color:var(--muted);font-size:14px}
+/* marcos */
+.marcos{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.marco{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:6px}
+.marco .tag{align-self:flex-start;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+.marco h3{font-size:17px}
+.marco p{font-size:14px;color:var(--muted)}
+/* gráfico */
+.chart svg{width:100%;height:auto;display:block}
+.legend{display:flex;gap:14px;font-size:12px;color:var(--muted);margin-top:8px;flex-wrap:wrap}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+/* aprendizados */
+.ins{display:flex;gap:12px}
+.ins + .ins{margin-top:14px}
+.ins .tag{flex:none;width:28px;height:28px;border-radius:8px;display:grid;place-items:center;font-weight:800;font-size:14px}
+.ins.ok .tag{background:var(--good-soft);color:var(--good)}
+.ins.no .tag{background:var(--warn-soft);color:var(--warn)}
+.ins b{display:block;font-size:14.5px}
+.ins span{font-size:13.5px;color:var(--muted)}
+/* posts */
+.posts{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.post{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;text-decoration:none}
+.thumb{aspect-ratio:4/5;max-width:100%;background:var(--surface-2) center/cover no-repeat;position:relative}
+.thumb .fmtb{position:absolute;top:10px;left:10px;font-size:11px;font-weight:700;background:rgba(20,4,30,.6);color:#fff;padding:3px 8px;border-radius:999px}
+.thumb .rank{position:absolute;top:10px;right:10px;font-size:11px;font-weight:800;background:#a68cff;color:#1a0626;padding:3px 8px;border-radius:999px}
+.post-b{padding:12px 14px;display:grid;grid-template-columns:repeat(3,1fr);gap:6px;font-size:12px;color:var(--muted)}
+.post-b b{display:block;color:var(--fg);font-size:15px}
+.post-b .cap{grid-column:1/-1;border-top:1px solid var(--line);padding-top:8px;margin-top:2px;color:var(--fg);font-size:12.5px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+/* barras horizontais */
+.bars{display:grid;gap:8px}
+.bars .r{display:grid;grid-template-columns:88px 1fr 46px;gap:10px;align-items:center;font-size:13px}
+.bars .t{height:14px;background:var(--surface-2);border-radius:5px;overflow:hidden}
+.bars .t b{display:block;height:100%;background:var(--primary);border-radius:5px}
+.bars .r.top .t b{background:var(--accent)}
+.bars .v{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:14px;margin-top:16px}
+.facts div b{display:block;font-family:var(--display);font-size:24px;font-weight:600;line-height:1.1}
+.facts div span{font-size:12.5px;color:var(--muted)}
+/* próximos passos */
+.next{list-style:none;margin:0;padding:0;display:grid;gap:10px;counter-reset:n}
+.next li{display:flex;gap:12px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px}
+.next li::before{counter-increment:n;content:counter(n);flex:none;width:26px;height:26px;border-radius:50%;background:var(--accent-soft);color:var(--accent);font-weight:800;display:grid;place-items:center;font-size:13px}
+/* tabelas */
+.tw{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:14px}
+.tbl{width:100%;border-collapse:collapse;font-size:13.5px}
+.tbl th{text-align:left;font-weight:600;color:var(--muted);font-size:12px;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
+.tbl td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+.tbl td.n,.tbl th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.tbl tr:last-child td{border-bottom:0}
+.tbl td.cap{min-width:220px;max-width:380px}
+.full{display:grid;gap:28px;margin-top:24px}
+.full h3{font-size:17px;margin-bottom:4px}
+.full .why{font-size:12px;color:var(--muted);margin-bottom:10px}
+.err{background:var(--warn-soft);color:var(--warn);border-radius:12px;padding:14px;margin-top:20px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="top">
+    <div class="brand"><svg viewBox="0 0 177 100" aria-hidden="true"><defs><linearGradient id="mg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7b4dff"/><stop offset="1" stop-color="#3d0a5a"/></linearGradient></defs><g fill="url(#mg)"><path d="M0 0A100 100 0 0 1 100 100H66.7A66.7 66.7 0 0 0 0 33.3Z"/><path transform="translate(76.7 0)" d="M0 0A100 100 0 0 1 100 100H66.7A66.7 66.7 0 0 0 0 33.3Z"/><rect x="0" y="67" width="33.3" height="33"/></g></svg>mantora</div>
+    <div id="estado"></div>
+  </div>
+  <div id="app"><p class="src">Carregando…</p></div>
+</main>
+<script>
+(function(){
+  const $ = (s) => document.querySelector(s);
+  const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  const NF = new Intl.NumberFormat("pt-BR");
+  const n = (v) => (v == null ? "—" : NF.format(v));
+  const brl = (v) => (v == null ? "—" : v.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }));
+  const pct = (v, d = 1) => (v == null ? "—" : v.toLocaleString("pt-BR", { maximumFractionDigits: d }) + "%");
+  const DIAS = ["dom","seg","ter","qua","qui","sex","sáb"];
+  const dd = (iso) => { if (!iso) return ""; const [, m, d] = iso.split("-"); return `${d}/${m}`; };
+  const dow = (iso) => DIAS[new Date(iso + "T12:00:00Z").getUTCDay()];
+  const add = (iso, k) => { const d = new Date(iso + "T12:00:00Z"); d.setUTCDate(d.getUTCDate() + k); return d.toISOString().slice(0, 10); };
+  const juntar = (xs) => xs.length < 2 ? xs.join("") : xs.slice(0, -1).join(", ") + " e " + xs[xs.length - 1];
+  const IMG = window.__IMAGENS || {};
+  const imgDe = (p) => IMG[p.id] || p.miniatura || null;
+
+  function delta(atual, base, inverso) {
+    if (atual == null || base == null || base === 0) return "";
+    const v = Math.round(((atual - base) / base) * 100);
+    const cls = v === 0 ? "eq" : (v > 0) !== Boolean(inverso) ? "up" : "down";
+    return `<span class="delta ${cls}">${v > 0 ? "+" : ""}${v}%</span>`;
+  }
+  function spark(vals) {
+    const arr = vals.filter((v) => v != null);
+    if (arr.length < 2) return "";
+    const w = 160, h = 30, mn = Math.min(...arr), mx = Math.max(...arr);
+    const pts = arr.map((v, i) => [i * (w / (arr.length - 1)), h - 3 - ((v - mn) / (mx - mn || 1)) * (h - 8)]);
+    const d = pts.map((p, i) => (i ? "L" : "M") + p[0].toFixed(1) + " " + p[1].toFixed(1)).join(" ");
+    const last = pts[pts.length - 1];
+    return `<svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" aria-hidden="true"><path d="${d} L${w} ${h} L0 ${h}Z" fill="var(--primary-soft)"/><path d="${d}" fill="none" stroke="var(--primary)" stroke-width="1.8" vector-effect="non-scaling-stroke"/><circle cx="${Math.min(last[0], w - 3)}" cy="${last[1]}" r="2.6" fill="var(--primary)"/></svg>`;
+  }
+
+  // ---------- atividades (cards) ----------
+  const FORM = { Reels: { s: "Reels", p: "Reels", g: "m" }, Carrossel: { s: "carrossel", p: "carrosséis", g: "m" }, Imagem: { s: "imagem", p: "imagens", g: "f" }, Capa: { s: "capa", p: "capas", g: "f" } };
+  const VERBO = { "Conteúdo": "finalizad", "Design": "criad", "Edição de vídeo": "editad", "Projetos e estratégia": "concluíd" };
+  const ORDEM = ["Conteúdo", "Design", "Edição de vídeo", "Projetos e estratégia"];
+  const etiqueta = (i) => i.area === "Projetos e estratégia" ? "Projeto" : (i.formato || i.area);
+  function contagem(itens) {
+    const c = {};
+    itens.forEach((i) => { const k = FORM[i.formato] ? i.formato : "_"; c[k] = (c[k] || 0) + 1; });
+    const partes = Object.entries(c).sort((a, b) => b[1] - a[1]).map(([k, q]) => k === "_" ? `${q} ${q > 1 ? "tarefas" : "tarefa"}` : `${q} ${q > 1 ? FORM[k].p : FORM[k].s}`);
+    const ks = Object.keys(c);
+    return { texto: juntar(partes), plural: itens.length > 1, g: ks.length === 1 ? (FORM[ks[0]]?.g || "f") : "m" };
+  }
+  function porArea(itens) {
+    const m = {};
+    itens.forEach((i) => (m[i.area] ||= []).push(i));
+    return Object.keys(m).sort((a, b) => ((ORDEM.indexOf(a) + 99) % 99) - ((ORDEM.indexOf(b) + 99) % 99)).map((a) => [a, m[a]]);
+  }
+  const fraseAcao = (a, its) => { if (a === "Projetos e estratégia") return juntar(its.map((i) => i.titulo)); const c = contagem(its); const v = VERBO[a]; return v ? `${c.texto} ${v}${c.g === "f" ? "a" : "o"}${c.plural ? "s" : ""}` : c.texto; };
+  const fraseSem = (a, its) => a === "Projetos e estratégia" ? juntar(its.map((i) => i.titulo)) : contagem(its).texto;
+  const linhas = (itens, f) => porArea(itens).map(([a, its]) => `<li><span>${esc(a)}</span>${esc(f(a, its))}</li>`).join("");
+  const quem = (i) => i.responsaveis.length ? i.responsaveis.join(" e ") : "";
+  const item = (i, dir) => `<li><span class="fmt ${esc(etiqueta(i))}">${esc(etiqueta(i))}</span><div class="t"><a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.titulo)}</a><small>${esc(i.area)}${quem(i) ? " · " + esc(quem(i)) : ""}</small></div>${dir}</li>`;
+  const card = ({ tom, numero, titulo, resumo, detalhe }) => `<details class="card ${tom || ""}"><summary><div class="c-top"><b>${numero}</b><span>${titulo}</span><i class="chev" aria-hidden="true"></i></div>${resumo}</summary><div class="c-det">${detalhe}</div></details>`;
+
+  function blocoAtividades(a) {
+    const r = a.resumo;
+    const dias = Array.from({ length: 7 }, (_, k) => add(add(a.periodo.fim, 1), k));
+    const cards = [
+      card({ tom: "main", numero: r.entregues, titulo: "entregas na semana",
+        resumo: a.entregues.length ? `<ul class="lines">${linhas(a.entregues, fraseAcao)}</ul>` : `<p class="c-none">Nenhuma entrega registrada.</p>`,
+        detalhe: porArea(a.entregues).map(([ar, its]) => `<div class="group">${esc(ar)} · ${its.length}</div><ul class="list">${its.map((i) => item(i, `<span class="d">${dow(i.entregue_em)} ${dd(i.entregue_em)}</span>`)).join("")}</ul>`).join("") || `<div class="empty">Nenhuma entrega.</div>` }),
+      card({ numero: r.em_andamento, titulo: `em produção agora${r.em_ajuste ? ` · ${r.em_ajuste} em ajuste` : ""}`,
+        resumo: a.em_andamento.length ? `<ul class="lines">${linhas(a.em_andamento, fraseSem)}</ul>` : `<p class="c-none">Nada em produção no momento.</p>`,
+        detalhe: a.em_andamento.length ? `<ul class="list">${a.em_andamento.map((i) => item(i, `<span class="pill ${i.fase === "aprovado" ? "ok" : i.em_ajuste ? "aj" : ""}">${esc(i.status)}</span>`)).join("")}</ul>` : `<div class="empty">Nada em produção.</div>` }),
+      card({ numero: r.proximos, titulo: `previstos de ${dd(dias[0])} a ${dd(dias[6])}`,
+        resumo: a.proximos.length ? `<ul class="lines">${linhas(a.proximos, fraseSem)}</ul>` : `<p class="c-none">Nada agendado ainda.</p>`,
+        detalhe: `<div class="week">${dias.map((dia) => { const its = a.proximos.filter((i) => i.prazo === dia); return `<div class="day"><h3>${dow(dia)} ${dd(dia)}</h3>${its.length ? its.map((i) => `<div class="it"><i>${esc(etiqueta(i))}</i>${esc(i.titulo)}</div>`).join("") : `<span class="c-none">—</span>`}</div>`; }).join("")}</div>` }),
+    ];
+    if (a.aguardando_cliente.length) cards.push(card({ tom: "warn", numero: a.aguardando_cliente.length, titulo: "precisam de você",
+      resumo: `<p class="c-txt">${esc(juntar(a.aguardando_cliente.slice(0, 2).map((i) => i.titulo)))}${a.aguardando_cliente.length > 2 ? ` e mais ${a.aguardando_cliente.length - 2}` : ""}</p>`,
+      detalhe: `<ul class="list">${a.aguardando_cliente.map((i) => item(i, i.prazo ? `<span class="d">desde ${dd(i.prazo)}</span>` : "")).join("")}</ul>` }));
+    cards.push(card({ tom: "soft", numero: a.notas.length, titulo: a.notas.length === 1 ? "nota do time" : "notas do time",
+      resumo: a.notas.length ? `<p class="c-txt">${esc((a.notas[0].texto || a.notas[0].tarefa || "").slice(0, 110))}</p>` : `<p class="c-none">Comente <code>#relatorio</code> numa tarefa para aparecer aqui.</p>`,
+      detalhe: a.notas.length ? a.notas.map((x) => `<p style="margin-bottom:10px">${esc(x.texto || "Destaque marcado pelo time")}<br><small class="src">${[x.autor, dd(x.data), x.tarefa].filter(Boolean).map(esc).join(" · ")}</small></p>`).join("") : `<div class="empty">Para incluir algo aqui, escreva um comentário com <code>#relatorio</code> em qualquer tarefa da cliente no ClickUp, ou marque a tarefa com a etiqueta <code>relatorio</code>.</div>` }));
+    return `<section class="sec"><div class="sec-h"><h2>O que fizemos</h2><small>tarefas do time no ClickUp · toque num card para ver os detalhes</small></div><div class="cards">${cards.join("")}</div></section>`;
+  }
+
+  // ---------- Instagram ----------
+  function kpis(d) {
+    const ig = d.meta?.instagram, c = ig?.conta || {}, med = d.comparacao.media || {}, h = d.historico;
+    const base = d.comparacao.semanas_base;
+    const ctx = (campo) => base ? `vs. sua média de ${n(med[campo])}${base < 4 ? ` (${base} sem.)` : ""}` : "primeira semana registrada";
+    const out = [];
+    if (ig && d.modulos.includes("instagram")) {
+      out.push({ l: "Contas alcançadas", v: n(c.reach), d: delta(c.reach, med.alcance), c: ctx("alcance"), s: h.map((x) => x.alcance) });
+      out.push({ l: "Visualizações", v: n(c.views), d: delta(c.views, med.visualizacoes), c: ctx("visualizacoes"), s: h.map((x) => x.visualizacoes) });
+      out.push({ l: "Interações", v: n(c.total_interactions), d: delta(c.total_interactions, med.interacoes), c: ctx("interacoes"), s: h.map((x) => x.interacoes) });
+      const saldo = c.novos_seguidores != null && c.deixaram_de_seguir != null ? c.novos_seguidores - c.deixaram_de_seguir : null;
+      out.push({ l: "Seguidores", v: n(ig.seguidores), d: saldo != null ? `<span class="delta ${saldo >= 0 ? "up" : "down"}">${saldo >= 0 ? "+" : ""}${saldo}</span>` : "", c: `${n(c.novos_seguidores)} novos, ${n(c.deixaram_de_seguir)} deixaram de seguir`, s: h.map((x) => x.novos_seguidores) });
+    }
+    const ads = d.meta?.anuncios;
+    if (ads?.total && d.modulos.includes("anuncios")) {
+      const conv = ads.por_conta.reduce((s, x) => s + (x.conversas || 0), 0);
+      const leads = ads.por_conta.reduce((s, x) => s + (x.leads || 0), 0);
+      if (conv || leads) out.push({ l: leads ? "Leads pelos anúncios" : "Conversas pelos anúncios", v: n(leads || conv), d: "", c: `${brl(ads.total.investimento)} investidos · ${brl(ads.total.investimento / (leads || conv))} cada`, s: [] });
+      else out.push({ l: "Investimento em anúncios", v: brl(ads.total.investimento), d: "", c: `CPM ${brl(ads.total.cpm)}`, s: h.map((x) => x.investimento) });
+    }
+    return out.length ? `<div class="kpis">${out.map((k) => `<div class="kpi"><div class="lab">${k.l}</div><div class="val num">${k.v}</div><div>${k.d} <span class="ctx">${k.c}</span></div>${spark(k.s)}</div>`).join("")}</div>` : "";
+  }
+
+  function graficoAlcance(h) {
+    if (h.length < 2) return "";
+    const W = 600, H = 220, pl = 46, pr = 12, pt = 18, pb = 28;
+    const max = Math.max(...h.map((x) => x.alcance || 0)) * 1.15 || 1;
+    const passo = (W - pl - pr) / h.length, bw = Math.min(46, passo * 0.6);
+    const y = (v) => pt + (1 - v / max) * (H - pt - pb);
+    const ticks = [0, max / 2, max].map((t) => Math.round(t / 100) * 100);
+    let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Contas alcançadas por semana">`;
+    ticks.forEach((t) => { s += `<line x1="${pl}" x2="${W - pr}" y1="${y(t)}" y2="${y(t)}" stroke="var(--line)"/><text x="${pl - 8}" y="${y(t) + 4}" text-anchor="end" font-size="11" fill="var(--muted)">${n(t)}</text>`; });
+    h.forEach((x, i) => {
+      const cx = pl + passo * i + passo / 2, ult = i === h.length - 1, v = x.alcance || 0;
+      s += `<rect x="${cx - bw / 2}" y="${y(v)}" width="${bw}" height="${y(0) - y(v)}" rx="4" fill="${ult ? "var(--accent)" : "var(--primary-soft)"}"><title>Semana de ${dd(x.inicio)}: ${n(v)} contas</title></rect>`;
+      s += `<text x="${cx}" y="${H - 9}" text-anchor="middle" font-size="11" fill="var(--muted)">${dd(x.inicio)}</text>`;
+      if (ult) s += `<text x="${cx}" y="${y(v) - 6}" text-anchor="middle" font-size="12" font-weight="700" fill="var(--fg)">${n(v)}</text>`;
+    });
+    return s + `</svg>`;
+  }
+
+  function blocoInstagram(d) {
+    const ig = d.meta.instagram, t = d.textos;
+    const posts = [...ig.posts].sort((a, b) => (b.reach || 0) - (a.reach || 0));
+    const rotulos = {}; if (ig.destaques.maior_alcance) rotulos[ig.destaques.maior_alcance] = "Maior alcance";
+    if (ig.destaques.mais_comentado && !rotulos[ig.destaques.mais_comentado]) rotulos[ig.destaques.mais_comentado] = "Mais comentado";
+    if (ig.destaques.mais_salvo && !rotulos[ig.destaques.mais_salvo]) rotulos[ig.destaques.mais_salvo] = "Mais salvo";
+    const top = posts.slice(0, 3);
+    const idade = ig.publico?.age || [];
+    const totIdade = idade.reduce((s, x) => s + x.valor, 0) || 1;
+    const ordIdade = ["13-17","18-24","25-34","35-44","45-54","55-64","65+"];
+    const idadeOrd = [...idade].sort((a, b) => ordIdade.indexOf(a.rotulo) - ordIdade.indexOf(b.rotulo));
+    const maxIdade = Math.max(...idade.map((x) => x.valor), 1);
+    const gen = ig.publico?.gender || [], totGen = gen.reduce((s, x) => s + x.valor, 0) || 1;
+    const g = (k) => Math.round(((gen.find((x) => x.rotulo === k)?.valor) || 0) / totGen * 100);
+    const cidades = (ig.publico?.city || []).slice(0, 3).map((x) => x.rotulo.split(",")[0]);
+    const aprend = (t.aprendizados || []).map((a) => `<div class="ins ${a.tipo === "atencao" ? "no" : "ok"}"><div class="tag">${a.tipo === "atencao" ? "!" : "✓"}</div><div><b>${esc(a.titulo)}</b><span>${esc(a.texto)}</span></div></div>`).join("");
+
+    return `<section class="sec"><div class="sec-h"><h2>Instagram</h2><small>@${esc(ig.usuario)} · dados da Meta</small></div>
+      <div class="grid2">
+        <div class="box chart"><div class="sec-h" style="margin-bottom:8px"><h3>Contas alcançadas por semana</h3></div>${graficoAlcance(d.historico) || `<p class="c-none">O gráfico aparece a partir da segunda semana registrada.</p>`}
+          <div class="legend"><span><i style="background:var(--primary-soft)"></i>Semanas anteriores</span><span><i style="background:var(--accent)"></i>Esta semana</span></div>
+          <div class="facts"><div><b class="num">${ig.publicacoes.total}</b><span>publicações (${ig.publicacoes.reels} Reels, ${ig.publicacoes.feed} no feed${ig.publicacoes.stories ? `, ${ig.publicacoes.stories} stories` : ""})</span></div><div><b class="num">${n(ig.medias.alcance_feed)}</b><span>alcance médio no feed</span></div><div><b class="num">${n(ig.medias.alcance_reels)}</b><span>alcance médio dos Reels</span></div></div></div>
+        <div class="box">${aprend ? `<div class="sec-h" style="margin-bottom:12px"><h3>O que aprendemos</h3></div>${aprend}` : `<p class="c-none">Os aprendizados da semana entram aqui depois da revisão do time.</p>`}</div>
+      </div>
+      <div class="sec-h" style="margin-top:24px"><h3>Conteúdos que mais se destacaram</h3><small>ordenados por contas alcançadas</small></div>
+      <div class="posts">${top.map((p) => `<a class="post" href="${esc(p.link)}" target="_blank" rel="noopener"><div class="thumb" style="${imgDe(p) ? `background-image:url('${imgDe(p)}')` : ""}"><span class="fmtb">${esc(p.formato)} · ${dd(p.data)}</span>${rotulos[p.id] ? `<span class="rank">${rotulos[p.id]}</span>` : ""}</div><div class="post-b"><div><b class="num">${n(p.reach)}</b>alcance</div><div><b class="num">${n(p.likes)}</b>curtidas</div><div><b class="num">${n(p.comments)}</b>coment.</div><div class="cap">${esc(p.legenda)}</div></div></a>`).join("")}</div>
+      ${idade.length ? `<div class="box" style="margin-top:16px"><div class="grid2"><div><h3 style="margin-bottom:12px">Quem segue você</h3><div class="bars">${idadeOrd.map((x) => `<div class="r${x.valor === maxIdade ? " top" : ""}"><span>${esc(x.rotulo)} anos</span><div class="t"><b style="width:${(x.valor / maxIdade) * 100}%"></b></div><span class="v">${Math.round((x.valor / totIdade) * 100)}%</span></div>`).join("")}</div></div>
+        <div><div class="facts" style="margin-top:0"><div><b class="num">${g("F")}%</b><span>mulheres</span></div><div><b class="num">${g("M")}%</b><span>homens</span></div></div><p class="src" style="margin-top:14px;font-size:13.5px">Principais cidades: ${esc(juntar(cidades))}.</p></div></div></div>` : ""}
+    </section>`;
+  }
+
+  function blocoAnuncios(d) {
+    const a = d.meta.anuncios;
+    if (!a.campanhas.length) return `<section class="sec"><div class="sec-h"><h2>Anúncios</h2></div><div class="empty">Nenhum anúncio rodou nesta semana.</div></section>`;
+    return `<section class="sec"><div class="sec-h"><h2>Anúncios</h2><small>Meta Ads · ${a.campanhas.length} ${a.campanhas.length > 1 ? "campanhas" : "campanha"}</small></div>
+      <div class="cards" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">${a.campanhas.map((c) => {
+        const res = c.leads ? [c.leads, "leads", c.custo_leads] : c.compras ? [c.compras, "compras", c.custo_compras] : c.conversas ? [c.conversas, "conversas no direct", c.custo_conversas] : null;
+        return `<div class="box"><h3 style="font-size:16px">${esc(c.nome)}</h3><div class="facts"><div><b class="num">${brl(c.investimento)}</b><span>investidos</span></div><div><b class="num">${n(c.alcance)}</b><span>pessoas alcançadas</span></div>${res ? `<div><b class="num">${n(res[0])}</b><span>${res[1]}${res[2] ? ` · ${brl(res[2])} cada` : ""}</span></div>` : ""}<div><b class="num">${pct(c.ctr, 2)}</b><span>CTR · CPM ${brl(c.cpm)}</span></div></div></div>`;
+      }).join("")}</div></section>`;
+  }
+
+  // ---------- camada "todos os dados" ----------
+  function todosDados(d) {
+    const partes = [];
+    const ig = d.meta?.instagram;
+    if (ig) {
+      const c = ig.conta, med = d.comparacao.media || {}, ant = d.comparacao.anterior || {};
+      const linhasConta = [["Contas alcançadas", c.reach, med.alcance, ant.alcance], ["Visualizações", c.views, med.visualizacoes, ant.visualizacoes], ["Contas que interagiram", c.accounts_engaged, med.contas_engajadas, ant.contas_engajadas], ["Interações", c.total_interactions, med.interacoes, ant.interacoes], ["Curtidas", c.likes], ["Comentários", c.comments], ["Salvamentos", c.saves], ["Compartilhamentos", c.shares], ["Toques no link da bio", c.profile_links_taps], ["Novos seguidores", c.novos_seguidores, med.novos_seguidores, ant.novos_seguidores], ["Deixaram de seguir", c.deixaram_de_seguir], ["Seguidores (total)", ig.seguidores], ["Publicações", ig.publicacoes.total, med.publicacoes, ant.publicacoes]];
+      partes.push(`<div><h3>Instagram · conta</h3><div class="why">Fonte: API do Instagram (Meta). Média = até 4 semanas anteriores.</div><div class="tw"><table class="tbl"><thead><tr><th>Indicador</th><th class="n">Semana</th><th class="n">Semana anterior</th><th class="n">Sua média</th></tr></thead><tbody>${linhasConta.map(([l, v, m, a]) => `<tr><td>${l}</td><td class="n">${n(v)}</td><td class="n">${a !== undefined ? n(a) : "—"}</td><td class="n">${m !== undefined ? n(m) : "—"}</td></tr>`).join("")}</tbody></table></div></div>`);
+      const ps = [...ig.posts].sort((a, b) => a.data.localeCompare(b.data));
+      partes.push(`<div><h3>Instagram · publicações</h3><div class="why">${ps.length} publicações na semana. Tempo médio assistido só existe para Reels.</div><div class="tw"><table class="tbl"><thead><tr><th>Data</th><th>Formato</th><th>Legenda</th><th class="n">Alcance</th><th class="n">Visualiz.</th><th class="n">Curtidas</th><th class="n">Coment.</th><th class="n">Salvos</th><th class="n">Compart.</th><th class="n">Tempo médio</th></tr></thead><tbody>${ps.map((p) => `<tr><td class="n">${dd(p.data)}</td><td>${esc(p.formato)}</td><td class="cap"><a href="${esc(p.link)}" target="_blank" rel="noopener">${esc(p.legenda || "(sem legenda)")}</a></td><td class="n">${n(p.reach)}</td><td class="n">${n(p.views)}</td><td class="n">${n(p.likes)}</td><td class="n">${n(p.comments)}</td><td class="n">${n(p.saved)}</td><td class="n">${n(p.shares)}</td><td class="n">${p.tempo_medio_assistido_s != null ? p.tempo_medio_assistido_s.toLocaleString("pt-BR") + "s" : "—"}</td></tr>`).join("")}</tbody></table></div></div>`);
+      if (ig.stories.length) partes.push(`<div><h3>Instagram · stories</h3><div class="tw"><table class="tbl"><thead><tr><th>Data</th><th class="n">Alcance</th><th class="n">Visualiz.</th><th class="n">Respostas</th><th class="n">Interações</th></tr></thead><tbody>${ig.stories.map((s) => `<tr><td class="n">${dd(s.data)}</td><td class="n">${n(s.reach)}</td><td class="n">${n(s.views)}</td><td class="n">${n(s.replies)}</td><td class="n">${n(s.total_interactions)}</td></tr>`).join("")}</tbody></table></div></div>`);
+    }
+    const ads = d.meta?.anuncios;
+    if (ads?.campanhas?.length) partes.push(`<div><h3>Anúncios · campanhas</h3><div class="why">Fonte: Meta Ads</div><div class="tw"><table class="tbl"><thead><tr><th>Campanha</th><th class="n">Investimento</th><th class="n">Alcance</th><th class="n">CPM</th><th class="n">CTR</th><th class="n">CPC</th><th class="n">Conversas</th><th class="n">Leads</th><th class="n">Vis. vídeo</th></tr></thead><tbody>${ads.campanhas.map((c) => `<tr><td>${esc(c.nome)}</td><td class="n">${brl(c.investimento)}</td><td class="n">${n(c.alcance)}</td><td class="n">${brl(c.cpm)}</td><td class="n">${pct(c.ctr, 2)}</td><td class="n">${brl(c.cpc)}</td><td class="n">${n(c.conversas)}</td><td class="n">${n(c.leads)}</td><td class="n">${n(c.visualizacoes_video)}</td></tr>`).join("")}</tbody></table></div></div>`);
+    if (d.historico.length > 1) partes.push(`<div><h3>Histórico semanal</h3><div class="tw"><table class="tbl"><thead><tr><th>Semana</th><th class="n">Alcance</th><th class="n">Visualiz.</th><th class="n">Interações</th><th class="n">Novos seg.</th><th class="n">Publicações</th><th class="n">Anúncios</th></tr></thead><tbody>${[...d.historico].reverse().map((x) => `<tr><td class="n">${dd(x.inicio)}</td><td class="n">${n(x.alcance)}</td><td class="n">${n(x.visualizacoes)}</td><td class="n">${n(x.interacoes)}</td><td class="n">${n(x.novos_seguidores)}</td><td class="n">${n(x.publicacoes)}</td><td class="n">${brl(x.investimento)}</td></tr>`).join("")}</tbody></table></div></div>`);
+    const a = d.atividades;
+    if (a) partes.push(`<div><h3>Tarefas da semana</h3><div class="why">Fonte: ClickUp</div><div class="tw"><table class="tbl"><thead><tr><th>Situação</th><th>Área</th><th>Tarefa</th><th>Status</th><th class="n">Data</th></tr></thead><tbody>${[["Entregue", a.entregues, "entregue_em"], ["Em andamento", a.em_andamento, "prazo"], ["Próxima semana", a.proximos, "prazo"], ["Com você", a.aguardando_cliente, "prazo"]].flatMap(([s, its, k]) => its.map((i) => `<tr><td>${s}</td><td>${esc(i.area)}</td><td><a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.titulo)}</a></td><td>${esc(i.status)}</td><td class="n">${dd(i[k])}</td></tr>`)).join("")}</tbody></table></div></div>`);
+    return `<div class="full">${partes.join("")}</div>`;
+  }
+
+  function render(d) {
+    const t = d.textos || {};
+    const nome = d.cliente.nome.split(" ")[0];
+    const marcos = (t.marcos || []).length ? `<section class="sec"><div class="sec-h"><h2>Marcos da semana</h2><small>entregas que não viram número</small></div><div class="marcos">${t.marcos.map((m) => `<div class="marco"><span class="tag">${esc(m.area || "Marco")}</span><h3>${esc(m.titulo)}</h3>${m.texto ? `<p>${esc(m.texto)}</p>` : ""}</div>`).join("")}</div></section>` : "";
+    const proximos = (t.proximos_passos || []).length ? `<section class="sec"><div class="sec-h"><h2>Próximos passos</h2></div><ol class="next">${t.proximos_passos.map((p) => `<li>${esc(p)}</li>`).join("")}</ol></section>` : "";
+    const resumo = [
+      t.destaques ? `<p class="lead">${esc(t.destaques)}</p>` : "",
+      kpis(d),
+      d.modulos.includes("atividades") && d.atividades ? blocoAtividades(d.atividades) : "",
+      marcos,
+      d.modulos.includes("instagram") && d.meta?.instagram ? blocoInstagram(d) : "",
+      d.modulos.includes("anuncios") && d.meta?.anuncios ? blocoAnuncios(d) : "",
+      proximos,
+    ].join("");
+
+    $("#app").innerHTML = `
+      <div class="head"><div><h1>Sua semana, ${esc(nome)}</h1><p>${esc(d.periodo.rotulo)}</p></div>
+        <div class="layer" role="group" aria-label="Nível de detalhe"><button id="l-res" aria-pressed="true">Resumo</button><button id="l-all" aria-pressed="false">Todos os dados</button></div></div>
+      <div id="v-res">${resumo}</div>
+      <div id="v-all" hidden>${todosDados(d)}</div>`;
+    const lr = $("#l-res"), la = $("#l-all");
+    const set = (all) => { $("#v-res").hidden = all; $("#v-all").hidden = !all; lr.setAttribute("aria-pressed", !all); la.setAttribute("aria-pressed", all); };
+    lr.onclick = () => set(false); la.onclick = () => set(true);
+    $("#estado").innerHTML = t.revisado ? `<span class="src">Atualizado em ${new Date(d.fonte.montado_em).toLocaleDateString("pt-BR")}</span>` : `<span class="draft">Rascunho · revisar antes de enviar</span>`;
+  }
+
+  if (window.__DADOS) return render(window.__DADOS);
+  const slug = new URLSearchParams(location.search).get("cliente") || "sabrina";
+  fetch(`data/${encodeURIComponent(slug)}-relatorio.json`, { cache: "no-store" })
+    .then((r) => { if (!r.ok) throw new Error(`data/${slug}-relatorio.json não encontrado (rode npm run relatorio)`); return r.json(); })
+    .then(render)
+    .catch((e) => { $("#app").innerHTML = `<p class="err">${esc(e.message)}</p>`; });
+})();
+</script>
+</body>
+</html>

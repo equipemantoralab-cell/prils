@@ -1,0 +1,25 @@
+{
+  "$comentario": "Textos do relatório por semana (chave = segunda-feira da semana). Rascunho escrito a partir dos dados da Meta e do ClickUp; o time revisa e marca revisado: true antes de enviar. Regra: só números que estão nos dados.",
+  "semanas": {
+    "2026-10-12": {
+      "revisado": false,
+      "destaques": "Seu conteúdo alcançou 2.835 contas nesta semana, quase 10 vezes mais que na semana anterior e 40% acima da sua média recente. A imagem publicada em 16/10 foi o grande destaque, com 335 contas alcançadas, e a nova campanha de conversas no direct já trouxe 7 conversas iniciadas.",
+      "aprendizados": [
+        { "tipo": "funcionou", "titulo": "Imagens de frase alcançam mais", "texto": "Os posts de feed alcançaram em média 131 contas, quase 3 vezes a média dos Reels (45)." },
+        { "tipo": "funcionou", "titulo": "Campanha de conversas no ar", "texto": "Com R$ 69,93 investidos, 7 pessoas iniciaram conversa no direct, a R$ 9,99 cada." },
+        { "tipo": "atencao", "titulo": "Reels com pouca retenção", "texto": "Os 11 Reels tiveram alcance médio de 45 contas e tempo médio assistido entre 5 e 18 segundos." },
+        { "tipo": "atencao", "titulo": "Menos interações que em setembro", "texto": "Foram 178 interações na semana. Nas semanas de setembro, com 40 a 50 publicações por semana, passavam de 500." }
+      ],
+      "marcos": [
+        { "area": "Tráfego", "titulo": "Campanha de conversas no direct", "texto": "Nova campanha LEADS | DIRECT no ar desde 12/10, levando quem vê o anúncio direto para uma conversa com você." },
+        { "area": "Conteúdo", "titulo": "Série de Black Friday em produção", "texto": "Reels sobre preparação e reativação de base para a Black Friday previstos entre 20 e 24/10." }
+      ],
+      "proximos_passos": [
+        "Publicar mais imagens de frase no feed, o formato com maior alcance da semana.",
+        "Nos Reels, trazer o gancho para os primeiros 3 segundos para aumentar o tempo assistido.",
+        "Manter a campanha de conversas e acompanhar o custo por conversa (hoje R$ 9,99).",
+        "Publicar a série de Black Friday entre 20 e 24/10."
+      ]
+    }
+  }
+}

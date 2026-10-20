@@ -1,0 +1,990 @@
+{
+  "schema_version": 1,
+  "cliente": {
+    "nome": "Sabrina Nascimento",
+    "slug": "sabrina"
+  },
+  "periodo": {
+    "inicio": "2026-09-14",
+    "fim": "2026-09-20"
+  },
+  "instagram": {
+    "usuario": "eusousabrinanascimento",
+    "seguidores": 762,
+    "conta": {
+      "reach": 4859,
+      "views": 11442,
+      "accounts_engaged": 151,
+      "total_interactions": 532,
+      "likes": 434,
+      "comments": 24,
+      "saves": 22,
+      "shares": 19,
+      "profile_links_taps": 0,
+      "novos_seguidores": 11,
+      "deixaram_de_seguir": 5
+    },
+    "publico": {
+      "age": [
+        {
+          "rotulo": "35-44",
+          "valor": 307
+        },
+        {
+          "rotulo": "25-34",
+          "valor": 217
+        },
+        {
+          "rotulo": "45-54",
+          "valor": 116
+        },
+        {
+          "rotulo": "55-64",
+          "valor": 34
+        },
+        {
+          "rotulo": "18-24",
+          "valor": 30
+        },
+        {
+          "rotulo": "65+",
+          "valor": 26
+        }
+      ],
+      "gender": [
+        {
+          "rotulo": "F",
+          "valor": 336
+        },
+        {
+          "rotulo": "M",
+          "valor": 317
+        },
+        {
+          "rotulo": "U",
+          "valor": 77
+        }
+      ],
+      "city": [
+        {
+          "rotulo": "São Paulo, São Paulo (state)",
+          "valor": 84
+        },
+        {
+          "rotulo": "São Vicente, São Paulo (state)",
+          "valor": 60
+        },
+        {
+          "rotulo": "Santos, São Paulo (state)",
+          "valor": 55
+        },
+        {
+          "rotulo": "Rio de Janeiro, Rio de Janeiro (state)",
+          "valor": 24
+        },
+        {
+          "rotulo": "Curitiba, Paraná",
+          "valor": 13
+        },
+        {
+          "rotulo": "Fortaleza, Ceará",
+          "valor": 12
+        },
+        {
+          "rotulo": "Belo Horizonte, Minas Gerais",
+          "valor": 12
+        },
+        {
+          "rotulo": "Recife, Pernambuco",
+          "valor": 10
+        },
+        {
+          "rotulo": "Porto Alegre, Rio Grande do Sul",
+          "valor": 8
+        },
+        {
+          "rotulo": "Salvador, Bahia",
+          "valor": 8
+        },
+        {
+          "rotulo": "São Caetano do Sul, São Paulo (state)",
+          "valor": 7
+        },
+        {
+          "rotulo": "Praia Grande, São Paulo (state)",
+          "valor": 7
+        },
+        {
+          "rotulo": "Guarujá, São Paulo (state)",
+          "valor": 7
+        },
+        {
+          "rotulo": "Florianópolis, Santa Catarina",
+          "valor": 7
+        },
+        {
+          "rotulo": "Santo André, São Paulo (state)",
+          "valor": 7
+        },
+        {
+          "rotulo": "Aracaju, Sergipe",
+          "valor": 5
+        },
+        {
+          "rotulo": "Maringá, Paraná",
+          "valor": 5
+        },
+        {
+          "rotulo": "São José dos Campos, São Paulo (state)",
+          "valor": 4
+        },
+        {
+          "rotulo": "Palhoça, Santa Catarina",
+          "valor": 4
+        },
+        {
+          "rotulo": "Uberlândia, Minas Gerais",
+          "valor": 4
+        },
+        {
+          "rotulo": "Vila Velha, Espírito Santo",
+          "valor": 4
+        },
+        {
+          "rotulo": "Duque de Caxias, Rio de Janeiro (state)",
+          "valor": 4
+        },
+        {
+          "rotulo": "Nova Iguaçu, Rio de Janeiro (state)",
+          "valor": 4
+        },
+        {
+          "rotulo": "Balneário Camboriú, Santa Catarina",
+          "valor": 4
+        },
+        {
+          "rotulo": "Campinas, São Paulo (state)",
+          "valor": 4
+        },
+        {
+          "rotulo": "Ribeirão Prêto, São Paulo (state)",
+          "valor": 3
+        },
+        {
+          "rotulo": "São Luís, Maranhão",
+          "valor": 3
+        },
+        {
+          "rotulo": "Contagem, Minas Gerais",
+          "valor": 3
+        },
+        {
+          "rotulo": "Taubaté, São Paulo (state)",
+          "valor": 3
+        },
+        {
+          "rotulo": "Campo Grande, Mato Grosso do Sul",
+          "valor": 3
+        },
+        {
+          "rotulo": "João Pessoa, Paraíba",
+          "valor": 3
+        },
+        {
+          "rotulo": "Montadas, Paraíba",
+          "valor": 3
+        },
+        {
+          "rotulo": "Rio das Ostras, Rio de Janeiro (state)",
+          "valor": 3
+        },
+        {
+          "rotulo": "Guará, Federal District",
+          "valor": 3
+        },
+        {
+          "rotulo": "Guarulhos, São Paulo (state)",
+          "valor": 3
+        },
+        {
+          "rotulo": "Piracicaba, São Paulo (state)",
+          "valor": 3
+        },
+        {
+          "rotulo": "São Bernardo do Campo, São Paulo (state)",
+          "valor": 3
+        },
+        {
+          "rotulo": "Betim, Minas Gerais",
+          "valor": 3
+        },
+        {
+          "rotulo": "Cotia, São Paulo (state)",
+          "valor": 3
+        },
+        {
+          "rotulo": "Criciúma, Santa Catarina",
+          "valor": 3
+        },
+        {
+          "rotulo": "Cuiabá, Mato Grosso",
+          "valor": 3
+        },
+        {
+          "rotulo": "Cajuru do Sul, São Paulo (state)",
+          "valor": 3
+        },
+        {
+          "rotulo": "Juiz de Fora, Minas Gerais",
+          "valor": 3
+        },
+        {
+          "rotulo": "Serra, Espírito Santo",
+          "valor": 3
+        },
+        {
+          "rotulo": "Russas, Ceará",
+          "valor": 2
+        }
+      ]
+    },
+    "publicacoes": {
+      "total": 42,
+      "reels": 35,
+      "feed": 7,
+      "stories": 0
+    },
+    "medias": {
+      "alcance_feed": 93,
+      "alcance_reels": 168,
+      "visualizacoes_stories": null
+    },
+    "destaques": {
+      "maior_alcance": "17916123240450821",
+      "mais_salvo": "17916123240450821",
+      "mais_comentado": "18123208285887716"
+    },
+    "posts": [
+      {
+        "id": "18105326783224588",
+        "formato": "Reels",
+        "data": "2026-09-20",
+        "legenda": "Nem tudo é culpa do tráfego",
+        "link": "https://www.instagram.com/reel/DdiImHMtAL4/",
+        "imagem": "https://scontent-ord5-1.cdninstagram.com/v/t51.82787-15/816996398_18101722031366164_2471315567224257545_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=HDHRVEYkYogQ7kNvwHmEgeX&_nc_oc=Adrtoe-oi2bS1WZLEy6QarVhqJg0fQRaTzVybkXJ8c8tSCM4sPaE8I1cKr_x7Sizs7Q&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQJ2TmNHsV5UYf3BoFSyLHJ5attlSakvqHtHiPyQBEpGv2I3Ei1uK2ZJXJ3jrcgrGaTYW3ts2p7H&oh=00_AQMka26EUXW3tGs0i7ExMrao91LeJFVthTkKU56_F6DVOQ&oe=6ADD6771",
+        "reach": 121,
+        "views": 144,
+        "likes": 10,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 10,
+        "tempo_medio_assistido_s": 4.6
+      },
+      {
+        "id": "18114365860799470",
+        "formato": "Reels",
+        "data": "2026-09-20",
+        "legenda": "27/100",
+        "link": "https://www.instagram.com/reel/DdiH61etHqf/",
+        "imagem": "https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/817624897_18101721821366164_4334932037055738874_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=Vo0sYW8e6QkQ7kNvwF-bfS6&_nc_oc=AdriANiU2vypFXWhk-_1DvSz23VYAN1HppXivjqPkxip3Kce2gKfOFoCkqDY5XSAWfQ&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQIQa9cqiB6xpJMFp43Uu6tqU5ElkT_kBwapOr8y_abWeV-5r8mlOqPRxMoEDjI8ezcK7Ypp1bbN&oh=00_AQMg3e0JSS5lrOffmnlFi0AgJDlz9kD6tMRhx5RYYMe0JA&oe=6ADD68CD",
+        "reach": 92,
+        "views": 111,
+        "likes": 6,
+        "comments": 0,
+        "saved": 1,
+        "shares": 0,
+        "total_interactions": 7,
+        "tempo_medio_assistido_s": 3.1
+      },
+      {
+        "id": "18072205070743117",
+        "formato": "Reels",
+        "data": "2026-09-20",
+        "legenda": "26/100 - O alcance é maquina de tração de vendas direta.",
+        "link": "https://www.instagram.com/reel/DdiHlclNLbz/",
+        "imagem": "https://scontent-ord5-2.cdninstagram.com/v/t51.71878-15/797646775_903897355934385_5103447765429777274_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=-_FFkYKFqFoQ7kNvwFkTd5E&_nc_oc=AdorBZfMRfJxgl-DUdR52gwnkxYnxNtLrY2vXhfYdMi2kdl58TOSdeLsy-6JUZIcugI&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQIYeI_WccJBhXARmsOZjLTTkpFAjQqZ48-iMLFDbkXX8zmXxiywwsegL8CVRM0FBUWAaylvCX1h&oh=00_AQPB47D_SCFF5fwCjvb5RxgbDtxmE6tBlHRLMvmZF808QQ&oe=6ADD8470",
+        "reach": 93,
+        "views": 104,
+        "likes": 6,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 6,
+        "tempo_medio_assistido_s": 3.4
+      },
+      {
+        "id": "18132955261639716",
+        "formato": "Reels",
+        "data": "2026-09-20",
+        "legenda": "Posicionamento não é o que você diz sobre si mesmo em uma bio; é a gaveta mental que você ocupa na cabeça de quem te acompanha. E essa gavet",
+        "link": "https://www.instagram.com/reel/DdiG9Dpx8zC/",
+        "imagem": "https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/815973572_18101721584366164_521154978247467435_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=GrkgKweQRRkQ7kNvwFmsg1U&_nc_oc=Adpy_S_js5nrTUX5mBvQf46spFB5eMFZqlz9OhbV5A_Xv5kxWtCayV7mi-JTvJSFhaQ&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQJY0lziMYy1lNOjSV1yom8NOPG_-8DS795tLG0tOkg4EBz6QbFDF337l9qxtrdxTYmRd-koW6cu&oh=00_AQMgUErMRHgK-UzxmIdFKYN8fc2nZYl9I82yTohrYdna5Q&oe=6ADD8103",
+        "reach": 126,
+        "views": 147,
+        "likes": 10,
+        "comments": 0,
+        "saved": 1,
+        "shares": 0,
+        "total_interactions": 11,
+        "tempo_medio_assistido_s": 5.6
+      },
+      {
+        "id": "18407463982090437",
+        "formato": "Reels",
+        "data": "2026-09-20",
+        "legenda": "24/100 ",
+        "link": "https://www.instagram.com/reel/DdiGTFitAAe/",
+        "imagem": "https://scontent-ord5-1.cdninstagram.com/v/t51.71878-15/807084682_1557045272315387_7543527334499329916_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=yLbP_YpWVo4Q7kNvwEVVzSm&_nc_oc=AdpBRZfne6Se2FtLlsWAlciT0qeKDmvNBBpFxjXKOn4sEQ-DXecdOJsvLrAG7rRU9O4&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQKlFXgMNM8m3e_lsnlUDh8irEKcuxe5QXDo9W-xXrzKfE7_oogD139z2FxBL9sAhyhPLK2u7a-i&oh=00_AQPMXosr0LupSXmLDI5G3AQBoCGbe61NZ6e3i2gs6mbSgw&oe=6ADD6EF4",
+        "reach": 145,
+        "views": 167,
+        "likes": 8,
+        "comments": 0,
+        "saved": 1,
+        "shares": 1,
+        "total_interactions": 10,
+        "tempo_medio_assistido_s": 7.8
+      },
+      {
+        "id": "17909617581537133",
+        "formato": "Reels",
+        "data": "2026-09-20",
+        "legenda": "23/100 todo mundo entrou com a promessa de faturar muito em poucos dias (essa é a realidade da maior parte das pessoas que estão no mercado)",
+        "link": "https://www.instagram.com/reel/DdiFYlkxiuG/",
+        "imagem": "https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/808192546_18101719982366164_8632523823350172307_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=pPHsS3WWfMIQ7kNvwHxapsA&_nc_oc=AdpoAMxkVgi5cfz1eugE_44IEMd2w1Djp07F6mK39vwAjg3G7iK744XnoCCak0IFJ0c&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQLF23qUYShOy686p-9dfQmdbHeTuIJKJ1Ne_8G1pd02ZRb0ntj6W7s6ITacjvnCIjZil6UZZqc6&oh=00_AQOFDxvhff5gb4PqrulUfFtuu2wEJY01OlKq1M-RUUHRng&oe=6ADD6EFB",
+        "reach": 138,
+        "views": 168,
+        "likes": 7,
+        "comments": 0,
+        "saved": 1,
+        "shares": 0,
+        "total_interactions": 8,
+        "tempo_medio_assistido_s": 3.8
+      },
+      {
+        "id": "18153340117472365",
+        "formato": "Reels",
+        "data": "2026-09-20",
+        "legenda": "21/100",
+        "link": "https://www.instagram.com/reel/DdiFDJjRLiD/",
+        "imagem": "https://scontent-ord5-1.cdninstagram.com/v/t51.71878-15/817341813_1563709905452346_5109016654025019678_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=9IuFIMmrapQQ7kNvwFZrozY&_nc_oc=Adqg7NU4PNJQDU1M-r2sdBoHr5GIFA5pq9qkhgfzsdjaL54R6fZTIzS4nBPogEtf3BI&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQIQcktLtj54Bd4BAEZEekfwp4Ch8vh1nmx46fiv2JB9trJHajamTvSNAfkRLgd4KN0OEmcvCJcJ&oh=00_AQNvJEfCexHLYw5znTlng0j_CypqZxW4RNxmj5X5bx_9Vg&oe=6ADD6180",
+        "reach": 126,
+        "views": 149,
+        "likes": 6,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 6,
+        "tempo_medio_assistido_s": 3.8
+      },
+      {
+        "id": "18125773978826285",
+        "formato": "Reels",
+        "data": "2026-09-20",
+        "legenda": "22/100",
+        "link": "https://www.instagram.com/reel/DdiFJgCtwIR/",
+        "imagem": "https://scontent-ord5-2.cdninstagram.com/v/t51.71878-15/792849009_28321313790828793_9187939576252682437_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=10UjXjqbI3QQ7kNvwGMdsPr&_nc_oc=Adot_qF7DDa6TrJtoiA1JoILwO0ndRbiyJE_dXVRX8h2gV_a-utuVLvjsHzZLA8AbZo&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQIMLPcG7ZZjODKaP_wibPAJHJ8AgGqTsRMMzo-QfadWI7XrTph26DBP_Ag4fDAeJXoOfM62PSFo&oh=00_AQPH-GxYDpVPFEPR9WhkwA8rVL8JyTnIHtTgKelgCOc6aQ&oe=6ADD8429",
+        "reach": 136,
+        "views": 160,
+        "likes": 8,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 8,
+        "tempo_medio_assistido_s": 9.9
+      },
+      {
+        "id": "18146508274486171",
+        "formato": "Reels",
+        "data": "2026-09-20",
+        "legenda": "70 vídeos gravados",
+        "link": "https://www.instagram.com/reel/Ddhwr43P2wC/",
+        "imagem": "https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/819097491_18101709524366164_2836296560166041397_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=yuvLENRuS6QQ7kNvwEfKHNq&_nc_oc=Adp5g79FD7sJs9H-MsiPgtoZHpyJOupw3DsFwyT5eEtpUKIOG8LeYVOy3QBdmSiRekw&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQLKJsT6AHqD5B7_Qi1LfiVlaxsN7UkUPr43S_Vf96-KdZOEXd6s9lNoU-rKviIFJRKPHSH7pKmT&oh=00_AQNOjXI6KQbulmXXrY6CJ5scFP9KAuJ4rMscnIxxRxS7yg&oe=6ADD60E9",
+        "reach": 219,
+        "views": 329,
+        "likes": 16,
+        "comments": 1,
+        "saved": 0,
+        "shares": 2,
+        "total_interactions": 19,
+        "tempo_medio_assistido_s": 9.9
+      },
+      {
+        "id": "18128673331753253",
+        "formato": "Reels",
+        "data": "2026-09-20",
+        "legenda": "20/100",
+        "link": "https://www.instagram.com/reel/Ddhk9DBRkvi/",
+        "imagem": "https://scontent-ord5-1.cdninstagram.com/v/t51.82787-15/810556823_18101702888366164_6312434399795211599_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=zMDl73gU9wAQ7kNvwHh1BYe&_nc_oc=AdpBVi1PzKrGbZrDyG32aI_6Ljlo1vBST6XF-cmVxK9O6mDxwyLKDI1s4wfSR0l0GbQ&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQIXuqh4TL2ABob6kfEZbGRkNQN7iBeoVhHja4qFCD4scwMgewFmg4ZQgCKJ6lejlDS6zPuHXQjM&oh=00_AQPh_jOy_VAePwfH-_2QZqtA20-VlcAOxmA4vZlP1HmvyA&oe=6ADD77A1",
+        "reach": 99,
+        "views": 140,
+        "likes": 9,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 9,
+        "tempo_medio_assistido_s": 4.9
+      },
+      {
+        "id": "18109703873175734",
+        "formato": "Reels",
+        "data": "2026-09-20",
+        "legenda": "19/100",
+        "link": "https://www.instagram.com/reel/Ddhj5i6s3vE/",
+        "imagem": "https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/808109671_18101702150366164_8697883798882193981_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=gsQEZUdddwMQ7kNvwFt4FXU&_nc_oc=AdohDAl3QmkWZMVJRRQY9ofSLeufcnpIXXJfSSWQ1wbl8t-3kNnRp9ZM_tAtB7rz8Ag&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQLMBquJXIkwbkPdQEsdJkTLY930xKkHcSoH5T8GXR26D0CFSkwwK-m5sDjWAITwTNK1GR6Essnu&oh=00_AQOHDlC_t2BczJRLEbS3vUcO4AkIL9bQ65-JWOiVSufaYA&oe=6ADD6D18",
+        "reach": 82,
+        "views": 117,
+        "likes": 9,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 9,
+        "tempo_medio_assistido_s": 4.2
+      },
+      {
+        "id": "17902934853591015",
+        "formato": "Reels",
+        "data": "2026-09-20",
+        "legenda": "18/100",
+        "link": "https://www.instagram.com/reel/Ddhi5BbhC8i/",
+        "imagem": "https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/789347694_18101701520366164_2556810553414016333_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=iNNHvpC3RNEQ7kNvwFGCe1W&_nc_oc=Adr_3K5GZmW9f1gMGvOG3y_82HsNRZdLErrSkW2f9Dh8UgNAEVX1ccfe0vMUp0fsu34&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQKEKF5vfMwpkp9fwiPQcTBaAlwZeRujaRCn8yZ4ZYNPdkRbbURi5XpSJCCfdX8-XAMDlAf5_enr&oh=00_AQMryqXnj4T-QgCQLGrvLa9YDwDNNTXZoXbj61SJG-1Lpg&oe=6ADD5F45",
+        "reach": 82,
+        "views": 110,
+        "likes": 7,
+        "comments": 1,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 8,
+        "tempo_medio_assistido_s": 4.9
+      },
+      {
+        "id": "17885158704485613",
+        "formato": "Reels",
+        "data": "2026-09-20",
+        "legenda": "17/100",
+        "link": "https://www.instagram.com/reel/Ddhi9nWhwyD/",
+        "imagem": "https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/797683844_18101701550366164_9101062260333720770_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=A-5oJuu5q38Q7kNvwFOlP10&_nc_oc=AdqfdjA2gN1xXBs1USxAdKpLsacMokW6dlnYz3eus-q7A30dLHlwPhzp9RtwRdGgdnc&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQLHFyb1WG7WXTAsoXeucrftjupTydUiHYIEWbYQO1dKwKMPXKIZ96k3fQkGplfFF1cvxBJdfe1T&oh=00_AQOzdaTkIwbxUmqAC8Kt3Q2idqyMUE3IIy3qSEDcrdijdw&oe=6ADD58EF",
+        "reach": 74,
+        "views": 90,
+        "likes": 10,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 10,
+        "tempo_medio_assistido_s": 3.8
+      },
+      {
+        "id": "18104751104076321",
+        "formato": "Reels",
+        "data": "2026-09-20",
+        "legenda": "16/100",
+        "link": "https://www.instagram.com/reel/Ddhg-L5hDEn/",
+        "imagem": "https://scontent-ord5-2.cdninstagram.com/v/t51.71878-15/800482962_2045031969472165_5261891181129405478_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=R3lvZ4xqauwQ7kNvwH6soUo&_nc_oc=AdpMGUIRne1SfrXjKZgeQhyK20b4K1JQmQovDamAw862S84Scy1ons0rAB7qAnfDctk&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQIsMV1uhGmvThDnxjFP987A0BeI_yuye0CU0UkWiKjFVu4a360RL7r88X1BaJbnGmdcJr-RSrf1&oh=00_AQMU5rXf7vu81USFjnGsNqLvl7lUzlknQAgirmE-ejwNKg&oe=6ADD838F",
+        "reach": 35,
+        "views": 52,
+        "likes": 6,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 6,
+        "tempo_medio_assistido_s": 5.4
+      },
+      {
+        "id": "18095298473644611",
+        "formato": "Reels",
+        "data": "2026-09-20",
+        "legenda": "15/100",
+        "link": "https://www.instagram.com/reel/DdhgUwcNO7N/",
+        "imagem": "https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/791110397_18101700167366164_8036766091927756504_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=1N2m00fEju8Q7kNvwHp0KDy&_nc_oc=Adr0Oqv4A_O0VgAByr9eIhRjkbD9SD-3EmsMp3snl4XScc2YSs-dP9uCgG0aUqFKimE&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQIdzmPAteUJVM6VZpDfGgbvuXOMayHEvfuPMo9x-cBjbHc_tVN6TrerODCHUU8EXBCfpx2usMVr&oh=00_AQP4iFToUeIHkYF4gNoOkF3gS6YGDlg43fheCNTiA0qnnQ&oe=6ADD6DCD",
+        "reach": 121,
+        "views": 149,
+        "likes": 13,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 13,
+        "tempo_medio_assistido_s": 4.7
+      },
+      {
+        "id": "18010348169993168",
+        "formato": "Reels",
+        "data": "2026-09-20",
+        "legenda": "14/100",
+        "link": "https://www.instagram.com/reel/DdhgEVivQG9/",
+        "imagem": "https://scontent-ord5-2.cdninstagram.com/v/t51.71878-15/809235664_28871858889073425_1738560693893758531_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=2XvnrgPlZ4AQ7kNvwG4njzY&_nc_oc=AdoBjHrH_vHqTJA-dPbHNZAbSRUJQmHAThtQ7VJ7bUIymAPktcgiN_SBLSiB5B4R4UE&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQJWhAeIUeEINGCpPHbe_1rftFj451ihu-TQidnINqEE2qmeZpusdcZbSqVayMNhHjkl27Oc32HS&oh=00_AQOLjRhxO4U1iVxkM3PjHkqWvnJ8hm9jZA6_MDfekxHCHQ&oe=6ADD7BC1",
+        "reach": 38,
+        "views": 54,
+        "likes": 6,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 6,
+        "tempo_medio_assistido_s": 4.3
+      },
+      {
+        "id": "18621274366023178",
+        "formato": "Reels",
+        "data": "2026-09-20",
+        "legenda": "13/100",
+        "link": "https://www.instagram.com/reel/DdhfRclJkuw/",
+        "imagem": "https://scontent-ord5-2.cdninstagram.com/v/t51.71878-15/818563406_1792014235266920_2853987931915964814_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=MCLYDtZ6LS0Q7kNvwE_Se4J&_nc_oc=Adphv_NQTqyZuH2oXH-vIiyIX7RlamIztPag1ItBWqugZWvIxUCpYIoWwRcvjODLIzQ&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQLx5phCIAGVFoKhw2ADEhZ9XEp2FaecLsCA0-dneYpspG_c4YufnExKuwD64JZOVxfmPVtHCOIU&oh=00_AQN3RFRWcuSDVUF0ywOsQJ37_vb7S2vX-32qN4Z1hax8lA&oe=6ADD74E9",
+        "reach": 53,
+        "views": 77,
+        "likes": 9,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 9,
+        "tempo_medio_assistido_s": 2.8
+      },
+      {
+        "id": "18116680726758031",
+        "formato": "Reels",
+        "data": "2026-09-20",
+        "legenda": "12/100",
+        "link": "https://www.instagram.com/reel/DdhfH38PN0d/",
+        "imagem": "https://scontent-ord5-1.cdninstagram.com/v/t51.82787-15/819062275_18101699237366164_3782834824480864697_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=7V5qzh-uDD4Q7kNvwGdoax7&_nc_oc=AdoYsYQ6g0UAah6MXfVsYcnqes1F7bOhWyE0uvihKIKIn4X1jkzmAFMHSnD8zkjon8M&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQKOINGQ69W1Riq0-PwqdkE7GXeYDqjChvIVyeOE639wVpQj_x6jyxokiex2x0yRBIJgSod_GzIc&oh=00_AQP5HcHWjDUyxzcUu6HO5GQNlIrCtcqTeQuzjONkOufMoA&oe=6ADD783F",
+        "reach": 126,
+        "views": 159,
+        "likes": 9,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 9,
+        "tempo_medio_assistido_s": 4.7
+      },
+      {
+        "id": "17963458175983680",
+        "formato": "Reels",
+        "data": "2026-09-20",
+        "legenda": "Ser percebido como um líder que enfrenta desafios reais gera um senso de propósito e faz o público querer acompanhar.",
+        "link": "https://www.instagram.com/reel/DdhaQzus-eY/",
+        "imagem": "https://scontent-ord5-1.cdninstagram.com/v/t51.82787-15/795946632_18101696804366164_4383609701186670806_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=o0emgYgLBJsQ7kNvwFbwved&_nc_oc=AdpCcmzE0HY8_ifGozqbKQ20Ua1BAxHdaPqibdBQHgC0m7cO3V-Mk4zvq6iiOWHh8f0&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQLrtl66jiXOTR_DNAipRAp877wUIdnTa58DXE-u9yJWTBGnyeL79_Rr5FG-YbB5H2XAfsPkG3tS&oh=00_AQPQ2mu11w5ar2zTtozKUP1uYRvE1JNK2lAj-2BnIiNOKg&oe=6ADD6F76",
+        "reach": 69,
+        "views": 114,
+        "likes": 15,
+        "comments": 1,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 16,
+        "tempo_medio_assistido_s": 9.1
+      },
+      {
+        "id": "18071021171746651",
+        "formato": "Reels",
+        "data": "2026-09-20",
+        "legenda": "10/100",
+        "link": "https://www.instagram.com/reel/DdhZQVlgUJ9/",
+        "imagem": "https://scontent-ord5-1.cdninstagram.com/v/t51.82787-15/799829893_18101695709366164_5707147281078386056_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=qxoJ4CfBOIQQ7kNvwH4FMVQ&_nc_oc=AdqJ-RRMlHDrvSZqGuTCJ2RVtoVZvFnLuunDA3BDeKGX4m0tfmxdqpUuQKbCwqPvOvM&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQJtlXijP7PuZsV22lts2UaHu6Xki5dccpnDzdJBMcS4iHkgZqhtXarO7sJqaK_Cb4XZwF4w2uKs&oh=00_AQMSEDlAR-HlfZhum03jdFlSR3tZogTS7xRv7LaHyrY8ng&oe=6ADD74B4",
+        "reach": 198,
+        "views": 231,
+        "likes": 10,
+        "comments": 0,
+        "saved": 3,
+        "shares": 0,
+        "total_interactions": 13,
+        "tempo_medio_assistido_s": 5.6
+      },
+      {
+        "id": "18065626952768241",
+        "formato": "Reels",
+        "data": "2026-09-20",
+        "legenda": "Utilize o PPMC para criar uma oferta irresistível.",
+        "link": "https://www.instagram.com/reel/DdhXZWIsSzu/",
+        "imagem": "https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/790307868_18101693408366164_2186195669721827647_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=-gNuPKjcF5EQ7kNvwG-FbRa&_nc_oc=Adr3t0bcEOMC0Y-Odae3H6MSQzzrb5e-bfWcBBYJTWa8i3VXQg7YqM6CNx9g6t6Tmn8&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQL2wpmRVi1ngLSAm6h6KWt-GH7k8At55DMIK1Oouhp_pUhWudr09TIex3Nb-2KIGuDPneCwAwiU&oh=00_AQMgh9gHVsHpuf0izq-XWEUxfmc4E2pFzirKD8q7vowyFQ&oe=6ADD6800",
+        "reach": 76,
+        "views": 105,
+        "likes": 8,
+        "comments": 0,
+        "saved": 0,
+        "shares": 1,
+        "total_interactions": 9,
+        "tempo_medio_assistido_s": 6.8
+      },
+      {
+        "id": "18131905642580602",
+        "formato": "Reels",
+        "data": "2026-09-20",
+        "legenda": "8/100",
+        "link": "https://www.instagram.com/reel/DdhU6Rrhx2s/",
+        "imagem": "https://scontent-ord5-1.cdninstagram.com/v/t51.71878-15/794946812_2281384076044090_2237529370124515710_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=5m8xv8pFir8Q7kNvwHooLGU&_nc_oc=Adpn4iWXn40bZk8bvH6ehvnILU89-axAPlSlfvJX2FXyGQA-dfFdxwvFAjiQWhTWGGI&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQJzf49NfCsUvyoJE-fR0z88NDNumSMaH0QStxhLHIzuU-o_v1hlktwOaNFgdTbf1ZubGSK0pxv4&oh=00_AQNeuPIAor5NfQ8Yv0VzchiWQJMpFEw2eYHqLDBC7WC0TQ&oe=6ADD733B",
+        "reach": 123,
+        "views": 152,
+        "likes": 13,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 13,
+        "tempo_medio_assistido_s": 6.8
+      },
+      {
+        "id": "18388354150202487",
+        "formato": "Reels",
+        "data": "2026-09-20",
+        "legenda": "7/100",
+        "link": "https://www.instagram.com/reel/DdhSZHKhw2x/",
+        "imagem": "https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/789563200_18101689598366164_2649980460787620152_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=TZG9YSp0icsQ7kNvwHyAn-G&_nc_oc=Adr1XTOpJNehJR272JHEbFuwAbwKFdooa2Ulp3qxAaZZLoiUATP5U7epxSrRgwgM_OU&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQLy2FDvT6YvH9tsf87vkIwr2xdWrnJsWHmQFlPsYECEVzxdfeBzcWNBvtHeliYo-9SQu5TLnuL2&oh=00_AQMK9HTp99SaKxhX7nvZVl-pP6X7QnrSTLNi-WGVmIkj3w&oe=6ADD743E",
+        "reach": 273,
+        "views": 345,
+        "likes": 20,
+        "comments": 0,
+        "saved": 4,
+        "shares": 1,
+        "total_interactions": 25,
+        "tempo_medio_assistido_s": 15
+      },
+      {
+        "id": "18073186601479915",
+        "formato": "Imagem",
+        "data": "2026-09-20",
+        "legenda": "Muito se fala de low ticket como a solução mágica para vender no automático, mas quase ninguém mostra os bastidores da matemática quando voc",
+        "link": "https://www.instagram.com/p/DdhP2Eghj-8/",
+        "imagem": "https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/795430672_18101687378366164_4750765810863513880_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=u-ekZMb-JIIQ7kNvwHvj46J&_nc_oc=AdrP-EIUcAgziCCzbbEt180wjsKOhsWei3odWgCFHYsuu4UhlNsiA2I7iMKjbdA_jJM&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&oh=00_AQNKvyPytR4Fq7ope6PmrJQIaLIs36EJyy0lwLFim-tg2Q&oe=6ADD749A",
+        "reach": 187,
+        "views": 449,
+        "likes": 21,
+        "comments": 3,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 24
+      },
+      {
+        "id": "18072039476757077",
+        "formato": "Reels",
+        "data": "2026-09-20",
+        "legenda": "Quer ter acesso a um banco de 120 ganchos? Comenta GANCHO",
+        "link": "https://www.instagram.com/reel/DdhNwWbBOUo/",
+        "imagem": "https://scontent-ord5-1.cdninstagram.com/v/t15.5256-10/819097384_1137901102085362_81790809432809535_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=z0vJI6Id79MQ7kNvwGeM5xK&_nc_oc=Adr3RuIRQo-Uz7sQu7FnJc92ist5tkThEC7UugCaytVdVI62qaTgyvlwMBPVSFxzCM8&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQKDcvCrndh0TTJjKbFvVX8xvMw3biyTClilnPh7RRjvJdr0bzC8vM2dUX31qXXLiFHAHbiQawvg&oh=00_AQOiN5E14YOl_12vQoDMvFxYre6NJqLe6TJEcye4O225uQ&oe=6ADD8195",
+        "reach": 93,
+        "views": 124,
+        "likes": 12,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 12,
+        "tempo_medio_assistido_s": 4.4
+      },
+      {
+        "id": "18047764484809900",
+        "formato": "Reels",
+        "data": "2026-09-20",
+        "legenda": "Na produção de conteúdo busque referências e busque a melhoria diária. Se compare com seu vídeo anterior e não por métricas de outros player",
+        "link": "https://www.instagram.com/reel/DdhK6WOOx7k/",
+        "imagem": "https://scontent-ord5-1.cdninstagram.com/v/t51.71878-15/815061376_1432580988778116_2658824441256480398_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=R31g5QnS-8QQ7kNvwH6k0nm&_nc_oc=Adr-bj3S06Dj6JIws022gZwugquC3DWEh4x49nA3UA4LZWVidZhSZVEn_Ub5xNSsslM&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQKQunFDycQw0WVfW-SXVvJxdf4KeCsfUijEEHVYuIfK76qh2J1yaxBb5bOQjXI7kuNXk8Jo-qcT&oh=00_AQNjFMMtaJeZcN_aTNmFJK75_bFX5gUWBLWTrAyUA6xyIQ&oe=6ADD5B05",
+        "reach": 128,
+        "views": 194,
+        "likes": 9,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 9,
+        "tempo_medio_assistido_s": 10.3
+      },
+      {
+        "id": "17895702012405131",
+        "formato": "Reels",
+        "data": "2026-09-20",
+        "legenda": "Antes de abrir tarefas e cobrar prazo, a gente precisa lembrar quem está do outro lado.  Adicionar essa pergunta nos primeiros minutos da no",
+        "link": "https://www.instagram.com/reel/DdhHoQJxFtf/",
+        "imagem": "https://scontent-ord5-1.cdninstagram.com/v/t51.82787-15/797646234_18101680985366164_4616873071172960737_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=ixck0FtBP44Q7kNvwGlzhxC&_nc_oc=AdpBeqAdC4XQfEVrYnVUu_3LsPh6yU3_DrGQHmk7Xvj2hAeOaXIMEi2cC12_T4jN6k0&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQJM2tQVIIGEAjJeoPkH1Tc9wvq4SJ8JFOlLMD6yavz7EG6ZI9ibDYb5Kf4-j7KCB4rUgtP3lfuD&oh=00_AQNJk3RYp-m90jKfz2VRNm5TIAMjhFy_W5jcVQiyhMfsQg&oe=6ADD68FB",
+        "reach": 156,
+        "views": 199,
+        "likes": 9,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 9,
+        "tempo_medio_assistido_s": 12
+      },
+      {
+        "id": "17904862176589109",
+        "formato": "Reels",
+        "data": "2026-09-20",
+        "legenda": "Ser autêntico é seu melhor hack #marketingdigital #posicionamiento",
+        "link": "https://www.instagram.com/reel/DdhEleORVNy/",
+        "imagem": "https://scontent-ord5-1.cdninstagram.com/v/t51.71878-15/817946383_951479651338429_4327789599370025147_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=Tcrdg0HlxG0Q7kNvwF7qC-v&_nc_oc=AdryxZWRnRyvDdk22xKsfTRnyphb3AFLardg6hr0HP7r-4T6-RPoPThzhfM7XncUr40&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQLOR3mlfGydmDwFY6u7vftcq07CRg7WmPqZATp17yczGvmv6_euTAL1SvIJsetJvm7XMKluNMtT&oh=00_AQOGJi4pUE24CZ7Qhi1GeGyomGI812HV4MGeqxlgHFojEw&oe=6ADD81C6",
+        "reach": 44,
+        "views": 62,
+        "likes": 10,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 10,
+        "tempo_medio_assistido_s": 6
+      },
+      {
+        "id": "18144515455605996",
+        "formato": "Reels",
+        "data": "2026-09-20",
+        "legenda": "Hoje estou testando a estratégia do @caiomktviral ",
+        "link": "https://www.instagram.com/reel/Ddgt1CtRB5T/",
+        "imagem": "https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/818366528_18101655599366164_8214310300184027343_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=2KOxiIWS-ZIQ7kNvwGhzyv8&_nc_oc=AdqNJZTcG9D_7FXHtbs0i4Su1wKWa7CZcVnorU8BF-Exc3EvCS5a_KCUz31ilyHE_6I&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQJ76CFVIoT1-p20TE3NsOChvXUtlV2pO8Kg-01TrjcQOKeY8kZyVa94grM3373ChmHNK2NTAFo9&oh=00_AQPTP67KogAcI-bwBU544YsGDmbM6RBPfFWGIu6MVvZ8vA&oe=6ADD884B",
+        "reach": 153,
+        "views": 200,
+        "likes": 13,
+        "comments": 0,
+        "saved": 0,
+        "shares": 1,
+        "total_interactions": 14,
+        "tempo_medio_assistido_s": 11.8
+      },
+      {
+        "id": "17916123240450821",
+        "formato": "Reels",
+        "data": "2026-09-19",
+        "legenda": "Nos últimos tempos, a estratégia dos 100 Reels por dia gerou opiniões bem divididas no mercado digital.",
+        "link": "https://www.instagram.com/reel/Ddei51OAL7V/",
+        "imagem": "https://scontent-ord5-2.cdninstagram.com/v/t51.71878-15/817946621_978084555304138_4026917424303641302_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=MZ9yisxhlWwQ7kNvwH-8nSM&_nc_oc=AdqTXJzp2WoMfMgvswsV7F5OpZtv4wsAtllxej8GTCX36228mD_rANueCPAXQxGUHeo&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQKe1I3tvYfMJ1f5Igazw1F4ecLkADGW7nrbHlfXUQ6Bg0KfblvqO55Sy_3Y6LqyCKddzqUoUL5U&oh=00_AQODju4D8cTfc1UqTwG4YxgA_RnID1FVS1h4D9kjPzt4xA&oe=6ADD8589",
+        "reach": 1862,
+        "views": 2890,
+        "likes": 31,
+        "comments": 2,
+        "saved": 5,
+        "shares": 3,
+        "total_interactions": 42,
+        "tempo_medio_assistido_s": 13.4
+      },
+      {
+        "id": "18108670406604354",
+        "formato": "Reels",
+        "data": "2026-09-19",
+        "legenda": "Na Black Friday, boa parte do trabalho já foi feito pelo próprio mercado.",
+        "link": "https://www.instagram.com/reel/DdeNbGGmuKH/",
+        "imagem": "https://scontent-ord5-1.cdninstagram.com/v/t51.82787-15/788000608_18101550794366164_5290190600566791862_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=DrT6b4POWmoQ7kNvwHMEWOH&_nc_oc=AdqDIICRXzo0WDKIwVo6Sbc57lLlb9E4msddIwigra_0pkgQf2C6SQ-bw8tKIaEFmzY&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQLOygnzKaizfi9rOAm4DsANeqiYrHJg8m3CfTcQKsWQYNgisYr1F67Rjne7ZhHD8lN20MetWvKg&oh=00_AQNOQBRcEz2fdgkctjTKSFO1JFHt9EWwgHNYC9UVZwbs0g&oe=6ADD58F5",
+        "reach": 46,
+        "views": 73,
+        "likes": 8,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 8,
+        "tempo_medio_assistido_s": 4.6
+      },
+      {
+        "id": "18115684114976592",
+        "formato": "Imagem",
+        "data": "2026-09-18",
+        "legenda": "Existem duas reuniões que você pode ter sobre a sua Black Friday: uma em setembro, para questionar a estratégia e tomar as decisões certas e",
+        "link": "https://www.instagram.com/p/Ddb8utPF1eg/",
+        "imagem": "https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/814926293_18101453087366164_6587878156917489406_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=bvZd6KDhqrwQ7kNvwEt0J9u&_nc_oc=AdqJCAVRWwp-vnDnJlv59tbK4j39oPIuzj5gF2SghuLiVlgUFNdTTzJOcDZv9JrZST8&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&oh=00_AQMaz53DrdKpNRjEdSDHMaeO7-_IYls9vcVmOpeTerjJOA&oe=6ADD7726",
+        "reach": 37,
+        "views": 84,
+        "likes": 3,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 3
+      },
+      {
+        "id": "18110983729930956",
+        "formato": "Imagem",
+        "data": "2026-09-18",
+        "legenda": "A pior hora para descobrir os problemas da sua Black Friday é quando clientes já deveriam estar comprando.",
+        "link": "https://www.instagram.com/p/DdbfSxel7ZJ/",
+        "imagem": "https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/814800494_18101426843366164_5660476508501397070_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=yaFvWh7msf4Q7kNvwE_0tMU&_nc_oc=AdpNvOZKCf3kJuflidQNfgap2UyBO7eiXfe9f5Xa2p4axIOiBc-dUDaMOBeLNjja_X4&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&oh=00_AQOhNQ0oYXx7AJgL1udIsxYFc8tRmGXCgmLhUdzY554NKg&oe=6ADD637F",
+        "reach": 45,
+        "views": 95,
+        "likes": 4,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 4
+      },
+      {
+        "id": "18109385830895044",
+        "formato": "Reels",
+        "data": "2026-09-17",
+        "legenda": "A pior hora para descobrir os problemas da sua Black Friday é quando clientes já deveriam estar comprando.",
+        "link": "https://www.instagram.com/reel/DdaDWeZiY2I/",
+        "imagem": "https://scontent-ord5-2.cdninstagram.com/v/t51.71878-15/814507518_1887497618879616_4789101858876675884_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=824ncWaTC6AQ7kNvwHiQdVg&_nc_oc=AdpAxC6BXeCzDr0waZ3VoEmJHHz6o88pSQsWPgb5i7jMxHLGjrcQpi335r8RvVlCuwI&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQL-vIM_ypwOCV-zAfp4R5nMUcB1Ap9chfKQeRZvWte3Uo-34H1m2O0OFOC2-_Bey5Bkok8fpEQz&oh=00_AQMHcX4R2qrLDX1Pay7CKI-Z0y3etUtO4T7_rlXFRRXMPg&oe=6ADD6CB3",
+        "reach": 103,
+        "views": 135,
+        "likes": 10,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 10,
+        "tempo_medio_assistido_s": 7.1
+      },
+      {
+        "id": "18118046990318727",
+        "formato": "Imagem",
+        "data": "2026-09-17",
+        "legenda": "Às vezes, a ideia chega e nós já começamos a desmontá-la antes mesmo de tentar.",
+        "link": "https://www.instagram.com/p/DdZxTeJDHDJ/",
+        "imagem": "https://scontent-ord5-1.cdninstagram.com/v/t51.82787-15/813923187_18101366732366164_3991177661736483401_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=fMh3ot4qEQwQ7kNvwEMJtTa&_nc_oc=AdqPkYZVcTL8x-6g6Mb7nIdsE9unaBCdX7IgdMne2h6g69eCe9lfIzqWF9YBQw-pz5E&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&oh=00_AQNZM13_2iryU6NINXk-FlR8xsr_6_jiU8Tz-Nfr8GtsoQ&oe=6ADD8175",
+        "reach": 41,
+        "views": 99,
+        "likes": 6,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 6
+      },
+      {
+        "id": "18057264032549985",
+        "formato": "Reels",
+        "data": "2026-09-17",
+        "legenda": "Quando uma empresa aprende a produzir conteúdo de forma estratégica, ela começa a construir um ativo que continua trabalhando mesmo depois d",
+        "link": "https://www.instagram.com/reel/DdZY9BYgn9G/",
+        "imagem": "https://scontent-ord5-1.cdninstagram.com/v/t51.82787-15/839822650_18103507991366164_3668288693369599815_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=yEWuFTsJ_fkQ7kNvwFjE0KJ&_nc_oc=Ado0LXLw-xMnv0-ASrCPZU-w5eL5qN_KTFQmrEBDCR2k-wun8IHW9YY95pG2Iza8IBA&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQJxQcxYnlVcXUUsmuG9S-CHcZMY-_HulgcQuni8Qf7a4UG66iYwMJKMrfrPr-JeMZYGlhB-L3_n&oh=00_AQP_6qljpEKKCM8slAmSuvahz3MhWAbKvPnHzVG3agno-A&oe=6ADD586A",
+        "reach": 152,
+        "views": 207,
+        "likes": 11,
+        "comments": 4,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 15,
+        "tempo_medio_assistido_s": 12
+      },
+      {
+        "id": "17874918945572602",
+        "formato": "Imagem",
+        "data": "2026-09-17",
+        "legenda": "A gente já viu muita Black Friday por dentro. Campanhas que faturaram milhões, estratégias que pareciam excelentes no papel e não funcionara",
+        "link": "https://www.instagram.com/p/DdZHH-Mlx96/",
+        "imagem": "https://scontent-ord5-1.cdninstagram.com/v/t51.82787-15/814575218_18101334110366164_3153875621395061835_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=aIqADCGhJdQQ7kNvwGvKWon&_nc_oc=Ado1LQVU9tZdpZplgen0zWjQC4QcOo5msOYxl_JhMoc8GFvfBNaVC8dQbLhuLbVOQLg&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&oh=00_AQMH-fDB1wE8cCj9pxKPVkyp7e41O2eg8gP8wWGaqWSnwQ&oe=6ADD824E",
+        "reach": 202,
+        "views": 415,
+        "likes": 8,
+        "comments": 1,
+        "saved": 0,
+        "shares": 1,
+        "total_interactions": 10
+      },
+      {
+        "id": "18123208285887716",
+        "formato": "Reels",
+        "data": "2026-09-16",
+        "legenda": "Participar de um evento da Hotmart me fez pensar em como algumas convicções ficam ainda mais fortes quando a gente precisa colocá-las em voz",
+        "link": "https://www.instagram.com/reel/DdXS1CJAIQ4/",
+        "imagem": "https://scontent-ord5-2.cdninstagram.com/v/t51.71878-15/808553870_1380116830440193_3851520521077477879_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=nUB9SASANdgQ7kNvwH5dNXR&_nc_oc=Ado1iZLJpMo7gj3eaTxpP2Z_hDC-xi7hTvsuNIg_4AwM2b3ShLPY4m4xTKMVYE_8lEI&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQKABHhPRfo7mutxsDhZ3xBeNxq3I8RtXT-t3TGu9XZpw26i_XinYFYX_EwIMGmsdgOxu7XraLsr&oh=00_AQOOvZq1NU4L7WkSmuPB2P2eoQBHSb95CTPWIrJesdhj1Q&oe=6ADD7858",
+        "reach": 398,
+        "views": 569,
+        "likes": 47,
+        "comments": 11,
+        "saved": 1,
+        "shares": 1,
+        "total_interactions": 62,
+        "tempo_medio_assistido_s": 10.2
+      },
+      {
+        "id": "18494710468100173",
+        "formato": "Reels",
+        "data": "2026-09-15",
+        "legenda": "Uma base de 10 mil contatos não representa 10 mil pessoas igualmente prontas para comprar.",
+        "link": "https://www.instagram.com/reel/DdU13ebiOSd/",
+        "imagem": "https://scontent-ord5-1.cdninstagram.com/v/t51.82787-15/819957268_18101790497366164_5246641689545478205_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=7Wde_rf12LcQ7kNvwHamhJR&_nc_oc=Adq0u_AwfahDUOtQTt-6BgPI45ggHkPog2FH2nlgRS1rCbX7fcEAG8yBxmLykqV6xvY&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQIjiKBheQhmoe2lcbyVylag28dBhOo8NoAQTWYL9y9sUZLVlmA6K3VxwsO8fZaS3rmZDvX1QUZv&oh=00_AQPJdPvjLsfiKKK8-uD7gqlAGNvoRvUpVnU53jTBQRUETA&oe=6ADD6ACA",
+        "reach": 63,
+        "views": 98,
+        "likes": 4,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 4,
+        "tempo_medio_assistido_s": 5.4
+      },
+      {
+        "id": "18078973400709712",
+        "formato": "Carrossel",
+        "data": "2026-09-14",
+        "legenda": "O maior obstáculo de profissionais tecnicamente brilhantes não é a falta de autoridade. É a régua que usam para medir o próprio valor.",
+        "link": "https://www.instagram.com/p/DdSlRbkjefe/",
+        "imagem": "https://scontent-ord5-1.cdninstagram.com/v/t51.82787-15/811405276_18101068421366164_3409020322593660745_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=00ES_Qi8IWcQ7kNvwGSihjf&_nc_oc=AdqZjt6zs96IWDiLVJWl7Ys7oAaLjtAA6I9AcD3lJBHDEkcQ8E2VlmdGhn0lLliSCWw&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&oh=00_AQNNmvzilinbEr2KtwLHacL-Sdmv4C9sg-vEuCvzk6wnsw&oe=6ADD6242",
+        "reach": 84,
+        "views": 223,
+        "likes": 13,
+        "comments": 1,
+        "saved": 1,
+        "shares": 0,
+        "total_interactions": 15
+      },
+      {
+        "id": "17944819905072121",
+        "formato": "Reels",
+        "data": "2026-09-14",
+        "legenda": "A IA pode acelerar uma pesquisa, mas não substitui o contato com a linguagem real do público.",
+        "link": "https://www.instagram.com/reel/DdSRbXVCv8D/",
+        "imagem": "https://scontent-ord5-1.cdninstagram.com/v/t51.71878-15/810182351_1462491782614939_8497123549525634398_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=0jAFLpvF85wQ7kNvwFeBdnR&_nc_oc=AdoMph26GzqW2olNAqlUzPGi3DV6yCCKAFvI_RgKV7IDw1GUAK6S1EXD-xxYIlWwCwc&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&_nc_tpa=Q5bMBQKhvfmShNqyrQHl2IxMVxd472LokeqNu3ED5JZqDLIK0dInMnE00K8SaDYBV6K4Dv3PIKGyWt5t&oh=00_AQPKeGX1tw0zbElIeAZE53oamMDmPY2srEMPWha64E-8eA&oe=6ADD8339",
+        "reach": 54,
+        "views": 79,
+        "likes": 5,
+        "comments": 0,
+        "saved": 1,
+        "shares": 0,
+        "total_interactions": 6,
+        "tempo_medio_assistido_s": 6.9
+      },
+      {
+        "id": "17915794614446925",
+        "formato": "Carrossel",
+        "data": "2026-09-14",
+        "legenda": "Escolher um posicionamento exige abrir mão da fantasia de ser a opção perfeita para todo mundo.",
+        "link": "https://www.instagram.com/p/DdRyzgLo49A/",
+        "imagem": "https://scontent-ord5-1.cdninstagram.com/v/t51.82787-15/810215375_18101041091366164_6144418386235864429_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=sKAGRVr4fhgQ7kNvwHYJZDM&_nc_oc=Adq30JMz761XNJV9OIk3wZdhWQcHUyCxfv_FPgLbq7TrRmxzJ9_ZfYfvthXHWPyjf3s&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Fnvi2QrzByNO3IZHKBg7VA&oh=00_AQO6oocNq9xTqArKwVyewLk69QdRWiwefLuhmY9JC2H85A&oe=6ADD69A3",
+        "reach": 56,
+        "views": 165,
+        "likes": 5,
+        "comments": 0,
+        "saved": 1,
+        "shares": 0,
+        "total_interactions": 6
+      }
+    ],
+    "stories": []
+  },
+  "anuncios": {
+    "total": {
+      "investimento": 50.12,
+      "impressoes": 592,
+      "cpm": 84.66,
+      "ctr_link": 2.7,
+      "cliques_link": 16
+    },
+    "por_conta": [
+      {
+        "conta": "act_1042643068247418",
+        "investimento": 50.12,
+        "impressoes": 592,
+        "alcance": 490,
+        "cpm": 84.662162,
+        "ctr": 3.378378,
+        "cpc": 2.506,
+        "leads": 3,
+        "visualizacoes_video": 144,
+        "custo_visualizacoes_video": 0.348056,
+        "custo_leads": 16.706667
+      }
+    ],
+    "campanhas": [
+      {
+        "conta": "act_1042643068247418",
+        "nome": "VENDAS | TERMOMETRO | CBO | ADV+",
+        "objetivo": "OUTCOME_SALES",
+        "investimento": 50.12,
+        "alcance": 490,
+        "cpm": 84.662162,
+        "ctr": 3.378378,
+        "cpc": 2.506,
+        "visualizacoes_video": 144,
+        "custo_visualizacoes_video": 0.348056
+      },
+      {
+        "conta": "act_1042643068247418",
+        "nome": "LEADS | TERMOMETRO | CBO | ADV+",
+        "objetivo": "OUTCOME_LEADS",
+        "investimento": 0,
+        "alcance": 0,
+        "cpm": null,
+        "ctr": null,
+        "cpc": null,
+        "leads": 3,
+        "custo_leads": 0
+      }
+    ]
+  },
+  "fonte": {
+    "sistema": "Meta",
+    "coletado_em": "2026-10-20T16:48:38.538Z"
+  }
+}
