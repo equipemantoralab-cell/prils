@@ -85,6 +85,28 @@ a{color:inherit}
 .empty{background:var(--surface);border:1px dashed var(--line);border-radius:14px;padding:16px;color:var(--muted);font-size:14px}
 .empty code{background:var(--surface-2);padding:1px 6px;border-radius:5px;color:var(--fg)}
 .err{background:var(--warn-soft);color:var(--warn);border-radius:12px;padding:14px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin-top:24px;align-items:start}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;min-width:0}
+.card[open]{grid-column:1/-1}
+.card summary{list-style:none;cursor:pointer;padding:18px 18px 16px;display:flex;flex-direction:column;gap:10px}
+.card summary::-webkit-details-marker{display:none}
+.c-top{display:flex;align-items:baseline;gap:10px}
+.c-top b{font-family:var(--display);font-size:40px;font-weight:600;line-height:1;font-variant-numeric:tabular-nums}
+.c-top span{font-weight:600;color:var(--muted);flex:1}
+.chev{width:10px;height:10px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg);opacity:.6;align-self:center;transition:transform .2s}
+.card[open] .chev{transform:rotate(-135deg)}
+.lines{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:15px}
+.lines li span{display:block;font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.c-txt,.c-none{margin:0;font-size:14.5px}
+.c-none{color:var(--muted)}
+.c-none code{background:var(--surface-2);padding:1px 5px;border-radius:5px}
+.c-det{padding:0 18px 18px;border-top:1px solid var(--line);padding-top:16px}
+.card.main{background:var(--primary);border-color:var(--primary);color:#fff}
+.card.main .c-top span,.card.main .lines li span{color:rgba(255,255,255,.75)}
+.card.main .c-det{background:var(--bg);color:var(--fg);border-radius:0 0 15px 15px;border-top-color:transparent}
+.card.warn{background:var(--warn-soft);border-color:transparent}
+.card.soft{border-style:dashed}
+.card summary:hover .chev{opacity:1}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
 </style>
 </head>
@@ -113,57 +135,88 @@ a{color:inherit}
       ${direita}</li>`;
   }
 
+  // ---------- frases ("6 Reels editados") ----------
+  const FORM = {
+    Reels: { s: "Reels", p: "Reels", g: "m" },
+    Carrossel: { s: "carrossel", p: "carrosséis", g: "m" },
+    Imagem: { s: "imagem", p: "imagens", g: "f" },
+    Capa: { s: "capa", p: "capas", g: "f" },
+  };
+  const VERBO = { "Conteúdo": "finalizad", "Design": "criad", "Edição de vídeo": "editad", "Projetos e estratégia": "concluíd" };
+  const juntar = (xs) => xs.length < 2 ? xs.join("") : xs.slice(0, -1).join(", ") + " e " + xs[xs.length - 1];
+  function contagem(itens) {
+    const c = {};
+    itens.forEach((i) => { const k = FORM[i.formato] ? i.formato : "_"; c[k] = (c[k] || 0) + 1; });
+    const partes = Object.entries(c).sort((a, b) => b[1] - a[1]).map(([k, n]) =>
+      k === "_" ? `${n} ${n > 1 ? "tarefas" : "tarefa"}` : `${n} ${n > 1 ? FORM[k].p : FORM[k].s}`);
+    const ks = Object.keys(c);
+    const g = ks.length === 1 && FORM[ks[0]] ? FORM[ks[0]].g : (ks.length === 1 ? "f" : "m");
+    return { texto: juntar(partes), plural: itens.length > 1, g };
+  }
+  function frase(area, itens) {
+    if (area === "Projetos e estratégia") return juntar(itens.map((i) => i.titulo));
+    const c = contagem(itens);
+    const v = VERBO[area];
+    return v ? `${c.texto} ${v}${c.g === "f" ? "a" : "o"}${c.plural ? "s" : ""}` : c.texto;
+  }
+  const ORDEM = ["Conteúdo", "Design", "Edição de vídeo", "Projetos e estratégia"];
+  function porArea(itens) {
+    const m = {};
+    itens.forEach((i) => (m[i.area] ||= []).push(i));
+    return Object.keys(m).sort((a, b) => ((ORDEM.indexOf(a) + 99) % 99) - ((ORDEM.indexOf(b) + 99) % 99)).map((a) => [a, m[a]]);
+  }
+  const linhas = (itens) => porArea(itens).map(([a, its]) => `<li><span>${esc(a)}</span>${esc(frase(a, its))}</li>`).join("");
+
+  const linhasSemVerbo = (itens) => porArea(itens).map(([a, its]) =>
+    `<li><span>${esc(a)}</span>${esc(a === "Projetos e estratégia" ? juntar(its.map((i) => i.titulo)) : contagem(its).texto)}</li>`).join("");
+
+  function card({ id, tom, numero, titulo, resumo, detalhe, aberto }) {
+    return `<details class="card ${tom || ""}" id="${id}"${aberto ? " open" : ""}>
+      <summary><div class="c-top"><b>${numero}</b><span>${titulo}</span><i class="chev" aria-hidden="true"></i></div>${resumo}</summary>
+      <div class="c-det">${detalhe}</div></details>`;
+  }
+
   function render(d) {
     const r = d.resumo;
-    const porArea = {};
-    d.entregues.forEach((i) => (porArea[i.area] ||= []).push(i));
-    const ordemAreas = ["Conteúdo","Design","Edição de vídeo","Projetos e estratégia"];
-    const areas = Object.keys(porArea).sort((a,b) => (ordemAreas.indexOf(a)+99)%99 - (ordemAreas.indexOf(b)+99)%99);
-
     const prox0 = add(d.periodo.fim, 1);
     const dias = Array.from({length:7}, (_, k) => add(prox0, k));
 
+    const listaEntregues = porArea(d.entregues).map(([a, its]) =>
+      `<div class="group">${esc(a)} · ${its.length}</div><ul class="list">${its.map((i) => item(i, `<span class="d">${dow(i.entregue_em)} ${dd(i.entregue_em)}</span>`)).join("")}</ul>`).join("");
+    const listaAndamento = `<ul class="list">${d.em_andamento.map((i) => item(i, `<span class="pill ${i.fase === "aprovado" ? "ok" : i.em_ajuste ? "aj" : ""}">${esc(i.status)}</span>`)).join("")}</ul>`;
+    const agenda = `<div class="week">${dias.map((dia) => {
+      const its = d.proximos.filter((i) => i.prazo === dia);
+      return `<div class="day"><h3>${dow(dia)} ${dd(dia)}</h3>${its.length ? its.map((i) => `<div class="it"><i>${esc(etiqueta(i))}</i>${esc(i.titulo)}</div>`).join("") : `<span class="none">—</span>`}</div>`;
+    }).join("")}</div>`;
     const notas = d.notas.length
       ? `<div class="notes">${d.notas.map((n) => `<div class="note"><p>${esc(n.texto || "Destaque marcado pelo time")}</p><small>${[n.autor, dd(n.data), n.tarefa ? `em <a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.tarefa)}</a>` : ""].filter(Boolean).join(" · ")}</small></div>`).join("")}</div>`
       : `<div class="empty">Nenhuma nota nesta semana. Para incluir algo aqui, escreva um comentário com <code>#relatorio</code> em qualquer tarefa da cliente no ClickUp, ou marque a tarefa com a etiqueta <code>relatorio</code>.</div>`;
 
+    const ajustes = r.em_ajuste ? ` · ${r.em_ajuste} em ajuste` : "";
+    const cards = [
+      card({ id: "c-entregue", tom: "main", numero: r.entregues, titulo: "entregas na semana",
+        resumo: d.entregues.length ? `<ul class="lines">${linhas(d.entregues)}</ul>` : `<p class="c-none">Nenhuma entrega registrada.</p>`,
+        detalhe: listaEntregues || `<div class="empty">Nenhuma entrega registrada nesta semana.</div>` }),
+      card({ id: "c-andamento", numero: r.em_andamento, titulo: `em produção agora${ajustes}`,
+        resumo: d.em_andamento.length ? `<ul class="lines">${linhasSemVerbo(d.em_andamento)}</ul>` : `<p class="c-none">Nada em produção no momento.</p>`,
+        detalhe: d.em_andamento.length ? listaAndamento : `<div class="empty">Nada em produção no momento.</div>` }),
+      card({ id: "c-proxima", numero: r.proximos, titulo: `previstos de ${dd(dias[0])} a ${dd(dias[6])}`,
+        resumo: d.proximos.length ? `<ul class="lines">${linhasSemVerbo(d.proximos)}</ul>` : `<p class="c-none">Nada agendado ainda.</p>`,
+        detalhe: agenda }),
+    ];
+    if (d.aguardando_cliente.length) cards.push(card({ id: "c-voce", tom: "warn", numero: d.aguardando_cliente.length, titulo: "precisam de você",
+      resumo: `<p class="c-txt">${esc(juntar(d.aguardando_cliente.slice(0, 2).map((i) => i.titulo)))}${d.aguardando_cliente.length > 2 ? ` e mais ${d.aguardando_cliente.length - 2}` : ""}</p>`,
+      detalhe: `<ul class="list">${d.aguardando_cliente.map((i) => item(i, i.prazo ? `<span class="d">desde ${dd(i.prazo)}</span>` : "")).join("")}</ul>` }));
+    cards.push(card({ id: "c-notas", tom: "soft", numero: d.notas.length, titulo: d.notas.length === 1 ? "nota do time" : "notas do time",
+      resumo: d.notas.length ? `<p class="c-txt">${esc((d.notas[0].texto || d.notas[0].tarefa || "").slice(0, 110))}</p>` : `<p class="c-none">Comente <code>#relatorio</code> numa tarefa para aparecer aqui.</p>`,
+      detalhe: notas }));
+
     $("#app").innerHTML = `
       <div class="head">
         <h1>O que fizemos por você, ${esc(d.cliente.nome.split(" ")[0])}</h1>
-        <p>Semana de ${esc(d.periodo.rotulo)} · resumo automático das tarefas do time</p>
+        <p>Semana de ${esc(d.periodo.rotulo)} · resumo automático das tarefas do time · toque num card para ver os detalhes</p>
       </div>
-      <div class="stats">
-        <div class="stat main"><b>${r.entregues}</b><span>entregas na semana</span></div>
-        <div class="stat"><b>${r.publicados}</b><span>conteúdos finalizados</span></div>
-        <div class="stat"><b>${r.pecas}</b><span>peças de design e vídeo</span></div>
-        <div class="stat"><b>${r.em_andamento}</b><span>em produção agora</span></div>
-        <div class="stat"><b>${r.proximos}</b><span>previstos para a próxima semana</span></div>
-      </div>
-
-      <div class="sec cols">
-        <div>
-          <div class="sec-h"><h2>Entregue nesta semana</h2><small>${r.entregues} itens</small></div>
-          ${areas.length ? areas.map((a) => `<div class="group">${esc(a)} · ${porArea[a].length}</div><ul class="list">${porArea[a].map((i) => item(i, `<span class="d">${dow(i.entregue_em)} ${dd(i.entregue_em)}</span>`)).join("")}</ul>`).join("") : `<div class="empty">Nenhuma entrega registrada nesta semana.</div>`}
-        </div>
-        <div>
-          <div class="sec-h"><h2>Em andamento</h2><small>status de hoje</small></div>
-          ${d.em_andamento.length ? `<ul class="list">${d.em_andamento.map((i) => item(i, `<span class="pill ${i.fase === "aprovado" ? "ok" : i.em_ajuste ? "aj" : ""}">${esc(i.status)}</span>`)).join("")}</ul>` : `<div class="empty">Nada em produção no momento.</div>`}
-          ${d.aguardando_cliente.length ? `<div class="sec callout"><h2>Precisamos de você</h2><ul>${d.aguardando_cliente.map((i) => `<li><a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.titulo)}</a></li>`).join("")}</ul></div>` : ""}
-        </div>
-      </div>
-
-      <div class="sec">
-        <div class="sec-h"><h2>Próxima semana</h2><small>${dd(dias[0])} a ${dd(dias[6])} · pelo prazo no ClickUp</small></div>
-        <div class="week">${dias.map((dia) => {
-          const its = d.proximos.filter((i) => i.prazo === dia);
-          return `<div class="day"><h3>${dow(dia)} ${dd(dia)}</h3>${its.length ? its.map((i) => `<div class="it"><i>${esc(etiqueta(i))}</i>${esc(i.titulo)}</div>`).join("") : `<span class="none">—</span>`}</div>`;
-        }).join("")}</div>
-      </div>
-
-      <div class="sec">
-        <div class="sec-h"><h2>Notas do time</h2><small>relato manual</small></div>
-        ${notas}
-      </div>`;
+      <div class="cards">${cards.join("")}</div>`;
 
     const quando = new Date(d.fonte.coletado_em).toLocaleString("pt-BR", {dateStyle:"short", timeStyle:"short"});
     $("#fonte").textContent = `Fonte: ClickUp · atualizado em ${quando}`;
