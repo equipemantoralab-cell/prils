@@ -7,6 +7,8 @@
     "coletar:offline": "node scripts/coletar.mjs sabrina --offline",
     "atividades": "node scripts/atividades.mjs sabrina",
     "atividades:offline": "node scripts/atividades.mjs sabrina --offline",
+    "meta": "node scripts/meta.mjs sabrina",
+    "meta:stories": "node scripts/meta.mjs sabrina --stories",
     "dev": "python3 -m http.server 8000"
   },
   "engines": { "node": ">=18" }
