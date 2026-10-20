@@ -5,6 +5,8 @@
   "scripts": {
     "coletar": "node scripts/coletar.mjs sabrina",
     "coletar:offline": "node scripts/coletar.mjs sabrina --offline",
+    "atividades": "node scripts/atividades.mjs sabrina",
+    "atividades:offline": "node scripts/atividades.mjs sabrina --offline",
     "dev": "python3 -m http.server 8000"
   },
   "engines": { "node": ">=18" }

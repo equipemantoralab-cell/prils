@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Atividades da semana · Mantora</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: cabeçalho + faixa de números + colunas "entregue / em andamento" + agenda da próxima semana + notas do time. Paleta Mantora. */
+:root{
+  --bg:#f7f5fb; --surface:#ffffff; --surface-2:#efeaf7; --line:#e0d8ee;
+  --fg:#22082f; --muted:#6b5a7a;
+  --primary:#5b2aab; --primary-soft:#ece5fa; --accent:#6840e1; --accent-soft:#e8e2ff;
+  --good:#1d7f4e; --good-soft:#dcf1e5; --warn:#9a5b00; --warn-soft:#fbecd2;
+  --display:"Instrument Sans","Helvetica Neue",Arial,sans-serif;
+  --body:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#17061f; --surface:#220b2e; --surface-2:#2f0a40; --line:#46215c;
+  --fg:#f3eef8; --muted:#b5a5c6;
+  --primary:#9f82ff; --primary-soft:#3a1658; --accent:#8f72ff; --accent-soft:#33195a;
+  --good:#5cc993; --good-soft:#173a29; --warn:#f0b35a; --warn-soft:#3d2b12; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#17061f; --surface:#220b2e; --surface-2:#2f0a40; --line:#46215c;
+  --fg:#f3eef8; --muted:#b5a5c6;
+  --primary:#9f82ff; --primary-soft:#3a1658; --accent:#8f72ff; --accent-soft:#33195a;
+  --good:#5cc993; --good-soft:#173a29; --warn:#f0b35a; --warn-soft:#3d2b12; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--display);font-weight:600;letter-spacing:-.015em;line-height:1.15;margin:0;text-wrap:balance}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:16px;padding-block:28px 64px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:8px;font-family:var(--display);font-weight:700;font-size:19px;letter-spacing:-.02em}
+.brand svg{width:32px;height:auto}
+.src{font-size:12px;color:var(--muted)}
+.head{margin-top:28px}
+.head h1{font-size:clamp(26px,4vw,36px)}
+.head p{color:var(--muted);margin:6px 0 0}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:24px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px}
+.stat b{display:block;font-family:var(--display);font-size:34px;font-weight:600;line-height:1;font-variant-numeric:tabular-nums}
+.stat span{display:block;font-size:13px;color:var(--muted);margin-top:6px}
+.stat.main{background:var(--primary);border-color:var(--primary);color:#fff}
+.stat.main span{color:rgba(255,255,255,.8)}
+.sec{margin-top:36px}
+.sec-h{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+.sec-h h2{font-size:22px}
+.sec-h small{color:var(--muted);font-size:13px}
+.cols{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:20px}
+@media (max-width:820px){.cols{grid-template-columns:1fr}}
+.list{list-style:none;margin:0;padding:0;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.list li{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:12px;align-items:center;padding:12px 14px;border-top:1px solid var(--line)}
+.list li:first-child{border-top:0}
+.list .t{min-width:0}
+.list .t a{text-decoration:none;font-weight:600;display:block;overflow-wrap:anywhere}
+.list .t a:hover{text-decoration:underline}
+.list .t small{display:block;color:var(--muted);font-size:12px;margin-top:2px}
+.list .d{font-size:12px;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+.fmt{font-size:11px;font-weight:700;padding:3px 8px;border-radius:999px;background:var(--primary-soft);color:var(--primary);white-space:nowrap;min-width:72px;text-align:center}
+.fmt.Design,.fmt.Imagem,.fmt.Capa{background:var(--accent-soft);color:var(--accent)}
+.fmt.Projeto{background:var(--surface-2);color:var(--muted)}
+.pill{font-size:11px;font-weight:700;padding:3px 8px;border-radius:999px;white-space:nowrap;background:var(--surface-2);color:var(--muted)}
+.pill.ok{background:var(--good-soft);color:var(--good)}
+.pill.aj{background:var(--warn-soft);color:var(--warn)}
+.group{font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:16px 0 8px}
+.group:first-child{margin-top:0}
+.week{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px}
+@media (max-width:820px){.week{grid-template-columns:1fr}}
+.day{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px;min-height:96px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.day h3{font-family:var(--body);font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.day .it{font-size:12.5px;line-height:1.35;background:var(--surface-2);border-radius:8px;padding:6px 8px;overflow-wrap:anywhere}
+.day .it i{font-style:normal;display:block;font-size:10.5px;font-weight:700;color:var(--primary);text-transform:uppercase;letter-spacing:.05em}
+.day .none{font-size:12px;color:var(--muted)}
+.callout{background:var(--warn-soft);border-radius:14px;padding:16px}
+.callout h2{font-size:18px;margin-bottom:8px}
+.callout ul{margin:0;padding-left:18px}
+.callout li{margin:4px 0}
+.notes{display:grid;gap:10px}
+.note{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:12px;padding:14px 16px}
+.note p{margin:0}
+.note small{display:block;color:var(--muted);font-size:12px;margin-top:6px}
+.empty{background:var(--surface);border:1px dashed var(--line);border-radius:14px;padding:16px;color:var(--muted);font-size:14px}
+.empty code{background:var(--surface-2);padding:1px 6px;border-radius:5px;color:var(--fg)}
+.err{background:var(--warn-soft);color:var(--warn);border-radius:12px;padding:14px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="top">
+    <div class="brand"><svg viewBox="0 0 177 100" aria-hidden="true"><defs><linearGradient id="mg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7b4dff"/><stop offset="1" stop-color="#3d0a5a"/></linearGradient></defs><g fill="url(#mg)"><path d="M0 0A100 100 0 0 1 100 100H66.7A66.7 66.7 0 0 0 0 33.3Z"/><path transform="translate(76.7 0)" d="M0 0A100 100 0 0 1 100 100H66.7A66.7 66.7 0 0 0 0 33.3Z"/><rect x="0" y="67" width="33.3" height="33"/></g></svg>mantora</div>
+    <div class="src" id="fonte"></div>
+  </div>
+  <div id="app"><p class="src">Carregando…</p></div>
+</main>
+<script>
+(function(){
+  const $ = (s) => document.querySelector(s);
+  const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  const DIAS = ["dom","seg","ter","qua","qui","sex","sáb"];
+  const dd = (iso) => { if (!iso) return ""; const [,m,d] = iso.split("-"); return `${d}/${m}`; };
+  const dow = (iso) => DIAS[new Date(iso + "T12:00:00Z").getUTCDay()];
+  const add = (iso, n) => { const d = new Date(iso + "T12:00:00Z"); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0,10); };
+  const etiqueta = (i) => i.area === "Projetos e estratégia" ? "Projeto" : (i.formato || i.area);
+  const quem = (i) => i.responsaveis.length ? i.responsaveis.join(" e ") : "";
+
+  function item(i, direita) {
+    return `<li><span class="fmt ${esc(etiqueta(i))}">${esc(etiqueta(i))}</span>
+      <div class="t"><a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.titulo)}</a><small>${esc(i.area)}${quem(i) ? " · " + esc(quem(i)) : ""}</small></div>
+      ${direita}</li>`;
+  }
+
+  function render(d) {
+    const r = d.resumo;
+    const porArea = {};
+    d.entregues.forEach((i) => (porArea[i.area] ||= []).push(i));
+    const ordemAreas = ["Conteúdo","Design","Edição de vídeo","Projetos e estratégia"];
+    const areas = Object.keys(porArea).sort((a,b) => (ordemAreas.indexOf(a)+99)%99 - (ordemAreas.indexOf(b)+99)%99);
+
+    const prox0 = add(d.periodo.fim, 1);
+    const dias = Array.from({length:7}, (_, k) => add(prox0, k));
+
+    const notas = d.notas.length
+      ? `<div class="notes">${d.notas.map((n) => `<div class="note"><p>${esc(n.texto || "Destaque marcado pelo time")}</p><small>${[n.autor, dd(n.data), n.tarefa ? `em <a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.tarefa)}</a>` : ""].filter(Boolean).join(" · ")}</small></div>`).join("")}</div>`
+      : `<div class="empty">Nenhuma nota nesta semana. Para incluir algo aqui, escreva um comentário com <code>#relatorio</code> em qualquer tarefa da cliente no ClickUp, ou marque a tarefa com a etiqueta <code>relatorio</code>.</div>`;
+
+    $("#app").innerHTML = `
+      <div class="head">
+        <h1>O que fizemos por você, ${esc(d.cliente.nome.split(" ")[0])}</h1>
+        <p>Semana de ${esc(d.periodo.rotulo)} · resumo automático das tarefas do time</p>
+      </div>
+      <div class="stats">
+        <div class="stat main"><b>${r.entregues}</b><span>entregas na semana</span></div>
+        <div class="stat"><b>${r.publicados}</b><span>conteúdos finalizados</span></div>
+        <div class="stat"><b>${r.pecas}</b><span>peças de design e vídeo</span></div>
+        <div class="stat"><b>${r.em_andamento}</b><span>em produção agora</span></div>
+        <div class="stat"><b>${r.proximos}</b><span>previstos para a próxima semana</span></div>
+      </div>
+
+      <div class="sec cols">
+        <div>
+          <div class="sec-h"><h2>Entregue nesta semana</h2><small>${r.entregues} itens</small></div>
+          ${areas.length ? areas.map((a) => `<div class="group">${esc(a)} · ${porArea[a].length}</div><ul class="list">${porArea[a].map((i) => item(i, `<span class="d">${dow(i.entregue_em)} ${dd(i.entregue_em)}</span>`)).join("")}</ul>`).join("") : `<div class="empty">Nenhuma entrega registrada nesta semana.</div>`}
+        </div>
+        <div>
+          <div class="sec-h"><h2>Em andamento</h2><small>status de hoje</small></div>
+          ${d.em_andamento.length ? `<ul class="list">${d.em_andamento.map((i) => item(i, `<span class="pill ${i.fase === "aprovado" ? "ok" : i.em_ajuste ? "aj" : ""}">${esc(i.status)}</span>`)).join("")}</ul>` : `<div class="empty">Nada em produção no momento.</div>`}
+          ${d.aguardando_cliente.length ? `<div class="sec callout"><h2>Precisamos de você</h2><ul>${d.aguardando_cliente.map((i) => `<li><a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.titulo)}</a></li>`).join("")}</ul></div>` : ""}
+        </div>
+      </div>
+
+      <div class="sec">
+        <div class="sec-h"><h2>Próxima semana</h2><small>${dd(dias[0])} a ${dd(dias[6])} · pelo prazo no ClickUp</small></div>
+        <div class="week">${dias.map((dia) => {
+          const its = d.proximos.filter((i) => i.prazo === dia);
+          return `<div class="day"><h3>${dow(dia)} ${dd(dia)}</h3>${its.length ? its.map((i) => `<div class="it"><i>${esc(etiqueta(i))}</i>${esc(i.titulo)}</div>`).join("") : `<span class="none">—</span>`}</div>`;
+        }).join("")}</div>
+      </div>
+
+      <div class="sec">
+        <div class="sec-h"><h2>Notas do time</h2><small>relato manual</small></div>
+        ${notas}
+      </div>`;
+
+    const quando = new Date(d.fonte.coletado_em).toLocaleString("pt-BR", {dateStyle:"short", timeStyle:"short"});
+    $("#fonte").textContent = `Fonte: ClickUp · atualizado em ${quando}`;
+  }
+
+  if (window.__DADOS) return render(window.__DADOS);
+  const slug = new URLSearchParams(location.search).get("cliente") || "sabrina";
+  fetch(`data/${encodeURIComponent(slug)}-atividades.json`, {cache:"no-store"})
+    .then((r) => { if (!r.ok) throw new Error(`data/${slug}-atividades.json não encontrado (rode npm run atividades)`); return r.json(); })
+    .then(render)
+    .catch((e) => { $("#app").innerHTML = `<p class="err">${esc(e.message)}</p>`; });
+})();
+</script>
+</body>
+</html>

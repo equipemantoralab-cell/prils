@@ -68,3 +68,37 @@ Declarados por área em `graficos` no config, sempre apontando para IDs de campo
 ## Deploy
 
 `netlify.toml` e `vercel.json` publicam só `index.html` + `data/` (pasta `dist/`). A página tem `noindex`.
+
+## Atividades do time (sem formulário)
+
+`scripts/atividades.mjs` lê as tarefas das listas da cliente no ClickUp e monta o resumo da semana, sem ninguém preencher nada:
+
+```
+ClickUp (Calendário, Atividades, Design, Edição de vídeo) ──atividades──▶ data/<cliente>-atividades.json ──▶ atividades.html
+```
+
+```bash
+npm run atividades                               # semana passada (seg a dom), via API
+node scripts/atividades.mjs sabrina --inicio 2026-10-12
+npm run atividades:offline                       # usa coleta/snapshots/atividades-sabrina.json
+npm run dev                                      # http://localhost:8000/atividades.html
+```
+
+O que cada bloco usa:
+
+| Bloco | Regra |
+|---|---|
+| Entregue na semana | Status do tipo "done"/"closed" (ex.: `finalizado`, `concluído`) com data de conclusão na semana. Sem data de conclusão, usa o prazo. |
+| Em andamento | Qualquer status entre `pendente` e `finalizado` (escrevendo, revisão, alteração…, aprovado, programado). `alteração …` aparece como ajuste. |
+| Próxima semana | `pendente` com prazo nos 7 dias seguintes. |
+| Precisamos de você | Tarefas abertas em que a própria cliente é responsável. |
+| Atrasados | Só no JSON, para o time. Não aparece na página. |
+
+As listas e as áreas ficam em `config/<cliente>.json`, bloco `atividades`. Listas novas dentro da pasta da cliente entram sozinhas, com o nome da lista como área.
+
+**Relato manual**, para o que não vira tarefa ou precisa de contexto:
+
+- comente `#relatorio` seguido do texto em qualquer tarefa da cliente (ex.: `#relatorio A Sabrina aprovou a nova linha editorial na call de quinta`);
+- ou coloque a etiqueta `relatorio` numa tarefa para destacá-la.
+
+Os dois aparecem em "Notas do time" na semana em que foram feitos.

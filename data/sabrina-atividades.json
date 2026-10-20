@@ -1,0 +1,687 @@
+{
+  "schema_version": 1,
+  "cliente": {
+    "nome": "Sabrina Nascimento",
+    "slug": "sabrina"
+  },
+  "periodo": {
+    "inicio": "2026-10-12",
+    "fim": "2026-10-18",
+    "rotulo": "12 a 18/out/2026"
+  },
+  "resumo": {
+    "publicados": 6,
+    "pecas": 6,
+    "projetos": 0,
+    "entregues": 12,
+    "em_andamento": 5,
+    "em_ajuste": 1,
+    "aprovados": 1,
+    "proximos": 14,
+    "aguardando_cliente": 3,
+    "atrasados": 3
+  },
+  "entregues_por_area": {
+    "Conteúdo": 6,
+    "Design": 3,
+    "Edição de vídeo": 3
+  },
+  "entregues_por_formato": {
+    "Reels": 6
+  },
+  "entregues": [
+    {
+      "id": "17tjca23fer",
+      "titulo": "Low ticket sem esteira",
+      "formato": "Reels",
+      "area": "Conteúdo",
+      "conta_como": "publicacao",
+      "status": "finalizado",
+      "fase": "entregue",
+      "em_ajuste": false,
+      "responsaveis": [
+        "Karine",
+        "Caroline"
+      ],
+      "prazo": "2026-10-13",
+      "entregue_em": "2026-10-13",
+      "destaque": false,
+      "url": "https://app.clickup.com/t/17tjca23fer"
+    },
+    {
+      "id": "17tjca20thc",
+      "titulo": "Esteja pronto para jogar o jogo",
+      "formato": "Reels",
+      "area": "Conteúdo",
+      "conta_como": "publicacao",
+      "status": "finalizado",
+      "fase": "entregue",
+      "em_ajuste": false,
+      "responsaveis": [
+        "Karine",
+        "Caroline"
+      ],
+      "prazo": "2026-10-13",
+      "entregue_em": "2026-10-13",
+      "destaque": false,
+      "url": "https://app.clickup.com/t/17tjca20thc"
+    },
+    {
+      "id": "17tjca22wtd",
+      "titulo": "Caixinha - O que não fazer ao começar a produzir conteúdo",
+      "formato": "Reels",
+      "area": "Conteúdo",
+      "conta_como": "publicacao",
+      "status": "finalizado",
+      "fase": "entregue",
+      "em_ajuste": false,
+      "responsaveis": [],
+      "prazo": "2026-10-13",
+      "entregue_em": "2026-10-13",
+      "destaque": false,
+      "url": "https://app.clickup.com/t/17tjca22wtd"
+    },
+    {
+      "id": "86ajpcgkz",
+      "titulo": "Como saber se a minha comunicação está clara?",
+      "formato": "Carrossel",
+      "area": "Design",
+      "conta_como": "peca",
+      "status": "finalizado",
+      "fase": "entregue",
+      "em_ajuste": false,
+      "responsaveis": [
+        "Fernanda",
+        "Caroline"
+      ],
+      "prazo": "2026-10-14",
+      "entregue_em": "2026-10-14",
+      "destaque": false,
+      "url": "https://app.clickup.com/t/86ajpcgkz"
+    },
+    {
+      "id": "17tjca23reg",
+      "titulo": "Se o seu conteúdo chama atenção, mas não ajuda as pessoas a entenderem o valor do que você vende, talvez o problema não esteja apenas no conteúdo.",
+      "formato": "Reels",
+      "area": "Edição de vídeo",
+      "conta_como": "peca",
+      "status": "finalizado",
+      "fase": "entregue",
+      "em_ajuste": false,
+      "responsaveis": [
+        "Karine",
+        "Caroline"
+      ],
+      "prazo": "2026-10-14",
+      "entregue_em": "2026-10-14",
+      "destaque": false,
+      "url": "https://app.clickup.com/t/17tjca23reg"
+    },
+    {
+      "id": "86ak8zvc4",
+      "titulo": "Cair todo mundo cai",
+      "formato": "Imagem",
+      "area": "Design",
+      "conta_como": "peca",
+      "status": "finalizado",
+      "fase": "entregue",
+      "em_ajuste": false,
+      "responsaveis": [
+        "Fernanda",
+        "Caroline"
+      ],
+      "prazo": "2026-10-15",
+      "entregue_em": "2026-10-15",
+      "destaque": false,
+      "url": "https://app.clickup.com/t/86ak8zvc4"
+    },
+    {
+      "id": "17tjca23rec",
+      "titulo": "Um dos maiores desafios de quem tem muito conhecimento é entender que não precisa mostrar tudo o que sabe.",
+      "formato": "Reels",
+      "area": "Edição de vídeo",
+      "conta_como": "peca",
+      "status": "finalizado",
+      "fase": "entregue",
+      "em_ajuste": false,
+      "responsaveis": [
+        "Karine",
+        "Caroline"
+      ],
+      "prazo": "2026-10-15",
+      "entregue_em": "2026-10-15",
+      "destaque": false,
+      "url": "https://app.clickup.com/t/17tjca23rec"
+    },
+    {
+      "id": "17tjca22wtm",
+      "titulo": "Caixinha - Você se sente realizada profissionalmente?",
+      "formato": "Reels",
+      "area": "Conteúdo",
+      "conta_como": "publicacao",
+      "status": "finalizado",
+      "fase": "entregue",
+      "em_ajuste": false,
+      "responsaveis": [
+        "Karine",
+        "Caroline"
+      ],
+      "prazo": "2026-10-16",
+      "entregue_em": "2026-10-16",
+      "destaque": false,
+      "url": "https://app.clickup.com/t/17tjca22wtm"
+    },
+    {
+      "id": "86ak8zvdb",
+      "titulo": "O mundo perde toda vez que alguém bom escolhe o silêncio.",
+      "formato": "Imagem",
+      "area": "Design",
+      "conta_como": "peca",
+      "status": "finalizado",
+      "fase": "entregue",
+      "em_ajuste": false,
+      "responsaveis": [
+        "Fernanda",
+        "Caroline"
+      ],
+      "prazo": "2026-10-16",
+      "entregue_em": "2026-10-16",
+      "destaque": false,
+      "url": "https://app.clickup.com/t/86ak8zvdb"
+    },
+    {
+      "id": "17tjca23re9",
+      "titulo": "Você sabe a diferença entre ter um Instagram bonito e ter um posicionamento de verdade?",
+      "formato": "Reels",
+      "area": "Edição de vídeo",
+      "conta_como": "peca",
+      "status": "finalizado",
+      "fase": "entregue",
+      "em_ajuste": false,
+      "responsaveis": [
+        "Karine",
+        "Caroline"
+      ],
+      "prazo": "2026-10-16",
+      "entregue_em": "2026-10-16",
+      "destaque": false,
+      "url": "https://app.clickup.com/t/17tjca23re9"
+    },
+    {
+      "id": "17tjca20thb",
+      "titulo": "O Mantora é o anabolizante",
+      "formato": "Reels",
+      "area": "Conteúdo",
+      "conta_como": "publicacao",
+      "status": "finalizado",
+      "fase": "entregue",
+      "em_ajuste": false,
+      "responsaveis": [
+        "Karine",
+        "Caroline"
+      ],
+      "prazo": "2026-10-17",
+      "entregue_em": "2026-10-17",
+      "destaque": false,
+      "url": "https://app.clickup.com/t/17tjca20thb"
+    },
+    {
+      "id": "17tjca23fhd",
+      "titulo": "Tempo de mercado e percepção de valor",
+      "formato": "Reels",
+      "area": "Conteúdo",
+      "conta_como": "publicacao",
+      "status": "finalizado",
+      "fase": "entregue",
+      "em_ajuste": false,
+      "responsaveis": [
+        "Karine",
+        "Caroline"
+      ],
+      "prazo": "2026-10-18",
+      "entregue_em": "2026-10-18",
+      "destaque": false,
+      "url": "https://app.clickup.com/t/17tjca23fhd"
+    }
+  ],
+  "em_andamento": [
+    {
+      "id": "17tjca23rbu",
+      "titulo": "Fazer reels dos planejamento",
+      "formato": "Reels",
+      "area": "Edição de vídeo",
+      "conta_como": "peca",
+      "status": "revisão",
+      "fase": "em_producao",
+      "em_ajuste": false,
+      "responsaveis": [
+        "Karine",
+        "Caroline"
+      ],
+      "prazo": "2026-10-13",
+      "entregue_em": null,
+      "destaque": false,
+      "url": "https://app.clickup.com/t/17tjca23rbu"
+    },
+    {
+      "id": "86ak8zufa",
+      "titulo": "Fundo roxo - Quem vende no medo perde o cliente na primeira dúvida.",
+      "formato": "Imagem",
+      "area": "Design",
+      "conta_como": "peca",
+      "status": "design aprovado",
+      "fase": "aprovado",
+      "em_ajuste": false,
+      "responsaveis": [
+        "Fernanda",
+        "Caroline"
+      ],
+      "prazo": "2026-10-19",
+      "entregue_em": null,
+      "destaque": false,
+      "url": "https://app.clickup.com/t/86ak8zufa"
+    },
+    {
+      "id": "17tjca20the",
+      "titulo": "40 milhões de pessoas alcançadas no orgânico",
+      "formato": "Reels",
+      "area": "Conteúdo",
+      "conta_como": "publicacao",
+      "status": "revisão",
+      "fase": "em_producao",
+      "em_ajuste": false,
+      "responsaveis": [
+        "Karine",
+        "Caroline"
+      ],
+      "prazo": "2026-10-20",
+      "entregue_em": null,
+      "destaque": false,
+      "url": "https://app.clickup.com/t/17tjca20the"
+    },
+    {
+      "id": "17tjca24hmz",
+      "titulo": "Estratégia Tatiane",
+      "formato": "Reels",
+      "area": "Conteúdo",
+      "conta_como": "publicacao",
+      "status": "alteração vídeo",
+      "fase": "em_producao",
+      "em_ajuste": true,
+      "responsaveis": [
+        "Karine"
+      ],
+      "prazo": "2026-10-20",
+      "entregue_em": null,
+      "destaque": false,
+      "url": "https://app.clickup.com/t/17tjca24hmz"
+    },
+    {
+      "id": "86ahyapx9",
+      "titulo": "A IA facilitou muito a etapa de pesquisa",
+      "formato": "Carrossel",
+      "area": "Conteúdo",
+      "conta_como": "publicacao",
+      "status": "escrevendo",
+      "fase": "em_producao",
+      "em_ajuste": false,
+      "responsaveis": [],
+      "prazo": "2026-10-26",
+      "entregue_em": null,
+      "destaque": false,
+      "url": "https://app.clickup.com/t/86ahyapx9"
+    }
+  ],
+  "proximos": [
+    {
+      "id": "17tjca24j8b",
+      "titulo": "Black Friday não cria desejo do zero",
+      "formato": "Reels",
+      "area": "Conteúdo",
+      "conta_como": "publicacao",
+      "status": "pendente",
+      "fase": "a_fazer",
+      "em_ajuste": false,
+      "responsaveis": [
+        "Karine"
+      ],
+      "prazo": "2026-10-20",
+      "entregue_em": null,
+      "destaque": false,
+      "url": "https://app.clickup.com/t/17tjca24j8b"
+    },
+    {
+      "id": "17tjca240zg",
+      "titulo": "7 coisas xexelentas do marketing que você não deveria reproduzir",
+      "formato": "Carrossel",
+      "area": "Design",
+      "conta_como": "peca",
+      "status": "pendente",
+      "fase": "a_fazer",
+      "em_ajuste": false,
+      "responsaveis": [
+        "Fernanda"
+      ],
+      "prazo": "2026-10-20",
+      "entregue_em": null,
+      "destaque": false,
+      "url": "https://app.clickup.com/t/17tjca240zg"
+    },
+    {
+      "id": "17tjca24j8c",
+      "titulo": "Reativação de base na Black Friday",
+      "formato": "Reels",
+      "area": "Conteúdo",
+      "conta_como": "publicacao",
+      "status": "pendente",
+      "fase": "a_fazer",
+      "em_ajuste": false,
+      "responsaveis": [
+        "Karine"
+      ],
+      "prazo": "2026-10-21",
+      "entregue_em": null,
+      "destaque": false,
+      "url": "https://app.clickup.com/t/17tjca24j8c"
+    },
+    {
+      "id": "17tjca20tta",
+      "titulo": "Nem todo gancho foi feito para viralizar",
+      "formato": "Carrossel",
+      "area": "Design",
+      "conta_como": "peca",
+      "status": "pendente",
+      "fase": "a_fazer",
+      "em_ajuste": false,
+      "responsaveis": [
+        "Fernanda"
+      ],
+      "prazo": "2026-10-21",
+      "entregue_em": null,
+      "destaque": false,
+      "url": "https://app.clickup.com/t/17tjca20tta"
+    },
+    {
+      "id": "17tjca24j8d",
+      "titulo": "Conteúdo sem personagem",
+      "formato": "Reels",
+      "area": "Conteúdo",
+      "conta_como": "publicacao",
+      "status": "pendente",
+      "fase": "a_fazer",
+      "em_ajuste": false,
+      "responsaveis": [
+        "Karine"
+      ],
+      "prazo": "2026-10-22",
+      "entregue_em": null,
+      "destaque": false,
+      "url": "https://app.clickup.com/t/17tjca24j8d"
+    },
+    {
+      "id": "17tjca20thd",
+      "titulo": "Quebramos recordes atrás de recordes",
+      "formato": "Reels",
+      "area": "Conteúdo",
+      "conta_como": "publicacao",
+      "status": "pendente",
+      "fase": "a_fazer",
+      "em_ajuste": false,
+      "responsaveis": [
+        "Karine"
+      ],
+      "prazo": "2026-10-22",
+      "entregue_em": null,
+      "destaque": false,
+      "url": "https://app.clickup.com/t/17tjca20thd"
+    },
+    {
+      "id": "17tjca24j8f",
+      "titulo": "A melhor era para bons especialistas",
+      "formato": "Reels",
+      "area": "Conteúdo",
+      "conta_como": "publicacao",
+      "status": "pendente",
+      "fase": "a_fazer",
+      "em_ajuste": false,
+      "responsaveis": [
+        "Karine"
+      ],
+      "prazo": "2026-10-23",
+      "entregue_em": null,
+      "destaque": false,
+      "url": "https://app.clickup.com/t/17tjca24j8f"
+    },
+    {
+      "id": "17tjca23fhe",
+      "titulo": "Volume sem direção",
+      "formato": "Reels",
+      "area": "Conteúdo",
+      "conta_como": "publicacao",
+      "status": "pendente",
+      "fase": "a_fazer",
+      "em_ajuste": false,
+      "responsaveis": [
+        "Karine"
+      ],
+      "prazo": "2026-10-23",
+      "entregue_em": null,
+      "destaque": false,
+      "url": "https://app.clickup.com/t/17tjca23fhe"
+    },
+    {
+      "id": "86ak8zu0h",
+      "titulo": "Fundo roxo - Tem alguém esperando exatamente aquilo que só você sabe dizer.",
+      "formato": "Imagem",
+      "area": "Design",
+      "conta_como": "peca",
+      "status": "pendente",
+      "fase": "a_fazer",
+      "em_ajuste": false,
+      "responsaveis": [
+        "Fernanda"
+      ],
+      "prazo": "2026-10-23",
+      "entregue_em": null,
+      "destaque": false,
+      "url": "https://app.clickup.com/t/86ak8zu0h"
+    },
+    {
+      "id": "17tjca24j8g",
+      "titulo": "Black Friday sem estrutura desmorona",
+      "formato": "Reels",
+      "area": "Conteúdo",
+      "conta_como": "publicacao",
+      "status": "pendente",
+      "fase": "a_fazer",
+      "em_ajuste": false,
+      "responsaveis": [
+        "Karine"
+      ],
+      "prazo": "2026-10-24",
+      "entregue_em": null,
+      "destaque": false,
+      "url": "https://app.clickup.com/t/17tjca24j8g"
+    },
+    {
+      "id": "17tjca20ttb",
+      "titulo": "Você tem conteúdo para ensinar",
+      "formato": "Carrossel",
+      "area": "Design",
+      "conta_como": "peca",
+      "status": "pendente",
+      "fase": "a_fazer",
+      "em_ajuste": false,
+      "responsaveis": [
+        "Fernanda"
+      ],
+      "prazo": "2026-10-24",
+      "entregue_em": null,
+      "destaque": false,
+      "url": "https://app.clickup.com/t/17tjca20ttb"
+    },
+    {
+      "id": "86ajqxj8n",
+      "titulo": "Não peça desculpas por ser grande demais para espaços que se recusam a crescer.",
+      "formato": "Imagem",
+      "area": "Design",
+      "conta_como": "peca",
+      "status": "pendente",
+      "fase": "a_fazer",
+      "em_ajuste": false,
+      "responsaveis": [
+        "Fernanda"
+      ],
+      "prazo": "2026-10-24",
+      "entregue_em": null,
+      "destaque": false,
+      "url": "https://app.clickup.com/t/86ajqxj8n"
+    },
+    {
+      "id": "17tjca20thg",
+      "titulo": "Planeje e execute com base em dados",
+      "formato": "Reels",
+      "area": "Conteúdo",
+      "conta_como": "publicacao",
+      "status": "pendente",
+      "fase": "a_fazer",
+      "em_ajuste": false,
+      "responsaveis": [
+        "Karine"
+      ],
+      "prazo": "2026-10-25",
+      "entregue_em": null,
+      "destaque": false,
+      "url": "https://app.clickup.com/t/17tjca20thg"
+    },
+    {
+      "id": "17tjca24phx",
+      "titulo": "Clareza antes da venda",
+      "formato": "Reels",
+      "area": "Conteúdo",
+      "conta_como": "publicacao",
+      "status": "pendente",
+      "fase": "a_fazer",
+      "em_ajuste": false,
+      "responsaveis": [
+        "Karine"
+      ],
+      "prazo": "2026-10-25",
+      "entregue_em": null,
+      "destaque": false,
+      "url": "https://app.clickup.com/t/17tjca24phx"
+    }
+  ],
+  "aguardando_cliente": [
+    {
+      "id": "86ajn3j03",
+      "titulo": "Transformar o roteiro em carrossel",
+      "formato": "Carrossel",
+      "area": "Projetos e estratégia",
+      "conta_como": "projeto",
+      "status": "alteração copy",
+      "fase": "em_producao",
+      "em_ajuste": true,
+      "responsaveis": [
+        "Sabrina"
+      ],
+      "prazo": "2026-07-30",
+      "entregue_em": null,
+      "destaque": false,
+      "url": "https://app.clickup.com/t/86ajn3j03"
+    },
+    {
+      "id": "86ajwky2c",
+      "titulo": "Gravar um tutorial de ferramentas do Instagram, tela verde, remix et",
+      "formato": null,
+      "area": "Projetos e estratégia",
+      "conta_como": "projeto",
+      "status": "pendente",
+      "fase": "a_fazer",
+      "em_ajuste": false,
+      "responsaveis": [
+        "Sabrina"
+      ],
+      "prazo": "2026-08-06",
+      "entregue_em": null,
+      "destaque": false,
+      "url": "https://app.clickup.com/t/86ajwky2c"
+    },
+    {
+      "id": "86ahya6t8",
+      "titulo": "Primeira compra com o Nubank",
+      "formato": "Reels",
+      "area": "Conteúdo",
+      "conta_como": "publicacao",
+      "status": "pendente",
+      "fase": "a_fazer",
+      "em_ajuste": false,
+      "responsaveis": [
+        "Sabrina"
+      ],
+      "prazo": "2026-09-05",
+      "entregue_em": null,
+      "destaque": false,
+      "url": "https://app.clickup.com/t/86ahya6t8"
+    }
+  ],
+  "atrasados": [
+    {
+      "id": "86ajnxfrh",
+      "titulo": "Acreditar antes de acontecer",
+      "formato": "Reels",
+      "area": "Conteúdo",
+      "conta_como": "publicacao",
+      "status": "pendente",
+      "fase": "a_fazer",
+      "em_ajuste": false,
+      "responsaveis": [],
+      "prazo": "2026-09-11",
+      "entregue_em": null,
+      "destaque": false,
+      "url": "https://app.clickup.com/t/86ajnxfrh"
+    },
+    {
+      "id": "17tjca22zdc",
+      "titulo": "Análise de perfil",
+      "formato": null,
+      "area": "Projetos e estratégia",
+      "conta_como": "projeto",
+      "status": "pendente",
+      "fase": "a_fazer",
+      "em_ajuste": false,
+      "responsaveis": [
+        "Caroline"
+      ],
+      "prazo": "2026-10-08",
+      "entregue_em": null,
+      "destaque": false,
+      "url": "https://app.clickup.com/t/17tjca22zdc"
+    },
+    {
+      "id": "17tjca23rbu",
+      "titulo": "Fazer reels dos planejamento",
+      "formato": "Reels",
+      "area": "Edição de vídeo",
+      "conta_como": "peca",
+      "status": "revisão",
+      "fase": "em_producao",
+      "em_ajuste": false,
+      "responsaveis": [
+        "Karine",
+        "Caroline"
+      ],
+      "prazo": "2026-10-13",
+      "entregue_em": null,
+      "destaque": false,
+      "url": "https://app.clickup.com/t/17tjca23rbu"
+    }
+  ],
+  "notas": [],
+  "fonte": {
+    "sistema": "ClickUp",
+    "modo_coleta": "snapshot",
+    "coletado_em": "2026-10-20T14:57:56.452Z",
+    "tarefas_lidas": 71
+  }
+}

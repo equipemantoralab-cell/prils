@@ -1,0 +1,1766 @@
+{
+  "semana_inicio": "2026-10-12",
+  "$origem": "Exportado via conector do ClickUp em 20/10/2026. Sem date_done (o conector não traz): entregas usam o prazo como data. Rode `npm run atividades` com token para dados completos.",
+  "tarefas": [
+    {
+      "id": "17tjca24phy",
+      "name": "Sabrina Reels | Posicionamento começa antes do conteúdo",
+      "status": {
+        "status": "pendente",
+        "type": "open"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1792998000000",
+      "date_updated": "1792494469687",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca24phy"
+    },
+    {
+      "id": "17tjca20thg",
+      "name": "Sabrina Reels | Planeje e execute com base em dados",
+      "status": {
+        "status": "pendente",
+        "type": "open"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1792911600000",
+      "date_updated": "1792494441248",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca20thg"
+    },
+    {
+      "id": "17tjca24j8d",
+      "name": "Sabrina Reels | Conteúdo sem personagem",
+      "status": {
+        "status": "pendente",
+        "type": "open"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1792652400000",
+      "date_updated": "1792494383522",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca24j8d"
+    },
+    {
+      "id": "17tjca24j8c",
+      "name": "Sabrina Reels | Reativação de base na Black Friday",
+      "status": {
+        "status": "pendente",
+        "type": "open"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1792566000000",
+      "date_updated": "1792494346683",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca24j8c"
+    },
+    {
+      "id": "17tjca24j8b",
+      "name": "Sabrina Reels | Black Friday não cria desejo do zero",
+      "status": {
+        "status": "pendente",
+        "type": "open"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1792479600000",
+      "date_updated": "1792494321360",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca24j8b"
+    },
+    {
+      "id": "17tjca24pj2",
+      "name": "Sabrina Reels | Estratégia não é uma peça isolada",
+      "status": {
+        "status": "pendente",
+        "type": "open"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1793343600000",
+      "date_updated": "1792493634374",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca24pj2"
+    },
+    {
+      "id": "17tjca24pj1",
+      "name": "Sabrina Reels | Estratégia começa pela pessoa real",
+      "status": {
+        "status": "pendente",
+        "type": "open"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1793257200000",
+      "date_updated": "1792493629219",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca24pj1"
+    },
+    {
+      "id": "17tjca24pj0",
+      "name": "Sabrina Reels | O briefing precisa capturar a essência",
+      "status": {
+        "status": "pendente",
+        "type": "open"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1793170800000",
+      "date_updated": "1792493624184",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca24pj0"
+    },
+    {
+      "id": "17tjca24phz",
+      "name": "Sabrina Reels | Autoridade sem personagem",
+      "status": {
+        "status": "pendente",
+        "type": "open"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1793084400000",
+      "date_updated": "1792493618673",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca24phz"
+    },
+    {
+      "id": "17tjca24phx",
+      "name": "Sabrina Reels | Clareza antes da venda",
+      "status": {
+        "status": "pendente",
+        "type": "open"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1792911600000",
+      "date_updated": "1792493608326",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca24phx"
+    },
+    {
+      "id": "17tjca24j8g",
+      "name": "Sabrina Reels | Black Friday sem estrutura desmorona",
+      "status": {
+        "status": "pendente",
+        "type": "open"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1792825200000",
+      "date_updated": "1792492763699",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca24j8g"
+    },
+    {
+      "id": "17tjca24j8f",
+      "name": "Sabrina Reels | A melhor era para bons especialistas",
+      "status": {
+        "status": "pendente",
+        "type": "open"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1792738800000",
+      "date_updated": "1792492758626",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca24j8f"
+    },
+    {
+      "id": "17tjca23fhc",
+      "name": "Sabrina Reels | Estratégia para o estágio do negócio",
+      "status": {
+        "status": "finalizado",
+        "type": "done"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        },
+        {
+          "username": "Caroline Ribeiro"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1792393200000",
+      "date_updated": "1792445074436",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca23fhc"
+    },
+    {
+      "id": "17tjca23fha",
+      "name": "Sabrina Reels | High Ticket sem pular etapas",
+      "status": {
+        "status": "finalizado",
+        "type": "done"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        },
+        {
+          "username": "Caroline Ribeiro"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1792393200000",
+      "date_updated": "1792430992075",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca23fha"
+    },
+    {
+      "id": "17tjca20the",
+      "name": "Sabrina Reels | 40 milhões de pessoas alcançadas no orgânico",
+      "status": {
+        "status": "revisão",
+        "type": "custom"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        },
+        {
+          "username": "Caroline Ribeiro"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1792479600000",
+      "date_updated": "1792425997480",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca20the"
+    },
+    {
+      "id": "17tjca24hmz",
+      "name": "Sabrina Reels | Estratégia Tatiane",
+      "status": {
+        "status": "alteração vídeo",
+        "type": "custom"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1792479600000",
+      "date_updated": "1792422943273",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca24hmz"
+    },
+    {
+      "id": "17tjca22wtq",
+      "name": "Sabrina Reels | Caixinha - Pergunta a identificar no áudio",
+      "status": {
+        "status": "stand by",
+        "type": "custom"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        },
+        {
+          "username": "Caroline Ribeiro"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1792393200000",
+      "date_updated": "1792422497941",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca22wtq"
+    },
+    {
+      "id": "17tjca23fhd",
+      "name": "Sabrina Reels | Tempo de mercado e percepção de valor",
+      "status": {
+        "status": "finalizado",
+        "type": "done"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        },
+        {
+          "username": "Caroline Ribeiro"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1792306800000",
+      "date_updated": "1792333901385",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca23fhd"
+    },
+    {
+      "id": "17tjca20thb",
+      "name": "Sabrina Reels | O Mantora é o anabolizante",
+      "status": {
+        "status": "finalizado",
+        "type": "done"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        },
+        {
+          "username": "Caroline Ribeiro"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1792220400000",
+      "date_updated": "1792278035406",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca20thb"
+    },
+    {
+      "id": "17tjca22wtm",
+      "name": "Sabrina Reels | Caixinha - Você se sente realizada profissionalmente?",
+      "status": {
+        "status": "finalizado",
+        "type": "done"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        },
+        {
+          "username": "Caroline Ribeiro"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1792134000000",
+      "date_updated": "1792164060544",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca22wtm"
+    },
+    {
+      "id": "17tjca23fhb",
+      "name": "Sabrina Reels | Linha de criativo",
+      "status": {
+        "status": "pendente",
+        "type": "open"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1793084400000",
+      "date_updated": "1792010377058",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca23fhb"
+    },
+    {
+      "id": "17tjca20thf",
+      "name": "Sabrina Reels | Resultado de R$ 1 milhão e 200 mil",
+      "status": {
+        "status": "pendente",
+        "type": "open"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1793257200000",
+      "date_updated": "1792010311022",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca20thf"
+    },
+    {
+      "id": "17tjca20thh",
+      "name": "Sabrina Reels | Cuide da sua mente e corpo para empreender",
+      "status": {
+        "status": "pendente",
+        "type": "open"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1793257200000",
+      "date_updated": "1792010283810",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca20thh"
+    },
+    {
+      "id": "17tjca23fhe",
+      "name": "Sabrina Reels | Volume sem direção",
+      "status": {
+        "status": "pendente",
+        "type": "open"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1792738800000",
+      "date_updated": "1792009777745",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca23fhe"
+    },
+    {
+      "id": "17tjca20thd",
+      "name": "Sabrina Reels | Quebramos recordes atrás de recordes",
+      "status": {
+        "status": "pendente",
+        "type": "open"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1792652400000",
+      "date_updated": "1792009720138",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca20thd"
+    },
+    {
+      "id": "86ahyapx9",
+      "name": "Sabrina Carrossel | A IA facilitou muito a etapa de pesquisa",
+      "status": {
+        "status": "escrevendo",
+        "type": "custom"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [],
+      "tags": [],
+      "archived": false,
+      "due_date": "1792998000000",
+      "date_updated": "1792009398587",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/86ahyapx9"
+    },
+    {
+      "id": "17tjca23fer",
+      "name": "Sabrina Reels | Low ticket sem esteira",
+      "status": {
+        "status": "finalizado",
+        "type": "done"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        },
+        {
+          "username": "Caroline Ribeiro"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1791874800000",
+      "date_updated": "1791920230560",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca23fer"
+    },
+    {
+      "id": "17tjca20thc",
+      "name": "Sabrina Reels | Esteja pronto para jogar o jogo",
+      "status": {
+        "status": "finalizado",
+        "type": "done"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        },
+        {
+          "username": "Caroline Ribeiro"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1791874800000",
+      "date_updated": "1791920116313",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca20thc"
+    },
+    {
+      "id": "17tjca22wtd",
+      "name": "Sabrina Reels | Caixinha - O que não fazer ao começar a produzir conteúdo",
+      "status": {
+        "status": "finalizado",
+        "type": "done"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [],
+      "tags": [],
+      "archived": false,
+      "due_date": "1791874800000",
+      "date_updated": "1791919940124",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca22wtd"
+    },
+    {
+      "id": "17tjca22wt9",
+      "name": "Sabrina Reels | Caixinha - Personalidade sem personagem",
+      "status": {
+        "status": "finalizado",
+        "type": "done"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [],
+      "tags": [],
+      "archived": false,
+      "due_date": "1791615600000",
+      "date_updated": "1791574699644",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca22wt9"
+    },
+    {
+      "id": "17tjca22wt8",
+      "name": "Sabrina Reels | Caixinha - Quando delegar o conteúdo?",
+      "status": {
+        "status": "finalizado",
+        "type": "done"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1791442800000",
+      "date_updated": "1791490780184",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca22wt8"
+    },
+    {
+      "id": "86ajraype",
+      "name": "Sabrina Reels | Parecer igual ao seu concorrente",
+      "status": {
+        "status": "finalizado",
+        "type": "done"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        },
+        {
+          "username": "Caroline Ribeiro"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1791356400000",
+      "date_updated": "1791403544451",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/86ajraype"
+    },
+    {
+      "id": "86ajnxfrh",
+      "name": "Sabrina React | Acreditar antes de acontecer",
+      "status": {
+        "status": "pendente",
+        "type": "open"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [],
+      "tags": [],
+      "archived": false,
+      "due_date": "1789110000000",
+      "date_updated": "1791394815595",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/86ajnxfrh"
+    },
+    {
+      "id": "86ajpb4v8",
+      "name": "Sabrina Reels | Lançamento pago não é pra todo mundo",
+      "status": {
+        "status": "finalizado",
+        "type": "done"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        },
+        {
+          "username": "Caroline Ribeiro"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1791270000000",
+      "date_updated": "1791326530985",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/86ajpb4v8"
+    },
+    {
+      "id": "17tjca22wp4",
+      "name": "Sabrina Reels | Caixinha - Quando se preparar para a Black Friday?",
+      "status": {
+        "status": "finalizado",
+        "type": "done"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1791270000000",
+      "date_updated": "1791325300341",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca22wp4"
+    },
+    {
+      "id": "86ajnxf6c",
+      "name": "Sabrina Carrossel | Aprendizados relacionados a livros",
+      "status": {
+        "status": "stand by",
+        "type": "custom"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Sabrina Nascimento"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1789369200000",
+      "date_updated": "1791287601588",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/86ajnxf6c"
+    },
+    {
+      "id": "86ahya6t8",
+      "name": "Sabrina Reels React | Primeira compra com o Nubank",
+      "status": {
+        "status": "pendente",
+        "type": "open"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Sabrina Nascimento"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1788591600000",
+      "date_updated": "1791287601140",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/86ahya6t8"
+    },
+    {
+      "id": "86ajpb5g1",
+      "name": "Sabrina Reels | Existe uma versão de você sendo afogado por você mesmo",
+      "status": {
+        "status": "finalizado",
+        "type": "done"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        },
+        {
+          "username": "Caroline Ribeiro"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1791010800000",
+      "date_updated": "1791050497819",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/86ajpb5g1"
+    },
+    {
+      "id": "17tjca20th8",
+      "name": "Sabrina Reels | Sempre tem gente pronta pra comprar",
+      "status": {
+        "status": "finalizado",
+        "type": "done"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        },
+        {
+          "username": "Caroline Ribeiro"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1790924400000",
+      "date_updated": "1790965264134",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca20th8"
+    },
+    {
+      "id": "17tjca20gpa",
+      "name": "Sabrina Reels | História bem contada",
+      "status": {
+        "status": "finalizado",
+        "type": "done"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        },
+        {
+          "username": "Caroline Ribeiro"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1790838000000",
+      "date_updated": "1790887404984",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca20gpa"
+    },
+    {
+      "id": "86ajhmgvz",
+      "name": "Sabrina Reels | Orçamento de tráfego",
+      "status": {
+        "status": "finalizado",
+        "type": "done"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [],
+      "tags": [],
+      "archived": false,
+      "due_date": "1790665200000",
+      "date_updated": "1790710129300",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/86ajhmgvz"
+    },
+    {
+      "id": "17tjca20ggd",
+      "name": "Sabrina Reels | Autoconhecimento",
+      "status": {
+        "status": "finalizado",
+        "type": "done"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        },
+        {
+          "username": "Caroline Ribeiro"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1790578800000",
+      "date_updated": "1790621149550",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca20ggd"
+    },
+    {
+      "id": "17tjca20thk",
+      "name": "Sabrina Reels | Conselho para fazer Black Friday",
+      "status": {
+        "status": "pendente",
+        "type": "open"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [],
+      "tags": [],
+      "archived": false,
+      "due_date": "1793862000000",
+      "date_updated": "1790158098116",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca20thk"
+    },
+    {
+      "id": "17tjca20thj",
+      "name": "Sabrina Reels | Você já está satisfeito com o que tem?",
+      "status": {
+        "status": "pendente",
+        "type": "open"
+      },
+      "list": {
+        "id": "901316378329",
+        "name": "Sabrina - Calendário de Conteúdos"
+      },
+      "assignees": [],
+      "tags": [],
+      "archived": false,
+      "due_date": "1793602800000",
+      "date_updated": "1790158096764",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca20thj"
+    },
+    {
+      "id": "17tjca22zdc",
+      "name": "Sabrina | Análise de perfil",
+      "status": {
+        "status": "pendente",
+        "type": "open"
+      },
+      "list": {
+        "id": "901315887469",
+        "name": "Sabrina - Atividades"
+      },
+      "assignees": [
+        {
+          "username": "Caroline Ribeiro"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1791442800000",
+      "date_updated": "1791329627072",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca22zdc"
+    },
+    {
+      "id": "86ajwky2c",
+      "name": "Sabrina | Gravar um tutorial de ferramentas do Instagram, tela verde, remix et",
+      "status": {
+        "status": "pendente",
+        "type": "open"
+      },
+      "list": {
+        "id": "901315887469",
+        "name": "Sabrina - Atividades"
+      },
+      "assignees": [
+        {
+          "username": "Sabrina Nascimento"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1785999600000",
+      "date_updated": "1791323396535",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/86ajwky2c"
+    },
+    {
+      "id": "86ajn3j03",
+      "name": "Sabrina | Transformar o roteiro em carrossel",
+      "status": {
+        "status": "alteração copy",
+        "type": "custom"
+      },
+      "list": {
+        "id": "901315887469",
+        "name": "Sabrina - Atividades"
+      },
+      "assignees": [
+        {
+          "username": "Sabrina Nascimento"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1785394800000",
+      "date_updated": "1791287563350",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/86ajn3j03"
+    },
+    {
+      "id": "86ak8zufa",
+      "name": "Sabrina Imagem | Fundo roxo - Quem vende no medo perde o cliente na primeira dúvida.",
+      "status": {
+        "status": "design aprovado",
+        "type": "custom"
+      },
+      "list": {
+        "id": "901327118574",
+        "name": "Sabrina - design "
+      },
+      "assignees": [
+        {
+          "username": "Fernanda Lino"
+        },
+        {
+          "username": "Caroline Ribeiro"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1792393200000",
+      "date_updated": "1792450223553",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/86ak8zufa"
+    },
+    {
+      "id": "17tjca240zg",
+      "name": "Sabrina Carrossel | 7 coisas xexelentas do marketing que você não deveria reproduzir",
+      "status": {
+        "status": "pendente",
+        "type": "open"
+      },
+      "list": {
+        "id": "901327118574",
+        "name": "Sabrina - design "
+      },
+      "assignees": [
+        {
+          "username": "Fernanda Lino"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1792479600000",
+      "date_updated": "1792442749873",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca240zg"
+    },
+    {
+      "id": "17tjca20tta",
+      "name": "Sabrina Carrossel | Nem todo gancho foi feito para viralizar",
+      "status": {
+        "status": "pendente",
+        "type": "open"
+      },
+      "list": {
+        "id": "901327118574",
+        "name": "Sabrina - design "
+      },
+      "assignees": [
+        {
+          "username": "Fernanda Lino"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1792566000000",
+      "date_updated": "1792442730848",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca20tta"
+    },
+    {
+      "id": "86ak8zvdb",
+      "name": "Sabrina Imagem Fundo Roxo | O mundo perde toda vez que alguém bom escolhe o silêncio.",
+      "status": {
+        "status": "finalizado",
+        "type": "done"
+      },
+      "list": {
+        "id": "901327118574",
+        "name": "Sabrina - design "
+      },
+      "assignees": [
+        {
+          "username": "Fernanda Lino"
+        },
+        {
+          "username": "Caroline Ribeiro"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1792134000000",
+      "date_updated": "1792193573537",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/86ak8zvdb"
+    },
+    {
+      "id": "86ak8zvc4",
+      "name": "Sabrina Imagem | Cair todo mundo cai",
+      "status": {
+        "status": "finalizado",
+        "type": "done"
+      },
+      "list": {
+        "id": "901327118574",
+        "name": "Sabrina - design "
+      },
+      "assignees": [
+        {
+          "username": "Fernanda Lino"
+        },
+        {
+          "username": "Caroline Ribeiro"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1792047600000",
+      "date_updated": "1792156898295",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/86ak8zvc4"
+    },
+    {
+      "id": "86ajpcgkz",
+      "name": "Sabrina Carrossel | Como saber se a minha comunicação está clara?",
+      "status": {
+        "status": "finalizado",
+        "type": "done"
+      },
+      "list": {
+        "id": "901327118574",
+        "name": "Sabrina - design "
+      },
+      "assignees": [
+        {
+          "username": "Fernanda Lino"
+        },
+        {
+          "username": "Caroline Ribeiro"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1791961200000",
+      "date_updated": "1792024107690",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/86ajpcgkz"
+    },
+    {
+      "id": "86ajra768",
+      "name": "Sabrina Carrossel | Views",
+      "status": {
+        "status": "pendente",
+        "type": "open"
+      },
+      "list": {
+        "id": "901327118574",
+        "name": "Sabrina - design "
+      },
+      "assignees": [
+        {
+          "username": "Fernanda Lino"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1793170800000",
+      "date_updated": "1792012299284",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/86ajra768"
+    },
+    {
+      "id": "17tjca20tt9",
+      "name": "Sabrina Carrossel | Você não precisa virar outra pessoa para vender",
+      "status": {
+        "status": "pendente",
+        "type": "open"
+      },
+      "list": {
+        "id": "901327118574",
+        "name": "Sabrina - design "
+      },
+      "assignees": [
+        {
+          "username": "Fernanda Lino"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1792998000000",
+      "date_updated": "1792010395220",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca20tt9"
+    },
+    {
+      "id": "86ak8zveu",
+      "name": "Sabrina Imagem Colagem | Pare de negociar os seus sonhos.",
+      "status": {
+        "status": "pendente",
+        "type": "open"
+      },
+      "list": {
+        "id": "901327118574",
+        "name": "Sabrina - design "
+      },
+      "assignees": [
+        {
+          "username": "Fernanda Lino"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1793430000000",
+      "date_updated": "1792010259751",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/86ak8zveu"
+    },
+    {
+      "id": "17tjca20ttb",
+      "name": "Sabrina Carrossel | Você tem conteúdo para ensinar",
+      "status": {
+        "status": "pendente",
+        "type": "open"
+      },
+      "list": {
+        "id": "901327118574",
+        "name": "Sabrina - design "
+      },
+      "assignees": [
+        {
+          "username": "Fernanda Lino"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1792825200000",
+      "date_updated": "1792009936883",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca20ttb"
+    },
+    {
+      "id": "86ajqxj8n",
+      "name": "Sabrina Imagem Colagem | Não peça desculpas por ser grande demais para espaços que se recusam a crescer.",
+      "status": {
+        "status": "pendente",
+        "type": "open"
+      },
+      "list": {
+        "id": "901327118574",
+        "name": "Sabrina - design "
+      },
+      "assignees": [
+        {
+          "username": "Fernanda Lino"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1792825200000",
+      "date_updated": "1792003336115",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/86ajqxj8n"
+    },
+    {
+      "id": "86ak8zu0h",
+      "name": "Sabrina Imagem | Fundo roxo - Tem alguém esperando exatamente aquilo que só você sabe dizer.",
+      "status": {
+        "status": "pendente",
+        "type": "open"
+      },
+      "list": {
+        "id": "901327118574",
+        "name": "Sabrina - design "
+      },
+      "assignees": [
+        {
+          "username": "Fernanda Lino"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1792738800000",
+      "date_updated": "1792002971956",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/86ak8zu0h"
+    },
+    {
+      "id": "86ak8ztyf",
+      "name": "Sabrina Imagem | Fundo roxo - Seu concorrente é pior que você e tem mais sucesso pq ele se posiciona",
+      "status": {
+        "status": "finalizado",
+        "type": "done"
+      },
+      "list": {
+        "id": "901327118574",
+        "name": "Sabrina - design "
+      },
+      "assignees": [
+        {
+          "username": "Fernanda Lino"
+        },
+        {
+          "username": "Caroline Ribeiro"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1791615600000",
+      "date_updated": "1791652634519",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/86ak8ztyf"
+    },
+    {
+      "id": "86ak8zue2",
+      "name": "Sabrina Imagem | Fundo roxo - Ninguém se conecta com a sua imitação dos outros",
+      "status": {
+        "status": "finalizado",
+        "type": "done"
+      },
+      "list": {
+        "id": "901327118574",
+        "name": "Sabrina - design "
+      },
+      "assignees": [
+        {
+          "username": "Fernanda Lino"
+        },
+        {
+          "username": "Caroline Ribeiro"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1791442800000",
+      "date_updated": "1791490736050",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/86ak8zue2"
+    },
+    {
+      "id": "86ajqyna2",
+      "name": "Sabrina Carrossel | Como transformar repertório complexo em mensagem simples",
+      "status": {
+        "status": "finalizado",
+        "type": "done"
+      },
+      "list": {
+        "id": "901327118574",
+        "name": "Sabrina - design "
+      },
+      "assignees": [
+        {
+          "username": "Fernanda Lino"
+        },
+        {
+          "username": "Caroline Ribeiro"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1791356400000",
+      "date_updated": "1791326781722",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/86ajqyna2"
+    },
+    {
+      "id": "86ak8zuty",
+      "name": "Sabrina Imagem Colagem | Se ninguém te deu espaço, cria o seu.",
+      "status": {
+        "status": "finalizado",
+        "type": "done"
+      },
+      "list": {
+        "id": "901327118574",
+        "name": "Sabrina - design "
+      },
+      "assignees": [
+        {
+          "username": "Fernanda Lino"
+        },
+        {
+          "username": "Caroline Ribeiro"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1791183600000",
+      "date_updated": "1791301429349",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/86ak8zuty"
+    },
+    {
+      "id": "86ak8zuzm",
+      "name": "Sabrina Imagem | Coragem é fazer mesmo com a voz tremendo.",
+      "status": {
+        "status": "finalizado",
+        "type": "done"
+      },
+      "list": {
+        "id": "901327118574",
+        "name": "Sabrina - design "
+      },
+      "assignees": [
+        {
+          "username": "Fernanda Lino"
+        },
+        {
+          "username": "Caroline Ribeiro"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1790924400000",
+      "date_updated": "1790973565147",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/86ak8zuzm"
+    },
+    {
+      "id": "17tjca23re9",
+      "name": "Sabrina | editar o vídeo \"Você sabe a diferença entre ter um Instagram bonito e ter um posicionamento de verdade?\"",
+      "status": {
+        "status": "finalizado",
+        "type": "done"
+      },
+      "list": {
+        "id": "901327031461",
+        "name": "Sabrina - Edição de vídeo "
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        },
+        {
+          "username": "Caroline Ribeiro"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1792134000000",
+      "date_updated": "1792276522441",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca23re9"
+    },
+    {
+      "id": "17tjca23rbu",
+      "name": "Sabrina | Fazer reels dos planejamento",
+      "status": {
+        "status": "revisão",
+        "type": "custom"
+      },
+      "list": {
+        "id": "901327031461",
+        "name": "Sabrina - Edição de vídeo "
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        },
+        {
+          "username": "Caroline Ribeiro"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1791874800000",
+      "date_updated": "1792101008260",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca23rbu"
+    },
+    {
+      "id": "17tjca23rec",
+      "name": "Sabrina | editar o vídeo \"Um dos maiores desafios de quem tem muito conhecimento é entender que não precisa mostrar tudo o que sabe.\"",
+      "status": {
+        "status": "finalizado",
+        "type": "done"
+      },
+      "list": {
+        "id": "901327031461",
+        "name": "Sabrina - Edição de vídeo "
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        },
+        {
+          "username": "Caroline Ribeiro"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1792047600000",
+      "date_updated": "1792085631212",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca23rec"
+    },
+    {
+      "id": "86ajhmgu9",
+      "name": "Sabrina React | Mesma frequência",
+      "status": {
+        "status": "pendente",
+        "type": "open"
+      },
+      "list": {
+        "id": "901327031461",
+        "name": "Sabrina - Edição de vídeo "
+      },
+      "assignees": [],
+      "tags": [],
+      "archived": false,
+      "due_date": "1793343600000",
+      "date_updated": "1792003069716",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/86ajhmgu9"
+    },
+    {
+      "id": "86ajnxfq4",
+      "name": "Sabrina Reels | Sabrina do passado x Sabrina do presente",
+      "status": {
+        "status": "pendente",
+        "type": "open"
+      },
+      "list": {
+        "id": "901327031461",
+        "name": "Sabrina - Edição de vídeo "
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1793343600000",
+      "date_updated": "1792002417505",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/86ajnxfq4"
+    },
+    {
+      "id": "17tjca23reg",
+      "name": "Sabrina | editar o vídeo \"Se o seu conteúdo chama atenção, mas não ajuda as pessoas a entenderem o valor do que você vende, talvez o problema não esteja apenas no conteúdo.\"",
+      "status": {
+        "status": "finalizado",
+        "type": "done"
+      },
+      "list": {
+        "id": "901327031461",
+        "name": "Sabrina - Edição de vídeo "
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        },
+        {
+          "username": "Caroline Ribeiro"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1791961200000",
+      "date_updated": "1791989338533",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/17tjca23reg"
+    },
+    {
+      "id": "86ahy9ww5",
+      "name": "Sabrina Reels | Nenhum Guru conhece o seu negócio",
+      "status": {
+        "status": "finalizado",
+        "type": "done"
+      },
+      "list": {
+        "id": "901327031461",
+        "name": "Sabrina - Edição de vídeo "
+      },
+      "assignees": [
+        {
+          "username": "Karine Gomes"
+        },
+        {
+          "username": "Caroline Ribeiro"
+        }
+      ],
+      "tags": [],
+      "archived": false,
+      "due_date": "1790492400000",
+      "date_updated": "1790515202149",
+      "date_done": null,
+      "date_closed": null,
+      "url": "https://app.clickup.com/t/86ahy9ww5"
+    }
+  ],
+  "comentarios": {}
+}

@@ -668,5 +668,36 @@
         ]
       }
     ]
+  },
+  "atividades": {
+    "$comentario": "Resumo automático das tarefas do ClickUp (sem formulário). Listas lidas por ID; listas novas dentro das pastas também entram, com o nome da lista como área. Relato manual: comentário com o marcador ou tarefa com a etiqueta.",
+    "pastas": [
+      "901310056966"
+    ],
+    "listas": [
+      {
+        "id": "901316378329",
+        "area": "Conteúdo",
+        "conta_como": "publicacao"
+      },
+      {
+        "id": "901315887469",
+        "area": "Projetos e estratégia",
+        "conta_como": "projeto"
+      },
+      {
+        "id": "901327118574",
+        "area": "Design",
+        "conta_como": "peca"
+      },
+      {
+        "id": "901327031461",
+        "area": "Edição de vídeo",
+        "conta_como": "peca"
+      }
+    ],
+    "marcador_comentario": "#relatorio",
+    "etiqueta_destaque": "relatorio",
+    "prefixo_nome": "Sabrina"
   }
 }
