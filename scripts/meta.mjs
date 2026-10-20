@@ -137,6 +137,9 @@ async function instagram(ig, inicio, fim) {
     for (const m of reels ? METRICAS_REELS : METRICAS_POST) {
       ins[m] = await talvez(`post ${md.id} · ${m}`, async () => (await api(`${md.id}/insights`, { metric: m })).data?.[0]?.values?.[0]?.value ?? null);
     }
+    // A API devolve o tempo médio assistido em milissegundos.
+    if (ins.ig_reels_avg_watch_time != null) ins.tempo_medio_assistido_s = Math.round(ins.ig_reels_avg_watch_time / 100) / 10;
+    delete ins.ig_reels_avg_watch_time;
     posts.push({
       id: md.id,
       formato: reels ? "Reels" : md.media_type === "CAROUSEL_ALBUM" ? "Carrossel" : md.media_type === "VIDEO" ? "Vídeo" : "Imagem",

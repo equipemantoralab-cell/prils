@@ -2,11 +2,57 @@
   "$comentario": "Contas da Meta por cliente. O token fica no .env (META_TOKEN), nunca aqui. ig = Instagram Business ID; ads = contas de anúncio. 'confirmar' = ID encontrado pelo token mas ainda não validado.",
   "versao_api": "v23.0",
   "clientes": {
-    "sabrina": { "nome": "Sabrina Nascimento", "ig": "17841440984913728", "usuario": "eusousabrinanascimento", "ads": ["act_1042643068247418"] },
-    "hosaka": { "nome": "Hosaka", "ig": "17841401824246736", "usuario": "hosaka___", "ads": ["act_259240710942083", "act_238681800953629", "act_214584043598887", "act_1240847011177251"] },
-    "bruna": { "nome": "Bruna Cavalcante", "ig": "17841400418440650", "usuario": "drabrunabc", "ads": ["act_1446228403390743"] },
-    "paycon": { "nome": "Paycon Automações", "ig": "17841456014964300", "usuario": "payconautomacoes", "ads": ["act_1299047334130315"] },
-    "paycon-rh": { "nome": "Paycon RH", "ig": null, "usuario": null, "ads": ["act_2043505829897738"] },
-    "fellipe": { "nome": "Fellipe Barcelos", "ig": "17841405700542153", "usuario": "barcelosdecristo", "ads": ["act_582712880700136"], "confirmar": true }
+    "sabrina": {
+      "nome": "Sabrina Nascimento",
+      "ig": "17841440984913728",
+      "usuario": "eusousabrinanascimento",
+      "ads": [
+        "act_1042643068247418"
+      ]
+    },
+    "hosaka": {
+      "nome": "Hosaka",
+      "ig": "17841401824246736",
+      "usuario": "hosaka___",
+      "ads": [
+        "act_259240710942083",
+        "act_238681800953629",
+        "act_214584043598887",
+        "act_1240847011177251"
+      ]
+    },
+    "bruna": {
+      "nome": "Bruna Cavalcante",
+      "ig": "17841400418440650",
+      "usuario": "drabrunabc",
+      "ads": [
+        "act_1446228403390743"
+      ]
+    },
+    "paycon": {
+      "nome": "Paycon Automações",
+      "ig": "17841456014964300",
+      "usuario": "payconautomacoes",
+      "ads": [
+        "act_1299047334130315"
+      ]
+    },
+    "paycon-rh": {
+      "nome": "Paycon RH",
+      "ig": null,
+      "usuario": null,
+      "ads": [
+        "act_2043505829897738"
+      ]
+    },
+    "fellipe": {
+      "nome": "Fellipe Barcelos",
+      "ig": "17841405700542153",
+      "usuario": "barcelosdecristo",
+      "ads": [
+        "act_582712880700136"
+      ],
+      "obs": "Instagram confirmado. A conta de anúncio se chama \"Barceloscria CA - Reserva\": confirmar se é a principal."
+    }
   }
 }

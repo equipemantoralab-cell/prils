@@ -102,3 +102,15 @@ As listas e as áreas ficam em `config/<cliente>.json`, bloco `atividades`. List
 - ou coloque a etiqueta `relatorio` numa tarefa para destacá-la.
 
 Os dois aparecem em "Notas do time" na semana em que foram feitos.
+
+## Meta (Instagram + Meta Ads)
+
+`scripts/meta.mjs` lê, por cliente, o Instagram (conta, posts e Reels da semana, público) e as contas de anúncio. Contas em `config/meta.json`, token em `META_TOKEN` no `.env`.
+
+```bash
+npm run meta              # semana passada da Sabrina → data/sabrina-meta.json
+npm run meta:stories      # guarda os stories no ar agora; rode 1x por dia (a Meta só mantém stories por 24 h)
+node scripts/meta.mjs hosaka --inicio 2026-10-12
+```
+
+Atrás de proxy (como no ambiente do Claude Code), rode com `NODE_USE_ENV_PROXY=1` para o Node usar o `HTTPS_PROXY`.
